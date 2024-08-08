@@ -79,7 +79,7 @@
             <controls:PageLink x:Uid="LearnMore_PowerRename" Link="https://aka.ms/PowerToysOverview_PowerRename" />
         </controls:SettingsPageControl.PrimaryLinks>
         <controls:SettingsPageControl.SecondaryLinks>
-            <controls:PageLink Link="https://github.com/chrdavis/SmartRename" Text="Chris Davis 的软件 SmartRenamer" />
+            <controls:PageLink Link="https://github.com/chrdavis/SmartRename" Text="Chris Davis's SmartRenamer" />
         </controls:SettingsPageControl.SecondaryLinks>
     </controls:SettingsPageControl>
 </Page>

@@ -118,29 +118,29 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Max_File_Size_Error" xml:space="preserve">
-      <value>文件过大，无法预览。
-最大文件大小：%1KB</value>
+    <value>This file is too big to preview.
+Max file size: %1KB</value>
     <comment>Error message which is shown when the file is too big. %1 gets replaced by a value. Leave KB (means Kilobyte)</comment>
   </data>
   <data name="Exception_Occurred" xml:space="preserve">
-      <value>文件预览发生错误：
+    <value>Exception occurred:
       </value>
     <comment>Will be shown when an exception occurred.</comment>
   </data>
   <data name="Loading_Screen_Message" xml:space="preserve">
-      <value>加载中...</value>
+    <value>Loading...</value>
   </data>
   <data name="WebView2_Not_Installed_Message" xml:space="preserve">
-      <value>未安装 WebView2。</value>
+    <value>WebView2 not installed or found.</value>
   </data>
   <data name="Download_WebView2" xml:space="preserve">
-      <value>下载 WebView2 即可预览该文件。</value>
+    <value>Download WebView2 to display this file.</value>
   </data>
   <data name="GpoDisabledErrorText" xml:space="preserve">
-    <value>组策略已禁止该功能。请联系你的电脑管理员。</value>
+    <value>Tried to start with a GPO policy setting the utility to always be disabled. Please contact your systems administrator.</value>
     <comment>GPO stands for the Windows Group Policy Object feature.</comment>
   </data>
   <data name="Access_Denied_Exception_Message" xml:space="preserve">
-    <value>拒绝访问: 您当前无权打开该文件。请联系文件所有者或电脑管理员以获得许可。</value>
+    <value>Access denied: You do not have permission to open this file. See the owner of the file or an administrator to obtain permission.</value>
   </data>
 </root>

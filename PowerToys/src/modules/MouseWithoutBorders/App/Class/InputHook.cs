@@ -142,7 +142,7 @@ namespace MouseWithoutBorders.Class
                 if (!Common.RunOnLogonDesktop && !Common.RunOnScrSaverDesktop)
                 {
                     _ = MessageBox.Show(
-                        "安装键盘/鼠标侦听器失败！",
+                        "Error installing keyboard/Mouse hook!",
                         Application.ProductName,
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Error);
@@ -525,11 +525,11 @@ namespace MouseWithoutBorders.Class
                 {
                     EasyMouseOption easyMouseOption = (EasyMouseOption)Setting.Values.EasyMouse;
 
-                    if (easyMouseOption is EasyMouseOption.关闭 or EasyMouseOption.开启)
+                    if (easyMouseOption is EasyMouseOption.Disable or EasyMouseOption.Enable)
                     {
-                        Setting.Values.EasyMouse = (int)(easyMouseOption == EasyMouseOption.关闭 ? EasyMouseOption.开启 : EasyMouseOption.关闭);
+                        Setting.Values.EasyMouse = (int)(easyMouseOption == EasyMouseOption.Disable ? EasyMouseOption.Enable : EasyMouseOption.Disable);
 
-                        Common.ShowToolTip($"易动模式已通过快捷键切换为 [{(EasyMouseOption)Setting.Values.EasyMouse}]. 可以在设置中调整快捷键.", 5000);
+                        Common.ShowToolTip($"Easy Mouse has been toggled to [{(EasyMouseOption)Setting.Values.EasyMouse}] by a hotkey. You can change the hotkey in the Settings form.", 5000);
                         return false;
                     }
                 }
@@ -575,7 +575,7 @@ namespace MouseWithoutBorders.Class
             }
             else if (Common.HotkeyMatched(vkCode, winDown, CtrlDown, altDown, shiftDown, Setting.Values.HotKeyReconnect))
             {
-                Common.ShowToolTip("正在重新连接...", 2000);
+                Common.ShowToolTip("Reconnecting...", 2000);
                 Common.LastReconnectByHotKeyTime = Common.GetTick();
                 Common.PleaseReopenSocket = Common.REOPEN_WHEN_HOTKEY;
                 return false;
@@ -641,7 +641,7 @@ namespace MouseWithoutBorders.Class
                         Common.ShowToolTip(
                             string.Format(
                                 CultureInfo.CurrentCulture,
-                                "控制已通过快捷键 Ctrl+Alt+{1}{2} 切换到设备 {0}.",
+                                "Control has been switched to {0} by the hotkey Ctrl+Alt+{1}{2}",
                                 mcName,
                                 Setting.Values.HotKeySwitchMachine == (int)VK.F1 ? "F" : string.Empty,
                                 index + 1),

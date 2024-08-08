@@ -30,15 +30,9 @@ namespace ImageResizer.Views
                 .Append(Enum.GetName(type, value));
 
             var toLower = false;
-            var replacePercentage = false;
             if ((string)parameter == "ToLower")
             {
                 toLower = true;
-            }
-            else if ((string)parameter == "ToLower2")
-            {
-                toLower = true;
-                replacePercentage = true;
             }
             else if (parameter != null)
             {
@@ -55,11 +49,6 @@ namespace ImageResizer.Views
             if (toLower)
             {
                 targetValue = targetValue.ToLower(culture);
-            }
-
-            if (replacePercentage)
-            {
-                targetValue = targetValue.Replace("百分比", "%");
             }
 
             return targetValue;

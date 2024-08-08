@@ -153,7 +153,7 @@ namespace Microsoft.PowerToys.Run.Plugin.WindowsTerminal
             }
             catch (Exception ex)
             {
-                var name = "²å¼þ: " + Resources.plugin_name;
+                var name = "Plugin: " + Resources.plugin_name;
                 var message = Resources.run_terminal_failed;
                 Log.Exception("Failed to open Windows Terminal", ex, GetType());
                 _context.API.ShowMsg(name, message, string.Empty);
@@ -169,7 +169,7 @@ namespace Microsoft.PowerToys.Run.Plugin.WindowsTerminal
             }
             catch (Exception ex)
             {
-                var name = "²å¼þ: " + Resources.plugin_name;
+                var name = "Plugin: " + Resources.plugin_name;
                 var message = Resources.run_terminal_failed;
                 Log.Exception("Failed to open Windows Terminal", ex, GetType());
                 _context.API.ShowMsg(name, message, string.Empty);

@@ -1,6 +1,7 @@
 ﻿using System.Windows.Forms;
 using System.Collections.Generic;
 using System.Drawing;
+using Windows.UI.Notifications;
 
 namespace MouseWithoutBorders
 {
@@ -88,6 +89,8 @@ namespace MouseWithoutBorders
             this.linkLabelReConfigure = new System.Windows.Forms.LinkLabel();
             this.tabControlSetting = new System.Windows.Forms.TabControl();
             this.tabPageAdvancedSettings = new System.Windows.Forms.TabPage();
+            this.groupBoxName2IPPolicyList = new System.Windows.Forms.GroupBox();
+            this.textBoxMachineName2IPPolicyList = new System.Windows.Forms.TextBox();
             this.pictureBoxMouseWithoutBorders = new System.Windows.Forms.PictureBox();
             this.groupBoxDNS = new System.Windows.Forms.GroupBox();
             this.textBoxMachineName2IP = new System.Windows.Forms.TextBox();
@@ -103,6 +106,7 @@ namespace MouseWithoutBorders
             this.groupBoxMachineMatrix.SuspendLayout();
             this.tabControlSetting.SuspendLayout();
             this.tabPageAdvancedSettings.SuspendLayout();
+            this.groupBoxName2IPPolicyList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMouseWithoutBorders)).BeginInit();
             this.groupBoxDNS.SuspendLayout();
             this.SuspendLayout();
@@ -158,13 +162,13 @@ namespace MouseWithoutBorders
             "X",
             "Y",
             "Z",
-            "关闭"});
+            "Disable"});
             this.comboBoxLockMachine.Location = new System.Drawing.Point(230, 68);
             this.comboBoxLockMachine.Name = "comboBoxLockMachine";
             this.comboBoxLockMachine.Size = new System.Drawing.Size(54, 21);
             this.comboBoxLockMachine.TabIndex = 205;
             this.comboBoxLockMachine.Text = "L";
-            this.toolTip.SetToolTip(this.comboBoxLockMachine, "双击锁定所有电脑。");
+            this.toolTip.SetToolTip(this.comboBoxLockMachine, "Hit this hotkey twice to lock all machines.");
             this.comboBoxLockMachine.TextChanged += new System.EventHandler(this.ComboBoxLockMachine_TextChanged);
             // 
             // comboBoxSwitchToAllPC
@@ -199,13 +203,13 @@ namespace MouseWithoutBorders
             "X",
             "Y",
             "Z",
-            "关闭"});
+            "Disable"});
             this.comboBoxSwitchToAllPC.Location = new System.Drawing.Point(490, 68);
             this.comboBoxSwitchToAllPC.Name = "comboBoxSwitchToAllPC";
             this.comboBoxSwitchToAllPC.Size = new System.Drawing.Size(56, 21);
             this.comboBoxSwitchToAllPC.TabIndex = 206;
-            this.comboBoxSwitchToAllPC.Text = "关闭";
-            this.toolTip.SetToolTip(this.comboBoxSwitchToAllPC, "按三次 Ctrl 或者 Ctrl+Alt+[?]");
+            this.comboBoxSwitchToAllPC.Text = "Disabled";
+            this.toolTip.SetToolTip(this.comboBoxSwitchToAllPC, "Press Ctrl key three times fast or use Ctrl+Alt+[?]");
             this.comboBoxSwitchToAllPC.TextChanged += new System.EventHandler(this.ComboBoxSwitchToAllPC_TextChanged);
             // 
             // comboBoxReconnect
@@ -239,13 +243,13 @@ namespace MouseWithoutBorders
             "X",
             "Y",
             "Z",
-            "关闭"});
+            "Disable"});
             this.comboBoxReconnect.Location = new System.Drawing.Point(230, 95);
             this.comboBoxReconnect.Name = "comboBoxReconnect";
             this.comboBoxReconnect.Size = new System.Drawing.Size(54, 21);
             this.comboBoxReconnect.TabIndex = 207;
             this.comboBoxReconnect.Text = "R";
-            this.toolTip.SetToolTip(this.comboBoxReconnect, "防止连接丢失。");
+            this.toolTip.SetToolTip(this.comboBoxReconnect, "Just in case the connection is lost for any reason.");
             this.comboBoxReconnect.TextChanged += new System.EventHandler(this.ComboBoxReconnect_TextChanged);
             // 
             // checkBoxTwoRow
@@ -255,8 +259,9 @@ namespace MouseWithoutBorders
             this.checkBoxTwoRow.Name = "checkBoxTwoRow";
             this.checkBoxTwoRow.Size = new System.Drawing.Size(72, 17);
             this.checkBoxTwoRow.TabIndex = 6;
-            this.checkBoxTwoRow.Text = "双行排列(&R)";
-            this.toolTip.SetToolTip(this.checkBoxTwoRow, "选中改为上下两行，可上下移动鼠标来切换设备。");
+            this.checkBoxTwoRow.Text = "Two &Row";
+            this.toolTip.SetToolTip(this.checkBoxTwoRow, "Check this if you have machines above or below of each other so you can move mous" +
+        "e up and down to switch machine.");
             this.checkBoxTwoRow.UseVisualStyleBackColor = true;
             this.checkBoxTwoRow.CheckedChanged += new System.EventHandler(this.CheckBoxTwoRow_CheckedChanged);
             // 
@@ -291,13 +296,14 @@ namespace MouseWithoutBorders
             "X",
             "Y",
             "Z",
-            "关闭"});
+            "Disable"});
             this.comboBoxEasyMouse.Location = new System.Drawing.Point(490, 122);
             this.comboBoxEasyMouse.Name = "comboBoxEasyMouse";
             this.comboBoxEasyMouse.Size = new System.Drawing.Size(56, 21);
             this.comboBoxEasyMouse.TabIndex = 208;
             this.comboBoxEasyMouse.Text = "E";
-            this.toolTip.SetToolTip(this.comboBoxEasyMouse, "切换易动功能的开关，易动设置为按住按键开启时该切换无效。");
+            this.toolTip.SetToolTip(this.comboBoxEasyMouse, "Toggle Enable or Disable easy mouse. (Only works when Easy Mouse option is set to" +
+        " Enable or Disable)");
             this.comboBoxEasyMouse.TextChanged += new System.EventHandler(this.ComboBoxEasyMouse_TextChanged);
             // 
             // checkBoxDrawMouse
@@ -309,8 +315,9 @@ namespace MouseWithoutBorders
             this.checkBoxDrawMouse.Name = "checkBoxDrawMouse";
             this.checkBoxDrawMouse.Size = new System.Drawing.Size(117, 17);
             this.checkBoxDrawMouse.TabIndex = 171;
-            this.checkBoxDrawMouse.Text = "绘制鼠标光标(&D)";
-            this.toolTip.SetToolTip(this.checkBoxDrawMouse, "在 Win10 以上，如果电脑没插鼠标，那么默认不会显示鼠标光标，需要单独绘制。");
+            this.checkBoxDrawMouse.Text = "&Draw mouse cursor";
+            this.toolTip.SetToolTip(this.checkBoxDrawMouse, "Mouse cursor may not be visible in Windows 10 and later versions of Windows when t" +
+        "here is no physical mouse attached.");
             this.checkBoxDrawMouse.UseVisualStyleBackColor = true;
             this.checkBoxDrawMouse.CheckedChanged += new System.EventHandler(this.CheckBoxDrawMouse_CheckedChanged);
             // 
@@ -323,8 +330,9 @@ namespace MouseWithoutBorders
             this.checkBoxMouseMoveRelatively.Name = "checkBoxMouseMoveRelatively";
             this.checkBoxMouseMoveRelatively.Size = new System.Drawing.Size(131, 17);
             this.checkBoxMouseMoveRelatively.TabIndex = 170;
-            this.checkBoxMouseMoveRelatively.Text = "鼠标相对移动(&M)";
-            this.toolTip.SetToolTip(this.checkBoxMouseMoveRelatively, "提供不同屏幕配置和多屏使用的支持。");
+            this.checkBoxMouseMoveRelatively.Text = "&Move mouse relatively";
+            this.toolTip.SetToolTip(this.checkBoxMouseMoveRelatively, "Use this option when remote machine\'s monitor settings are different, or remote m" +
+        "achine has multiple monitors.");
             this.checkBoxMouseMoveRelatively.UseVisualStyleBackColor = true;
             this.checkBoxMouseMoveRelatively.CheckedChanged += new System.EventHandler(this.CheckBoxMouseMoveRelatively_CheckedChanged);
             // 
@@ -337,8 +345,10 @@ namespace MouseWithoutBorders
             this.checkBoxHideMouse.Name = "checkBoxHideMouse";
             this.checkBoxHideMouse.Size = new System.Drawing.Size(156, 17);
             this.checkBoxHideMouse.TabIndex = 169;
-            this.checkBoxHideMouse.Text = "移出屏幕隐藏鼠标(&H)";
-            this.toolTip.SetToolTip(this.checkBoxHideMouse, "鼠标移出屏幕后，把本设备光标隐藏在屏幕顶部，消除当前窗口焦点，使键盘输入转移到被控电脑。");
+            this.checkBoxHideMouse.Text = "&Hide mouse at screen edge";
+            this.toolTip.SetToolTip(this.checkBoxHideMouse, "Hide the mouse cursor at the top edge of the screen when switching to other machi" +
+        "ne. This option also steals the focus from any full-screen app to ensure the key" +
+        "board input is redirected.");
             this.checkBoxHideMouse.UseVisualStyleBackColor = true;
             this.checkBoxHideMouse.CheckedChanged += new System.EventHandler(this.CheckBoxHideMouse_CheckedChanged);
             // 
@@ -349,8 +359,8 @@ namespace MouseWithoutBorders
             this.checkBoxBlockMouseAtCorners.Name = "checkBoxBlockMouseAtCorners";
             this.checkBoxBlockMouseAtCorners.Size = new System.Drawing.Size(172, 17);
             this.checkBoxBlockMouseAtCorners.TabIndex = 172;
-            this.checkBoxBlockMouseAtCorners.Text = "屏幕四角阻挡";
-            this.toolTip.SetToolTip(this.checkBoxBlockMouseAtCorners, "在屏幕四角处阻挡跨界，防止误触。");
+            this.checkBoxBlockMouseAtCorners.Text = "Block mouse at screen corners";
+            this.toolTip.SetToolTip(this.checkBoxBlockMouseAtCorners, "To avoid accident machine-switch at screen corners.");
             this.checkBoxBlockMouseAtCorners.UseVisualStyleBackColor = true;
             this.checkBoxBlockMouseAtCorners.CheckedChanged += new System.EventHandler(this.CheckBoxBlockMouseAtCorners_CheckedChanged);
             // 
@@ -361,8 +371,8 @@ namespace MouseWithoutBorders
             this.checkBoxCircle.Name = "checkBoxCircle";
             this.checkBoxCircle.Size = new System.Drawing.Size(87, 17);
             this.checkBoxCircle.TabIndex = 163;
-            this.checkBoxCircle.Text = "循环移动(&W)";
-            this.toolTip.SetToolTip(this.checkBoxCircle, "鼠标移动超过最后一台电脑屏幕后，回到第一台电脑上。");
+            this.checkBoxCircle.Text = "&Wrap Mouse";
+            this.toolTip.SetToolTip(this.checkBoxCircle, "Move control back to the first machine when mouse moves passing the last one");
             this.checkBoxCircle.UseVisualStyleBackColor = true;
             this.checkBoxCircle.CheckedChanged += new System.EventHandler(this.CheckBoxCircle_CheckedChanged);
             // 
@@ -375,8 +385,9 @@ namespace MouseWithoutBorders
             this.checkBoxBlockScreenSaver.Name = "checkBoxBlockScreenSaver";
             this.checkBoxBlockScreenSaver.Size = new System.Drawing.Size(211, 17);
             this.checkBoxBlockScreenSaver.TabIndex = 168;
-            this.checkBoxBlockScreenSaver.Text = "阻止屏保(&B)";
-            this.toolTip.SetToolTip(this.checkBoxBlockScreenSaver, "阻止被控电脑启动屏幕保护程序。");
+            this.checkBoxBlockScreenSaver.Text = "&Block Screen Saver on other machines";
+            this.toolTip.SetToolTip(this.checkBoxBlockScreenSaver, "Prevent screen saver from starting on other machines when user is actively workin" +
+        "g on this machine.");
             this.checkBoxBlockScreenSaver.UseVisualStyleBackColor = true;
             this.checkBoxBlockScreenSaver.CheckedChanged += new System.EventHandler(this.CheckBoxBlockScreenSaver_CheckedChanged);
             // 
@@ -387,8 +398,8 @@ namespace MouseWithoutBorders
             this.checkBoxHideLogo.Name = "checkBoxHideLogo";
             this.checkBoxHideLogo.Size = new System.Drawing.Size(164, 17);
             this.checkBoxHideLogo.TabIndex = 167;
-            this.checkBoxHideLogo.Text = "登录时不显示 &Logo";
-            this.toolTip.SetToolTip(this.checkBoxHideLogo, "隐藏登录桌面上的“微软无界鼠标”字样。");
+            this.checkBoxHideLogo.Text = "Hide &logo from Logon Screen";
+            this.toolTip.SetToolTip(this.checkBoxHideLogo, "Hide the \"MouseWithoutBorders\" text from the logon desktop");
             this.checkBoxHideLogo.UseVisualStyleBackColor = true;
             this.checkBoxHideLogo.CheckedChanged += new System.EventHandler(this.CheckBoxHideLogo_CheckedChanged);
             // 
@@ -401,8 +412,8 @@ namespace MouseWithoutBorders
             this.checkBoxShareClipboard.Name = "checkBoxShareClipboard";
             this.checkBoxShareClipboard.Size = new System.Drawing.Size(101, 17);
             this.checkBoxShareClipboard.TabIndex = 165;
-            this.checkBoxShareClipboard.Text = "共享剪贴板(&S)";
-            this.toolTip.SetToolTip(this.checkBoxShareClipboard, "共享复制的内容，如果功能突然失效，按 Ctrl + Alt + Del 然后按 Esc 也许可以解决问题。");
+            this.checkBoxShareClipboard.Text = "&Share Clipboard";
+            this.toolTip.SetToolTip(this.checkBoxShareClipboard, "If share clipboard stops working, Ctrl+Alt+Del then Esc may solve the problem.");
             this.checkBoxShareClipboard.UseVisualStyleBackColor = true;
             this.checkBoxShareClipboard.CheckedChanged += new System.EventHandler(this.CheckBoxShareClipboard_CheckedChanged);
             // 
@@ -415,8 +426,8 @@ namespace MouseWithoutBorders
             this.checkBoxDisableCAD.Name = "checkBoxDisableCAD";
             this.checkBoxDisableCAD.Size = new System.Drawing.Size(86, 17);
             this.checkBoxDisableCAD.TabIndex = 166;
-            this.checkBoxDisableCAD.Text = "禁用 Ctrl+Alt+Del 登录(&C)";
-            this.toolTip.SetToolTip(this.checkBoxDisableCAD, "不需要按 Ctrl+Alt+Del 登录");
+            this.checkBoxDisableCAD.Text = "Disable &CAD";
+            this.toolTip.SetToolTip(this.checkBoxDisableCAD, "Ctrl+Alt+Del not required on Logon screen");
             this.checkBoxDisableCAD.UseVisualStyleBackColor = true;
             this.checkBoxDisableCAD.CheckedChanged += new System.EventHandler(this.CheckBoxDisableCAD_CheckedChanged);
             // 
@@ -426,8 +437,8 @@ namespace MouseWithoutBorders
             this.buttonOK.Name = "buttonOK";
             this.buttonOK.Size = new System.Drawing.Size(75, 23);
             this.buttonOK.TabIndex = 20;
-            this.buttonOK.Text = "应用(&A)";
-            this.toolTip.SetToolTip(this.buttonOK, "保存设置，刷新连接。");
+            this.buttonOK.Text = "&Apply";
+            this.toolTip.SetToolTip(this.buttonOK, "Save changes and reconnect to the machines in the matrix.");
             this.buttonOK.UseVisualStyleBackColor = true;
             this.buttonOK.Click += new System.EventHandler(this.ButtonOK_Click);
             // 
@@ -438,8 +449,9 @@ namespace MouseWithoutBorders
             this.checkBoxReverseLookup.Name = "checkBoxReverseLookup";
             this.checkBoxReverseLookup.Size = new System.Drawing.Size(196, 17);
             this.checkBoxReverseLookup.TabIndex = 173;
-            this.checkBoxReverseLookup.Text = "验证远程设备地址(&V)";
-            this.toolTip.SetToolTip(this.checkBoxReverseLookup, "通过反向 DNS 查找来验证远程电脑的 IP 地址（高级功能，如有疑问查看在线帮助）");
+            this.checkBoxReverseLookup.Text = "&Validate remote machine IP Address";
+            this.toolTip.SetToolTip(this.checkBoxReverseLookup, "Reverse DNS lookup to validate machine IP Address (Advanced option, click Help fo" +
+        "r any question)");
             this.checkBoxReverseLookup.UseVisualStyleBackColor = true;
             this.checkBoxReverseLookup.CheckedChanged += new System.EventHandler(this.CheckBoxReverseLookup_CheckedChanged);
             // 
@@ -451,8 +463,8 @@ namespace MouseWithoutBorders
             this.checkBoxVKMap.Name = "checkBoxVKMap";
             this.checkBoxVKMap.Size = new System.Drawing.Size(115, 17);
             this.checkBoxVKMap.TabIndex = 174;
-            this.checkBoxVKMap.Text = "启用按键映射(&U)";
-            this.toolTip.SetToolTip(this.checkBoxVKMap, "使用按键映射来改变快捷键，详情参阅在线帮助。");
+            this.checkBoxVKMap.Text = "&Use Key Mappings";
+            this.toolTip.SetToolTip(this.checkBoxVKMap, "Use key mappings to translate your key presses. See http://aka.ms/mm for help.");
             this.checkBoxVKMap.UseVisualStyleBackColor = true;
             this.checkBoxVKMap.CheckedChanged += new System.EventHandler(this.CheckBoxVKMap_CheckedChanged);
             // 
@@ -487,13 +499,14 @@ namespace MouseWithoutBorders
             "X",
             "Y",
             "Z",
-            "关闭"});
+            "Disable"});
             this.comboBoxScreenCapture.Location = new System.Drawing.Point(230, 121);
             this.comboBoxScreenCapture.Name = "comboBoxScreenCapture";
             this.comboBoxScreenCapture.Size = new System.Drawing.Size(54, 21);
             this.comboBoxScreenCapture.TabIndex = 210;
             this.comboBoxScreenCapture.Text = "S";
-            this.toolTip.SetToolTip(this.comboBoxScreenCapture, "按下快捷键，按住鼠标左键拖动选择屏幕区域，松手完成截屏。");
+            this.toolTip.SetToolTip(this.comboBoxScreenCapture, "Capture a selected area on the screen. Press this hotkey then hold left mouse but" +
+        "ton down and drag to select a screen area.");
             this.comboBoxScreenCapture.TextChanged += new System.EventHandler(this.ComboBoxScreenCapture_TextChanged);
             // 
             // checkBoxSameSubNet
@@ -503,8 +516,9 @@ namespace MouseWithoutBorders
             this.checkBoxSameSubNet.Name = "checkBoxSameSubNet";
             this.checkBoxSameSubNet.Size = new System.Drawing.Size(114, 18);
             this.checkBoxSameSubNet.TabIndex = 175;
-            this.checkBoxSameSubNet.Text = "仅限内网控制";
-            this.toolTip.SetToolTip(this.checkBoxSameSubNet, "仅允许连接到同一内网 NNN.NNN.*.* 下的电脑，只支持 IPv4。");
+            this.checkBoxSameSubNet.Text = "Same subnet only";
+            this.toolTip.SetToolTip(this.checkBoxSameSubNet, "Only connect to machines in the same intranet NNN.NNN.*.* (only works when both m" +
+        "achines have IPv4 enabled)");
             this.checkBoxSameSubNet.UseCompatibleTextRendering = true;
             this.checkBoxSameSubNet.UseVisualStyleBackColor = true;
             this.checkBoxSameSubNet.CheckedChanged += new System.EventHandler(this.CheckBoxSameSubNet_CheckedChanged);
@@ -516,8 +530,8 @@ namespace MouseWithoutBorders
             this.checkBoxClipNetStatus.Name = "checkBoxClipNetStatus";
             this.checkBoxClipNetStatus.Size = new System.Drawing.Size(231, 18);
             this.checkBoxClipNetStatus.TabIndex = 176;
-            this.checkBoxClipNetStatus.Text = "显示剪贴板/网络活动通知(&N)";
-            this.toolTip.SetToolTip(this.checkBoxClipNetStatus, "剪贴板和网络状态发生变化时，发送系统通知。");
+            this.checkBoxClipNetStatus.Text = "Show clipboard/&network status messages";
+            this.toolTip.SetToolTip(this.checkBoxClipNetStatus, "Show clipboard activities and network status in system tray notifications");
             this.checkBoxClipNetStatus.UseCompatibleTextRendering = true;
             this.checkBoxClipNetStatus.UseVisualStyleBackColor = true;
             this.checkBoxClipNetStatus.CheckedChanged += new System.EventHandler(this.CheckBoxClipNetStatus_CheckedChanged);
@@ -529,8 +543,8 @@ namespace MouseWithoutBorders
             this.checkBoxSendLog.Name = "checkBoxSendLog";
             this.checkBoxSendLog.Size = new System.Drawing.Size(95, 18);
             this.checkBoxSendLog.TabIndex = 177;
-            this.checkBoxSendLog.Text = "发送错误日志(&E)";
-            this.toolTip.SetToolTip(this.checkBoxSendLog, "发送匿名错误日志到微软车库来帮助改进本软件。");
+            this.checkBoxSendLog.Text = "Send &error log";
+            this.toolTip.SetToolTip(this.checkBoxSendLog, "Send anonymous error log to Microsoft Garage to help improve the app.");
             this.checkBoxSendLog.UseCompatibleTextRendering = true;
             this.checkBoxSendLog.UseVisualStyleBackColor = true;
             this.checkBoxSendLog.Visible = false;
@@ -547,8 +561,8 @@ namespace MouseWithoutBorders
             this.groupBoxKeySetup.Size = new System.Drawing.Size(558, 66);
             this.groupBoxKeySetup.TabIndex = 0;
             this.groupBoxKeySetup.TabStop = false;
-            this.groupBoxKeySetup.Text = " 连接(&S)";
-            this.toolTip.SetToolTip(this.groupBoxKeySetup, "数据通信使用该密码加密。");
+            this.groupBoxKeySetup.Text = " &Shared encryption key";
+            this.toolTip.SetToolTip(this.groupBoxKeySetup, "Data sent/received is encrypted/decrypted using this key.");
             // 
             // buttonNewKey
             // 
@@ -556,7 +570,7 @@ namespace MouseWithoutBorders
             this.buttonNewKey.Name = "buttonNewKey";
             this.buttonNewKey.Size = new System.Drawing.Size(75, 23);
             this.buttonNewKey.TabIndex = 22;
-            this.buttonNewKey.Text = "生成(&K)";
+            this.buttonNewKey.Text = "New &Key";
             this.buttonNewKey.UseVisualStyleBackColor = true;
             this.buttonNewKey.Click += new System.EventHandler(this.ButtonNewKey_Click);
             // 
@@ -568,7 +582,8 @@ namespace MouseWithoutBorders
             this.textBoxEnc.PasswordChar = '*';
             this.textBoxEnc.Size = new System.Drawing.Size(304, 20);
             this.textBoxEnc.TabIndex = 3;
-            this.toolTip.SetToolTip(this.textBoxEnc, "密码必须自动生成，不可以手动输入。将密码输入到其他设备建立连接。");
+            this.toolTip.SetToolTip(this.textBoxEnc, "The key must be auto generated in one machine by clicking on New Key, then typed in " +
+        "other machines.");
             // 
             // LabelEnc
             // 
@@ -577,7 +592,7 @@ namespace MouseWithoutBorders
             this.LabelEnc.Name = "LabelEnc";
             this.LabelEnc.Size = new System.Drawing.Size(69, 13);
             this.LabelEnc.TabIndex = 19;
-            this.LabelEnc.Text = "密码:";
+            this.LabelEnc.Text = "Security Key:";
             // 
             // checkBoxShowKey
             // 
@@ -586,7 +601,7 @@ namespace MouseWithoutBorders
             this.checkBoxShowKey.Name = "checkBoxShowKey";
             this.checkBoxShowKey.Size = new System.Drawing.Size(73, 17);
             this.checkBoxShowKey.TabIndex = 4;
-            this.checkBoxShowKey.Text = "显示(&S)";
+            this.checkBoxShowKey.Text = "&Show text";
             this.checkBoxShowKey.UseVisualStyleBackColor = true;
             this.checkBoxShowKey.CheckedChanged += new System.EventHandler(this.CheckBoxShowKey_CheckedChanged);
             // 
@@ -597,24 +612,25 @@ namespace MouseWithoutBorders
             this.labelEasyMouse.Name = "labelEasyMouse";
             this.labelEasyMouse.Size = new System.Drawing.Size(68, 13);
             this.labelEasyMouse.TabIndex = 211;
-            this.labelEasyMouse.Text = "易动模式:";
-            this.toolTip.SetToolTip(this.labelEasyMouse, "如果易动不选择常开，你也可以选择按住 Ctrl 或 Shift 来快速移动到其他电脑。");
+            this.labelEasyMouse.Text = "Easy Mouse:";
+            this.toolTip.SetToolTip(this.labelEasyMouse, "If easy mouse is not enabled, you can select to hold down Ctrl or Shift key to sw" +
+        "itch to other machines by mouse move.");
             // 
             // comboBoxEasyMouseOption
             // 
             this.comboBoxEasyMouseOption.Enabled = true;
             this.comboBoxEasyMouseOption.FormattingEnabled = true;
             this.comboBoxEasyMouseOption.Items.AddRange(new object[] {
-            "开启",
+            "Enable",
             "Ctrl",
             "Shift",
-            "关闭"});
+            "Disable"});
             this.comboBoxEasyMouseOption.Location = new System.Drawing.Point(490, 94);
             this.comboBoxEasyMouseOption.Name = "comboBoxEasyMouseOption";
             this.comboBoxEasyMouseOption.Size = new System.Drawing.Size(56, 21);
             this.comboBoxEasyMouseOption.TabIndex = 212;
-            this.comboBoxEasyMouseOption.Text = "开启";
-            this.toolTip.SetToolTip(this.comboBoxEasyMouseOption, "移动鼠标到屏幕边缘即可跨电脑移动。");
+            this.comboBoxEasyMouseOption.Text = "Enable";
+            this.toolTip.SetToolTip(this.comboBoxEasyMouseOption, "Enable or disable easy machine switch by moving mouse passing the screen edge.");
             this.comboBoxEasyMouseOption.TextChanged += new System.EventHandler(this.ComboBoxEasyMouseOption_TextChanged);
             // 
             // checkBoxTransferFile
@@ -627,8 +643,9 @@ namespace MouseWithoutBorders
             this.checkBoxTransferFile.Name = "checkBoxTransferFile";
             this.checkBoxTransferFile.Size = new System.Drawing.Size(81, 17);
             this.checkBoxTransferFile.TabIndex = 178;
-            this.checkBoxTransferFile.Text = "自动传输文件(&T)";
-            this.toolTip.SetToolTip(this.checkBoxTransferFile, "共享复制的文件，复制文件小于 100MB 时，自动传输到别的电脑的剪贴板。");
+            this.checkBoxTransferFile.Text = "&Transfer file";
+            this.toolTip.SetToolTip(this.checkBoxTransferFile, "If a file (<100MB) is copied, it will be transferred to the remote machine clipbo" +
+        "ard.");
             this.checkBoxTransferFile.UseVisualStyleBackColor = true;
             this.checkBoxTransferFile.CheckedChanged += new System.EventHandler(this.CheckBoxTransferFile_CheckedChanged);
             // 
@@ -646,7 +663,7 @@ namespace MouseWithoutBorders
             this.tabPageOther.Padding = new System.Windows.Forms.Padding(3);
             this.tabPageOther.Size = new System.Drawing.Size(563, 362);
             this.tabPageOther.TabIndex = 1;
-            this.tabPageOther.Text = "配置";
+            this.tabPageOther.Text = "Other Options";
             // 
             // groupBoxOtherOptions
             // 
@@ -700,11 +717,11 @@ namespace MouseWithoutBorders
             this.groupBoxShortcuts.Size = new System.Drawing.Size(557, 161);
             this.groupBoxShortcuts.TabIndex = 200;
             this.groupBoxShortcuts.TabStop = false;
-            this.groupBoxShortcuts.Text = " 快捷键(&K) ";
+            this.groupBoxShortcuts.Text = " &Keyboard Shortcuts ";
 
 
             ToolTip groupBoxToolTip = new ToolTip();
-            groupBoxToolTip.SetToolTip(this.groupBoxShortcuts, "以下设置由 PowerToys 设置界面控制.");
+            groupBoxToolTip.SetToolTip(this.groupBoxShortcuts, "These settings are controlled by the PowerToys.Settings application.");
 
             foreach (Control control in this.groupBoxShortcuts.Controls)
             {
@@ -719,7 +736,7 @@ namespace MouseWithoutBorders
             this.labelScreenCapture.Name = "labelScreenCapture";
             this.labelScreenCapture.Size = new System.Drawing.Size(173, 13);
             this.labelScreenCapture.TabIndex = 209;
-            this.labelScreenCapture.Text = "区块截屏 Ctrl+Shift+:";
+            this.labelScreenCapture.Text = "Custom screen capture, Ctrl+Shift+:";
             // 
             // LabelToggleEasyMouse
             // 
@@ -728,7 +745,7 @@ namespace MouseWithoutBorders
             this.LabelToggleEasyMouse.Name = "LabelToggleEasyMouse";
             this.LabelToggleEasyMouse.Size = new System.Drawing.Size(149, 13);
             this.LabelToggleEasyMouse.TabIndex = 114;
-            this.LabelToggleEasyMouse.Text = "切换易动 Ctrl+Alt+:";
+            this.LabelToggleEasyMouse.Text = "Toggle Easy Mouse, Ctrl+Alt+:";
             // 
             // comboBoxExitMM
             // 
@@ -761,7 +778,7 @@ namespace MouseWithoutBorders
             "X",
             "Y",
             "Z",
-            "关闭"});
+            "Disable"});
             this.comboBoxExitMM.Location = new System.Drawing.Point(490, 41);
             this.comboBoxExitMM.Name = "comboBoxExitMM";
             this.comboBoxExitMM.Size = new System.Drawing.Size(56, 21);
@@ -800,7 +817,7 @@ namespace MouseWithoutBorders
             "X",
             "Y",
             "Z",
-            "关闭"});
+            "Disable"});
             this.comboBoxShowSettings.Location = new System.Drawing.Point(230, 41);
             this.comboBoxShowSettings.Name = "comboBoxShowSettings";
             this.comboBoxShowSettings.Size = new System.Drawing.Size(54, 21);
@@ -815,7 +832,7 @@ namespace MouseWithoutBorders
             this.labelReconnect.Name = "labelReconnect";
             this.labelReconnect.Size = new System.Drawing.Size(195, 13);
             this.labelReconnect.TabIndex = 59;
-            this.labelReconnect.Text = "刷新连接 Ctrl+Alt+:";
+            this.labelReconnect.Text = "Reconnect to other machines, Ctrl+Alt+:";
             // 
             // labelSwitch2AllPCMode
             // 
@@ -824,7 +841,7 @@ namespace MouseWithoutBorders
             this.labelSwitch2AllPCMode.Name = "labelSwitch2AllPCMode";
             this.labelSwitch2AllPCMode.Size = new System.Drawing.Size(122, 13);
             this.labelSwitch2AllPCMode.TabIndex = 33;
-            this.labelSwitch2AllPCMode.Text = "同步模式:";
+            this.labelSwitch2AllPCMode.Text = "Switch to ALL PC mode:";
             // 
             // radioButtonDisable
             // 
@@ -834,7 +851,7 @@ namespace MouseWithoutBorders
             this.radioButtonDisable.Size = new System.Drawing.Size(60, 17);
             this.radioButtonDisable.TabIndex = 202;
             this.radioButtonDisable.TabStop = true;
-            this.radioButtonDisable.Text = "关闭(&D)";
+            this.radioButtonDisable.Text = "&Disable";
             this.radioButtonDisable.UseVisualStyleBackColor = true;
             this.radioButtonDisable.CheckedChanged += new System.EventHandler(this.RadioButton_CheckedChanged);
             // 
@@ -869,7 +886,7 @@ namespace MouseWithoutBorders
             this.labelLockMachine.Name = "labelLockMachine";
             this.labelLockMachine.Size = new System.Drawing.Size(133, 13);
             this.labelLockMachine.TabIndex = 31;
-            this.labelLockMachine.Text = "全部锁屏 Ctrl+Alt+:";
+            this.labelLockMachine.Text = "Lock machine(s), Ctrl+Alt+:";
             // 
             // labelExitMM
             // 
@@ -878,7 +895,7 @@ namespace MouseWithoutBorders
             this.labelExitMM.Name = "labelExitMM";
             this.labelExitMM.Size = new System.Drawing.Size(138, 13);
             this.labelExitMM.TabIndex = 29;
-            this.labelExitMM.Text = "退出软件 Ctrl+Alt+Shift+:";
+            this.labelExitMM.Text = "Exit the app, Ctrl+Alt+Shift+:";
             // 
             // labelShowSettings
             // 
@@ -887,7 +904,7 @@ namespace MouseWithoutBorders
             this.labelShowSettings.Name = "labelShowSettings";
             this.labelShowSettings.Size = new System.Drawing.Size(149, 13);
             this.labelShowSettings.TabIndex = 27;
-            this.labelShowSettings.Text = "打开设置 Ctrl+Alt+:";
+            this.labelShowSettings.Text = "Show Settings Form, Ctrl+Alt+:";
             // 
             // labelSwitchBetweenMachine
             // 
@@ -896,7 +913,7 @@ namespace MouseWithoutBorders
             this.labelSwitchBetweenMachine.Name = "labelSwitchBetweenMachine";
             this.labelSwitchBetweenMachine.Size = new System.Drawing.Size(179, 13);
             this.labelSwitchBetweenMachine.TabIndex = 24;
-            this.labelSwitchBetweenMachine.Text = "切换设备 Ctrl+Alt+:";
+            this.labelSwitchBetweenMachine.Text = "Switch between machines, Ctrl+Alt+:";
             // 
             // tabPageMain
             // 
@@ -910,7 +927,7 @@ namespace MouseWithoutBorders
             this.tabPageMain.Padding = new System.Windows.Forms.Padding(3);
             this.tabPageMain.Size = new System.Drawing.Size(563, 362);
             this.tabPageMain.TabIndex = 0;
-            this.tabPageMain.Text = "设备";
+            this.tabPageMain.Text = "Machine Setup";
             // 
             // buttonCancel
             // 
@@ -918,7 +935,7 @@ namespace MouseWithoutBorders
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(75, 23);
             this.buttonCancel.TabIndex = 21;
-            this.buttonCancel.Text = "关闭(&C)";
+            this.buttonCancel.Text = "&Close";
             this.buttonCancel.UseVisualStyleBackColor = true;
             this.buttonCancel.Click += new System.EventHandler(this.ButtonCancel_Click);
             // 
@@ -932,7 +949,9 @@ namespace MouseWithoutBorders
             this.groupBoxMachineMatrix.Size = new System.Drawing.Size(558, 244);
             this.groupBoxMachineMatrix.TabIndex = 5;
             this.groupBoxMachineMatrix.TabStop = false;
-            this.groupBoxMachineMatrix.Text = " 设备布局(&M) - 拖动设备图标排序，选中图标旁边的勾选框以输入设备名称。 ";
+            this.groupBoxMachineMatrix.Text = " Computer &Matrix  - Drag and drop computer thumbnails below to match computer ph" +
+    "ysical layout. Check the box next to each computer thumbnail to type in computer" +
+    " name. ";
             // 
             // linkLabelReConfigure
             // 
@@ -942,7 +961,7 @@ namespace MouseWithoutBorders
             this.linkLabelReConfigure.Size = new System.Drawing.Size(552, 20);
             this.linkLabelReConfigure.TabIndex = 304;
             this.linkLabelReConfigure.TabStop = true;
-            this.linkLabelReConfigure.Text = "重新执行软件初始化";
+            this.linkLabelReConfigure.Text = "Go through the setup experience";
             this.linkLabelReConfigure.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.linkLabelReConfigure.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabelReConfigure_LinkClicked);
             // 
@@ -962,6 +981,7 @@ namespace MouseWithoutBorders
             // tabPageAdvancedSettings
             // 
             this.tabPageAdvancedSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(245)))), ((int)(((byte)(242)))));
+            this.tabPageAdvancedSettings.Controls.Add(this.groupBoxName2IPPolicyList);
             this.tabPageAdvancedSettings.Controls.Add(this.pictureBoxMouseWithoutBorders);
             this.tabPageAdvancedSettings.Controls.Add(this.groupBoxDNS);
             this.tabPageAdvancedSettings.Controls.Add(this.textBoxDNS);
@@ -970,7 +990,34 @@ namespace MouseWithoutBorders
             this.tabPageAdvancedSettings.Padding = new System.Windows.Forms.Padding(3);
             this.tabPageAdvancedSettings.Size = new System.Drawing.Size(563, 362);
             this.tabPageAdvancedSettings.TabIndex = 2;
-            this.tabPageAdvancedSettings.Text = "高级";
+            this.tabPageAdvancedSettings.Text = "IP Mappings";
+            //
+            // groupBoxName2IPPolicyList
+            // 
+            this.groupBoxName2IPPolicyList.Controls.Add(this.textBoxMachineName2IPPolicyList);
+            this.groupBoxName2IPPolicyList.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBoxName2IPPolicyList.Location = new System.Drawing.Point(3, 241);
+            this.groupBoxName2IPPolicyList.Name = "groupBoxName2IPPolicyList";
+            this.groupBoxName2IPPolicyList.Size = new System.Drawing.Size(357, 150);
+            this.groupBoxName2IPPolicyList.TabIndex = 1;
+            this.groupBoxName2IPPolicyList.TabStop = false;
+            this.groupBoxName2IPPolicyList.Text = " Policy defined machine name to IP address mappings [Managed]";
+            this.groupBoxName2IPPolicyList.ForeColor = Color.DimGray;
+            this.groupBoxName2IPPolicyList.Visible = false;
+            //
+            // textBoxMachineName2IPPolicyList
+            // 
+            this.textBoxMachineName2IPPolicyList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxMachineName2IPPolicyList.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxMachineName2IPPolicyList.Location = new System.Drawing.Point(3, 172); // 3,172
+            this.textBoxMachineName2IPPolicyList.MaxLength = 1024;
+            this.textBoxMachineName2IPPolicyList.Multiline = true;
+            this.textBoxMachineName2IPPolicyList.Name = "textBoxMachineName2IPPolicyList";
+            this.textBoxMachineName2IPPolicyList.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBoxMachineName2IPPolicyList.Size = new System.Drawing.Size(351, 131);
+            this.textBoxMachineName2IPPolicyList.TabIndex = 1;
+            this.textBoxMachineName2IPPolicyList.ReadOnly = true;
+            this.textBoxMachineName2IPPolicyList.Visible = false;
             // 
             // pictureBoxMouseWithoutBorders
             // 
@@ -991,7 +1038,7 @@ namespace MouseWithoutBorders
             this.groupBoxDNS.Size = new System.Drawing.Size(557, 150);
             this.groupBoxDNS.TabIndex = 0;
             this.groupBoxDNS.TabStop = false;
-            this.groupBoxDNS.Text = " IP 地址映射 ";
+            this.groupBoxDNS.Text = " Machine name to IP address mappings ";
             // 
             // textBoxMachineName2IP
             // 
@@ -1028,7 +1075,7 @@ namespace MouseWithoutBorders
             this.linkLabelHelp.Size = new System.Drawing.Size(124, 13);
             this.linkLabelHelp.TabIndex = 300;
             this.linkLabelHelp.TabStop = true;
-            this.linkLabelHelp.Text = "在线帮助(&H)";
+            this.linkLabelHelp.Text = "&Help - http://aka.ms/mm";
             this.linkLabelHelp.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabelHelp_LinkClicked);
             // 
             // linkLabelMiniLog
@@ -1040,7 +1087,7 @@ namespace MouseWithoutBorders
             this.linkLabelMiniLog.Size = new System.Drawing.Size(47, 13);
             this.linkLabelMiniLog.TabIndex = 301;
             this.linkLabelMiniLog.TabStop = true;
-            this.linkLabelMiniLog.Text = "运行日志";
+            this.linkLabelMiniLog.Text = "Mini Log";
             this.linkLabelMiniLog.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabelMiniLog_LinkClicked);
             // 
             // frmMatrix
@@ -1059,7 +1106,7 @@ namespace MouseWithoutBorders
             this.MaximizeBox = false;
             this.Name = "frmMatrix";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "无界鼠标 - 设置";
+            this.Text = "Mouse Without Borders - Settings";
             this.TopMost = true;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmMatrix_FormClosed);
             this.Load += new System.EventHandler(this.FrmMatrix_Load);
@@ -1083,12 +1130,13 @@ namespace MouseWithoutBorders
             this.tabControlSetting.ResumeLayout(false);
             this.tabPageAdvancedSettings.ResumeLayout(false);
             this.tabPageAdvancedSettings.PerformLayout();
+            this.groupBoxName2IPPolicyList.ResumeLayout(false);
+            this.groupBoxName2IPPolicyList.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMouseWithoutBorders)).EndInit();
             this.groupBoxDNS.ResumeLayout(false);
             this.groupBoxDNS.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
@@ -1125,6 +1173,8 @@ namespace MouseWithoutBorders
         private GroupBox groupBoxDNS;
         private TextBox textBoxDNS;
         private TextBox textBoxMachineName2IP;
+        private GroupBox groupBoxName2IPPolicyList;
+        private TextBox textBoxMachineName2IPPolicyList;
         private PictureBox pictureBoxMouseWithoutBorders;
         private GroupBox groupBoxOtherOptions;
         private CheckBox checkBoxDrawMouse;

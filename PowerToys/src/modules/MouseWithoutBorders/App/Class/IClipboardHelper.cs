@@ -136,7 +136,7 @@ namespace MouseWithoutBorders
                     if (Setting.Values.FirstCtrlShiftS)
                     {
                         Setting.Values.FirstCtrlShiftS = false;
-                        Common.ShowToolTip("区块截屏被触发，您可以在设置中调整快捷键.", 10000);
+                        Common.ShowToolTip("Selective screen capture has been triggered, you can change the hotkey on the Settings form.", 10000);
                     }
                 }
                 else if (log.StartsWith("Trace:", StringComparison.InvariantCulture))

@@ -58,7 +58,7 @@
             SelectionChanged="NavigationView_SelectionChanged">
             <NavigationView.MenuItems>
                 <NavigationViewItem
-                    Content="简介"
+                    x:Uid="Shell_General"
                     Icon="{ui:BitmapIcon Source=/Assets/Settings/Icons/PowerToys.png}"
                     Tag="Overview" />
                 <NavigationViewItem

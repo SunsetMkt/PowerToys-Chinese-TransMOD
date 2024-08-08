@@ -118,65 +118,65 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="PluginTitle" xml:space="preserve">
-    <value>注册表</value>
+    <value>Registry Plugin</value>
   </data>
   <data name="PluginDescription" xml:space="preserve">
-    <value>浏览 Windows 注册表</value>
+    <value>Navigates inside the Windows Registry</value>
     <comment>"this built into Windows the OS. translate accordingly, https://learn.microsoft.com/troubleshoot/windows-server/performance/windows-registry-advanced-users is an example of it translated in German"</comment>
   </data>
   <data name="CopyKeyNamePath" xml:space="preserve">
-    <value>复制路径</value>
+    <value>Copy key name (path)</value>
     <comment>'The maximum size of a key name is 255 characters.'</comment>
   </data>
   <data name="KeyName" xml:space="preserve">
-    <value>路径:</value>
+    <value>Key name:</value>
     <comment>'The maximum size of a key name is 255 characters.'</comment>
   </data>
   <data name="Name" xml:space="preserve">
-    <value>名称:</value>
+    <value>Name:</value>
   </data>
   <data name="CopyValueName" xml:space="preserve">
-    <value>复制值名称</value>
+    <value>Copy value name</value>
   </data>
   <data name="OpenKeyInRegistryEditor" xml:space="preserve">
-    <value>在注册表编辑器中打开</value>
+    <value>Open key in registry editor</value>
     <comment>"registry editor" is the name of the OS built-in application</comment>
   </data>
   <data name="OpenInRegistryEditorAccessExceptionText" xml:space="preserve">
-    <value>没有权限打开 Windows 注册表编辑器</value>
+    <value>You do not have enough rights to open the Windows registry editor</value>
     <comment>"registry editor" is the name of the OS built-in application </comment>
   </data>
   <data name="OpenInRegistryEditorAccessExceptionTitle" xml:space="preserve">
-    <value>注册表编辑器打开失败</value>
+    <value>Error on open registry editor</value>
     <comment>"registry editor" is the name of the OS built-in application</comment>
   </data>
   <data name="SubKeys" xml:space="preserve">
-    <value>子项:</value>
+    <value>Subkeys:</value>
   </data>
   <data name="Values" xml:space="preserve">
-    <value>值:</value>
+    <value>Values:</value>
   </data>
   <data name="RegistryKey" xml:space="preserve">
-    <value>注册表项</value>
+    <value>Registry key</value>
   </data>
   <data name="RegistryValue" xml:space="preserve">
-    <value>注册表值</value>
+    <value>Registry value</value>
   </data>
   <data name="Type" xml:space="preserve">
-    <value>类型:</value>
+    <value>Type:</value>
     <comment>See https://learn.microsoft.com/windows/win32/sysinfo/registry-value-types for proper context of how to translate 'type'</comment>
   </data>
   <data name="Value" xml:space="preserve">
-    <value>数据:</value>
+    <value>Value:</value>
     <comment>See https://learn.microsoft.com/windows/win32/sysinfo/registry-value-types for proper context of how to translate 'value'</comment>
   </data>
   <data name="RegistryValueKindNone" xml:space="preserve">
-    <value>无类型</value>
+    <value>No data type</value>
   </data>
   <data name="RegistryValueKindUnknown" xml:space="preserve">
-    <value>未知类型</value>
+    <value>Unsupported data type</value>
   </data>
   <data name="CopyValueData" xml:space="preserve">
-    <value>复制值数据</value>
+    <value>Copy value data</value>
   </data>
 </root>

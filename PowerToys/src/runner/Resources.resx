@@ -59,79 +59,79 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ERROR" xml:space="preserve">
-    <value>PowerToys 错误</value>
+    <value>PowerToys Error</value>
   </data>
   <data name="COULDNOT_RESTART_NONELEVATED" xml:space="preserve">
-    <value>无法以用户身份启动 PowerToys！</value>
+    <value>Could not start PowerToys as a user!</value>
   </data>
   <data name="COULDNOT_RESTART_ELEVATED" xml:space="preserve">
-    <value>无法以管理员身份启动 PowerToys！</value>
+    <value>Could not start PowerToys as an administrator!</value>
   </data>
   <data name="ANOTHER_INSTANCE_RUNNING" xml:space="preserve">
-    <value>PowerToys 已经在运行。</value>
+    <value>PowerToys is already running.</value>
   </data>
   <data name="AUTOUPDATE_SUCCESS" xml:space="preserve">
-    <value>PowerToys 已成功更新！</value>
+    <value>PowerToys was successfully updated!</value>
   </data>
   <data name="MSI_VERSION_IS_ALREADY_RUNNING" xml:space="preserve">
-    <value>旧版 MSI 安装包的 PowerToys 正在运行。</value>
+    <value>An older version of PowerToys is already running.</value>
   </data>
   <data name="DOWNLOAD_UPDATE_ERROR" xml:space="preserve">
-    <value>无法下载 PowerToys 更新！请在 GitHub 上报告该问题。</value>
+    <value>Couldn't download PowerToys update! Please report the issue on GitHub.</value>
   </data>
   <data name="OLDER_MSIX_UNINSTALLED" xml:space="preserve">
-    <value>已经卸载了旧版 MSIX 安装包的 PowerToys。</value>
+    <value>An older MSIX version of PowerToys was uninstalled.</value>
   </data>
   <data name="PT_UPDATE_MESSAGE_BOX_TEXT" xml:space="preserve">
-    <value>PowerToys 已成功更新！</value>
+    <value>PowerToys was updated successfully!</value>
   </data>
   <data name="STARTUP_DISABLED_BY_POLICY" xml:space="preserve">
-    <value>您的系统管理员已禁止此设置。</value>
+    <value>This setting has been disabled by your administrator.</value>
   </data>
   <data name="STARTUP_DISABLED_BY_USER" xml:space="preserve">
-    <value>(此设置已在&lt;a href="https://ms_settings_startupapps" target="_blank"&gt;启动应用&lt;/a&gt;设置中禁止。)</value>
+    <value>This setting has been disabled manually via &lt;a href=&quot;https://ms_settings_startupapps&quot; target=&quot;_blank&quot;&gt;Startup Settings&lt;/a&gt;.</value>
   </data>
   <data name="GITHUB_NEW_VERSION_AVAILABLE" xml:space="preserve">
-    <value>PowerToys 有版本更新。</value>
+    <value>An update to PowerToys is available.</value>
   </data>
   <data name="GITHUB_NEW_VERSION_UPDATE_NOW" xml:space="preserve">
-    <value>立刻更新</value>
+    <value>Update now</value>
   </data>
   <data name="GITHUB_NEW_VERSION_AVAILABLE_OFFER_VISIT" xml:space="preserve">
-    <value>PowerToys 有版本更新。请访问 GitHub 页面下载。</value>
+    <value>An update to PowerToys is available. Visit our GitHub page to update.</value>
   </data>
   <data name="GITHUB_NEW_VERSION_MORE_INFO" xml:space="preserve">
-    <value>更多信息</value>
+    <value>More info...</value>
   </data>
   <data name="TOAST_TITLE" xml:space="preserve">
-    <value>PowerToys 更新</value>
+    <value>PowerToys Update</value>
   </data>
   <data name="QUICK_ACCESS_MENU_TEXT" xml:space="preserve">
-    <value>快捷面板\t单击图标</value>
+    <value>Quick access\tLeft-click</value>
     <comment>Don't localize "\t" as that is what separates the click portion to be right aligned in the menu.</comment>
   </data>
   <data name="SETTINGS_MENU_TEXT" xml:space="preserve">
-    <value>设置\t双击图标</value>
+    <value>Settings\tDouble-click</value>
     <comment>Don't localize "\t" as that is what separates the click portion to be right aligned in the menu.</comment>
   </data>
   <data name="DOCUMENTATION_MENU_TEXT" xml:space="preserve">
-    <value>帮助</value>
+    <value>Documentation</value>
   </data>
   <data name="EXIT_MENU_TEXT" xml:space="preserve">
-    <value>退出</value>
+    <value>Exit</value>
     <comment>Exit as a verb, as in Exit the application</comment>
   </data>
   <data name="SUBMIT_BUG_TEXT" xml:space="preserve">
-    <value>报告</value>
+    <value>Report bug</value>
   </data>
   <data name="BUGREPORT_SUCCESS" xml:space="preserve">
-    <value>问题报告已打包，Zip 文件位于桌面。</value>
+    <value>Bug report .zip file has been created on your Desktop.</value>
   </data>
   <data name="PT_VERSION_CHANGE_ASK_FOR_COMPUTER_RESTART" xml:space="preserve">
-    <value>PowerToys 新版本安装完成，由于程序文件路径变更，需要重启电脑，来重新加载系统集成功能。</value>
+    <value>A new PowerToys version has been installed. Please restart the computer, when possible, to fully reload File Explorer extensions.</value>
     <comment>File Explorer refers to the Windows File Explorer application.</comment>
   </data>
   <data name="TRAY_ICON_ADMIN_TOOLTIP" xml:space="preserve">
-    <value>管理员权限</value>
+    <value>Administrator</value>
   </data>
 </root>

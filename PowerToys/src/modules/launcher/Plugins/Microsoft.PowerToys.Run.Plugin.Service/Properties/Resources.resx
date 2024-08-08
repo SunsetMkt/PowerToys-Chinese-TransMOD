@@ -118,90 +118,90 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="wox_plugin_service_continue_pending" xml:space="preserve">
-    <value>正在恢复</value>
+    <value>Continue</value>
   </data>
   <data name="wox_plugin_service_name" xml:space="preserve">
-    <value>名称</value>
+    <value>Name</value>
   </data>
   <data name="wox_plugin_service_open_services" xml:space="preserve">
-    <value>管理服务(Ctrl+O)</value>
+    <value>Open services (Ctrl+O)</value>
   </data>
   <data name="wox_plugin_service_paused" xml:space="preserve">
-    <value>已暂停</value>
+    <value>Paused</value>
   </data>
   <data name="wox_plugin_service_pause_pending" xml:space="preserve">
-    <value>正在暂停</value>
+    <value>Pausing</value>
   </data>
   <data name="wox_plugin_service_plugin_description" xml:space="preserve">
-    <value>管理 Windows 服务</value>
+    <value>Manages Windows services</value>
   </data>
   <data name="wox_plugin_service_plugin_name" xml:space="preserve">
-    <value>服务</value>
+    <value>Service</value>
   </data>
   <data name="wox_plugin_service_restart" xml:space="preserve">
-    <value>重启(Ctrl+R)</value>
+    <value>Restart (Ctrl+R)</value>
   </data>
   <data name="wox_plugin_service_restarted_notification" xml:space="preserve">
-    <value>服务已重新启动</value>
+    <value>The service has been restarted</value>
   </data>
   <data name="wox_plugin_service_restart_error_notification" xml:space="preserve">
-    <value>重启服务时出错</value>
+    <value>An error occurred while restarting the service</value>
   </data>
   <data name="wox_plugin_service_running" xml:space="preserve">
-    <value>正在运行</value>
+    <value>Running</value>
   </data>
   <data name="wox_plugin_service_start" xml:space="preserve">
-    <value>启动(Enter)</value>
+    <value>Start (Enter)</value>
   </data>
   <data name="wox_plugin_service_started" xml:space="preserve">
-    <value>已启动</value>
+    <value>Started</value>
   </data>
   <data name="wox_plugin_service_started_notification" xml:space="preserve">
-    <value>服务已启动</value>
+    <value>The service has been started</value>
   </data>
   <data name="wox_plugin_service_startup" xml:space="preserve">
-    <value>启动类型</value>
+    <value>Startup</value>
   </data>
   <data name="wox_plugin_service_start_error_notification" xml:space="preserve">
-    <value>启动服务时出错</value>
+    <value>An error occurred while starting the service</value>
   </data>
   <data name="wox_plugin_service_start_mode_automatic" xml:space="preserve">
-    <value>自动</value>
+    <value>Automatic</value>
   </data>
   <data name="wox_plugin_service_start_mode_automaticDelayed" xml:space="preserve">
-    <value>自动(延迟启动)</value>
+    <value>Automatic (Delayed Start)</value>
   </data>
   <data name="wox_plugin_service_start_mode_boot" xml:space="preserve">
-    <value>开机启动</value>
+    <value>Boot</value>
   </data>
   <data name="wox_plugin_service_start_mode_disabled" xml:space="preserve">
-    <value>禁用</value>
+    <value>Disabled</value>
   </data>
   <data name="wox_plugin_service_start_mode_manual" xml:space="preserve">
-    <value>手动</value>
+    <value>Manual</value>
   </data>
   <data name="wox_plugin_service_start_mode_system" xml:space="preserve">
-    <value>系统</value>
+    <value>System</value>
   </data>
   <data name="wox_plugin_service_start_pending" xml:space="preserve">
-    <value>正在启动</value>
+    <value>Starting</value>
   </data>
   <data name="wox_plugin_service_status" xml:space="preserve">
-    <value>状态</value>
+    <value>Status</value>
   </data>
   <data name="wox_plugin_service_stop" xml:space="preserve">
-    <value>停止(Enter)</value>
+    <value>Stop (Enter)</value>
   </data>
   <data name="wox_plugin_service_stopped" xml:space="preserve">
-    <value>已停止</value>
+    <value>Stopped</value>
   </data>
   <data name="wox_plugin_service_stopped_notification" xml:space="preserve">
-    <value>服务已停止</value>
+    <value>The service has been stopped</value>
   </data>
   <data name="wox_plugin_service_stop_error_notification" xml:space="preserve">
-    <value>停止服务时出错</value>
+    <value>An error occurred while stopping the service</value>
   </data>
   <data name="wox_plugin_service_stop_pending" xml:space="preserve">
-    <value>正在停止</value>
+    <value>Stopping</value>
   </data>
 </root>

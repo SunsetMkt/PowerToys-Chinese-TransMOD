@@ -96,7 +96,7 @@
             this.groupBoxContributors.Size = new System.Drawing.Size(466, 350);
             this.groupBoxContributors.TabIndex = 30;
             this.groupBoxContributors.TabStop = false;
-            this.groupBoxContributors.Text = " 贡献者 ";
+            this.groupBoxContributors.Text = " Contributors ";
             // 
             // textBoxContributors
             // 
@@ -117,7 +117,7 @@
             this.okButton.Name = "okButton";
             this.okButton.Size = new System.Drawing.Size(75, 23);
             this.okButton.TabIndex = 24;
-            this.okButton.Text = "确定";
+            this.okButton.Text = "&OK";
             // 
             // frmAbout
             // 

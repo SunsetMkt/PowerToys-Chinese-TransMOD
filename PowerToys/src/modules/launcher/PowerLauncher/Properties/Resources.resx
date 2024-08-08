@@ -118,83 +118,83 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="startTyping" xml:space="preserve">
-    <value>搜点什么...</value>
+    <value>Start typing...</value>
   </data>
   <data name="registerHotkeyFailed" xml:space="preserve">
-    <value>注册快捷键失败：{0}</value>
+    <value>Failed to register hotkey: {0}</value>
   </data>
   <data name="executeQuery" xml:space="preserve">
-    <value>执行查询：{0}</value>
+    <value>Execute query: {0}</value>
   </data>
   <data name="lastExecuteTime" xml:space="preserve">
-    <value>上次运行时间：{0}</value>
+    <value>Last execution time: {0}</value>
   </data>
   <data name="reportWindow_header" xml:space="preserve">
-    <value>出现了一些问题。</value>
+    <value>Something went wrong.</value>
   </data>
   <data name="reportWindow_file_bug" xml:space="preserve">
-    <value>请汇报这个问题，发送到</value>
+    <value>Please file a bug in the</value>
     <comment>reportWindow_file_bug + reportWindow_github_repo string</comment>
   </data>
   <data name="reportWindow_github_repo" xml:space="preserve">
-    <value>PowerToys GitHub 储存库</value>
+    <value>PowerToys GitHub repository</value>
     <comment>reportWindow_file_bug + reportWindow_github_repo string</comment>
   </data>
   <data name="reportWindow_upload_log" xml:space="preserve">
-    <value>请上传日志文件和错误信息。</value>
+    <value>Make sure to upload the log file and to include the error message.</value>
   </data>
   <data name="reportWindow_period" xml:space="preserve">
     <value>.</value>
   </data>
   <data name="reportWindow_wox_got_an_error" xml:space="preserve">
-    <value>PowerToys 启动器遇到问题</value>
+    <value>PowerToys Run ran into an issue</value>
   </data>
   <data name="AppIcon" xml:space="preserve">
-    <value>应用图标</value>
+    <value>Application Icon</value>
   </data>
   <data name="ContextMenuItem" xml:space="preserve">
-    <value>上下文菜单项</value>
+    <value>Context Menu Item</value>
   </data>
   <data name="ContextMenuItemAdditionalInformation" xml:space="preserve">
-    <value>上下文菜单项附加信息</value>
+    <value>Context Menu Item Additional Information</value>
   </data>
   <data name="ContextMenuIcon" xml:space="preserve">
-    <value>上下文菜单图标</value>
+    <value>Context Menu Icon</value>
   </data>
   <data name="ContextMenuItemsCollection" xml:space="preserve">
-    <value>上下文菜单项集</value>
+    <value>Context Menu Items Collection</value>
   </data>
   <data name="Query" xml:space="preserve">
-    <value>查询</value>
+    <value>Query</value>
   </data>
   <data name="Results" xml:space="preserve">
-    <value>结果</value>
+    <value>Results</value>
   </data>
   <data name="SearchIcon" xml:space="preserve">
-    <value>搜索图标</value>
+    <value>Search Icon</value>
   </data>
   <data name="Subtitle" xml:space="preserve">
-    <value>子标题</value>
+    <value>Subtitle</value>
   </data>
   <data name="Title" xml:space="preserve">
-    <value>标题</value>
+    <value>Title</value>
   </data>
   <data name="deserialization_error_title" xml:space="preserve">
-    <value>PowerToys 启动器反序列化错误</value>
+    <value>PowerToys Run deserialization error</value>
   </data>
   <data name="deserialization_error_message" xml:space="preserve">
-    <value>重置设置为默认值，程序将继续运行。</value>
+    <value>Settings will be reset to default and program will continue to function.</value>
   </data>
   <data name="FailedToInitializePluginsDescription" xml:space="preserve">
-    <value>插件: {0} - 加载失败，已禁用，请联系插件作者以获取帮助</value>
+    <value>Plugins: {0} - fail to load and would be disabled, please contact plugins creator for help</value>
   </data>
   <data name="FailedToInitializePluginsTitle" xml:space="preserve">
-    <value>插件初始化失败</value>
+    <value>Fail to initialize plugins</value>
   </data>
   <data name="ContextMenuItemsAvailable" xml:space="preserve">
-    <value>控制按钮可用</value>
+    <value>Appended controls available</value>
   </data>
   <data name="PluginKeywords" xml:space="preserve">
-    <value>查将关键字</value>
+    <value>Plugin keywords</value>
   </data>
 </root>

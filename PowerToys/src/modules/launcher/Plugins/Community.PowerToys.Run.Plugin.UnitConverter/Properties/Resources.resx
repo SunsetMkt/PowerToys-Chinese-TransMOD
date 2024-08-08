@@ -118,18 +118,18 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="context_menu_copy" xml:space="preserve">
-    <value>复制 (回车)</value>
+    <value>Copy (Enter)</value>
   </data>
   <data name="copy_failed" xml:space="preserve">
-    <value>复制失败</value>
+    <value>Copy failed</value>
   </data>
   <data name="copy_to_clipboard" xml:space="preserve">
-    <value>复制转换结果 ({0})</value>
+    <value>Copy {0} to clipboard</value>
   </data>
   <data name="plugin_description" xml:space="preserve">
-    <value>进行单位转换（例如 10厘米 -&gt; 米）</value>
+    <value>Provides unit conversion (e.g. 10 ft to m)</value>
   </data>
   <data name="plugin_name" xml:space="preserve">
-    <value>单位转换</value>
+    <value>Unit Converter</value>
   </data>
 </root>

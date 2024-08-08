@@ -118,28 +118,28 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="plugin_browser" xml:space="preserve">
-    <value>默认浏览器</value>
+    <value>the default browser</value>
   </data>
   <data name="plugin_description" xml:space="preserve">
-    <value>使用默认搜索引擎在线搜索</value>
+    <value>Searches the web with your default search engine</value>
   </data>
   <data name="plugin_global_if_uri" xml:space="preserve">
-    <value>默认唤醒时输入网址，不显示在线搜索</value>
+    <value>Don't include in global results on queries that are URIs</value>
   </data>
   <data name="plugin_in_browser" xml:space="preserve">
-    <value>打开 默认浏览器</value>
+    <value>In the default browser</value>
   </data>
   <data name="plugin_in_browser_name" xml:space="preserve">
-    <value>打开 {0}</value>
+    <value>In {0}</value>
     <comment>Like "Search the web in {the browser name}"</comment>
   </data>
   <data name="plugin_name" xml:space="preserve">
-    <value>在线搜索</value>
+    <value>Web Search</value>
   </data>
   <data name="plugin_open" xml:space="preserve">
-    <value>打开 {0} 在线搜索</value>
+    <value>Search the web in {0}</value>
   </data>
   <data name="plugin_search_failed" xml:space="preserve">
-    <value>无法打开 {0}</value>
+    <value>Failed to open {0}.</value>
   </data>
 </root>

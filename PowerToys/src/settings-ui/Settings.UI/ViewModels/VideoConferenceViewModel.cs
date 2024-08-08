@@ -60,7 +60,7 @@ namespace Microsoft.PowerToys.Settings.UI.ViewModels
 
             CameraNames = interop.CommonManaged.GetAllVideoCaptureDeviceNames();
             MicrophoneNames = interop.CommonManaged.GetAllActiveMicrophoneDeviceNames();
-            MicrophoneNames.Insert(0, "所有麦克风");
+            MicrophoneNames.Insert(0, "[All]");
 
             var shouldSaveSettings = false;
 

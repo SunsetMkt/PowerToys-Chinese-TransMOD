@@ -116,7 +116,7 @@ namespace MouseWithoutBorders
             }
 
             // Common.UnhookClipboard();
-            Tag = "此电脑";
+            Tag = "myself";
             Close();
         }
 
@@ -179,14 +179,14 @@ namespace MouseWithoutBorders
                 }
 
                 while (!menuSendScreenCapture.DropDown.Items[
-                    menuSendScreenCapture.DropDown.Items.Count - 1].Text.Equals("此电脑", StringComparison.OrdinalIgnoreCase))
+                    menuSendScreenCapture.DropDown.Items.Count - 1].Text.Equals("Myself", StringComparison.OrdinalIgnoreCase))
                 {
                     menuSendScreenCapture.DropDown.Items.Remove(menuSendScreenCapture.DropDown.Items[
                         menuSendScreenCapture.DropDown.Items.Count - 1]);
                 }
 
                 while (!menuGetScreenCapture.DropDown.Items[
-                    menuGetScreenCapture.DropDown.Items.Count - 1].Text.Equals("所有电脑", StringComparison.OrdinalIgnoreCase))
+                    menuGetScreenCapture.DropDown.Items.Count - 1].Text.Equals("All", StringComparison.OrdinalIgnoreCase))
                 {
                     menuGetScreenCapture.DropDown.Items.Remove(menuGetScreenCapture.DropDown.Items[
                         menuGetScreenCapture.DropDown.Items.Count - 1]);
@@ -377,7 +377,7 @@ namespace MouseWithoutBorders
                                     if (Common.KeyCorrupted && !Setting.Values.FirstRun)
                                     {
                                         Common.KeyCorrupted = false;
-                                        string msg = "连接密码意外损坏，请重新生成。";
+                                        string msg = "The security key is corrupted for some reason, please re-setup.";
                                         MessageBox.Show(msg, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                                     }
                                 }
@@ -495,7 +495,7 @@ namespace MouseWithoutBorders
 
                                 Common.Sk?.Close(false);
 
-                                Common.ShowToolTip("连接密码不可以手动修改，必须点击生成按钮自动生成.", 10000);
+                                Common.ShowToolTip("The security key must be auto generated in one of the machines.", 10000);
                             }
                         }
                         else if (!Common.KeyCorrupted && !Common.RunOnLogonDesktop && !Common.RunOnScrSaverDesktop && !Setting.Values.FirstRun && Common.AtLeastOneSocketConnected())
@@ -508,12 +508,12 @@ namespace MouseWithoutBorders
 
                                 Common.Sk?.Close(false);
 
-                                string msg = "连接密码已过期，请重新生成.";
+                                string msg = "The security key has expired, please generate a new key.";
                                 Common.ShowToolTip(msg, 10000);
                             }
                             else if (myKeyDaysToExpire <= 15)
                             {
-                                Common.ShowToolTip($"连接密码将在 {myKeyDaysToExpire} 天内过期! 请注意重新生成密码.", 10000);
+                                Common.ShowToolTip($"The security key will expire in {myKeyDaysToExpire} days! Please regenerate a new key.", 10000);
                             }
                         }
                     }
@@ -920,7 +920,7 @@ namespace MouseWithoutBorders
 
             if (captureFile != null && File.Exists(captureFile))
             {
-                if (menuCaption.Equals("此电脑", StringComparison.OrdinalIgnoreCase))
+                if (menuCaption.Equals("Myself", StringComparison.OrdinalIgnoreCase))
                 {
                     Common.OpenImage(captureFile);
                 }
@@ -936,7 +936,7 @@ namespace MouseWithoutBorders
             string menuCaption = (sender as ToolStripMenuItem).Text;
 
             // Send CaptureScreenCommand
-            ID des = menuCaption.Equals("所有电脑", StringComparison.OrdinalIgnoreCase) ? ID.ALL : Common.IdFromName(menuCaption);
+            ID des = menuCaption.Equals("All", StringComparison.OrdinalIgnoreCase) ? ID.ALL : Common.IdFromName(menuCaption);
             Common.SendPackage(des, PackageType.CaptureScreenCommand);
         }
 
@@ -954,7 +954,7 @@ namespace MouseWithoutBorders
 
             if (Program.ShowServiceModeErrorTooltip)
             {
-                Common.ShowToolTip("服务启动失败，将以一般模式继续运行，请在设置中重新打开服务模式.", 10000, forceEvenIfHidingOldUI: true);
+                Common.ShowToolTip("Couldn't start the service. Will continue as not a service. Service mode must be enabled in the Settings again.", 10000, forceEvenIfHidingOldUI: true);
             }
         }
 

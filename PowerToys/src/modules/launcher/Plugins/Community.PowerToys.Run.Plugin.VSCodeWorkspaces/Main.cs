@@ -77,8 +77,8 @@ namespace Community.PowerToys.Run.Plugin.VSCodeWorkspaces
                             }
                             catch (Win32Exception)
                             {
-                                var name = $"插件: {_context.CurrentPluginMetadata.Name}";
-                                var msg = "无法打开此文件";
+                                var name = $"Plugin: {_context.CurrentPluginMetadata.Name}";
+                                var msg = "Can't Open this file";
                                 _context.API.ShowMsg(name, msg, string.Empty);
                                 hide = false;
                             }
@@ -125,8 +125,8 @@ namespace Community.PowerToys.Run.Plugin.VSCodeWorkspaces
                             }
                             catch (Win32Exception)
                             {
-                                var name = $"插件: {_context.CurrentPluginMetadata.Name}";
-                                var msg = "无法打开此文件";
+                                var name = $"Plugin: {_context.CurrentPluginMetadata.Name}";
+                                var msg = "Can't Open this file";
                                 _context.API.ShowMsg(name, msg, string.Empty);
                                 hide = false;
                             }

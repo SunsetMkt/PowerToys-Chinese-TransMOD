@@ -442,8 +442,8 @@
             <controls:PageLink x:Uid="LearnMore_MouseUtils" Link="https://aka.ms/PowerToysOverview_MouseUtilities" />
         </controls:SettingsPageControl.PrimaryLinks>
         <controls:SettingsPageControl.SecondaryLinks>
-            <controls:PageLink Link="https://devblogs.microsoft.com/oldnewthing/author/oldnewthing" Text="Raymond Chen 的软件 Find My Mouse" />
-            <controls:PageLink Link="https://michael-clayton.com/projects/fancymouse" Text="Michael Clayton 的软件 Mouse Jump (FancyMouse)" />
+            <controls:PageLink Link="https://devblogs.microsoft.com/oldnewthing/author/oldnewthing" Text="Raymond Chen's Find My Mouse" />
+            <controls:PageLink Link="https://michael-clayton.com/projects/fancymouse" Text="Michael Clayton's Mouse Jump (FancyMouse)" />
         </controls:SettingsPageControl.SecondaryLinks>
     </controls:SettingsPageControl>
 </Page>

@@ -144,7 +144,7 @@ namespace MouseWithoutBorders
 
         private static bool IsSwitchingByMouseEnabled()
         {
-            return (EasyMouseOption)Setting.Values.EasyMouse == EasyMouseOption.开启 || InputHook.EasyMouseKeyDown;
+            return (EasyMouseOption)Setting.Values.EasyMouse == EasyMouseOption.Enable || InputHook.EasyMouseKeyDown;
         }
 
         internal static void PrepareToSwitchToMachine(ID newDesMachineID, Point desMachineXY)

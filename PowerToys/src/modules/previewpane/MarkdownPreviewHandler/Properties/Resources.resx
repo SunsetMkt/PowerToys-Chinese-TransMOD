@@ -118,15 +118,15 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="BlockedImageInfoText" xml:space="preserve">
-    <value>一些图片已被屏蔽，防止电脑访问未知网址引起危险。启用此选项允许查看图片。</value>
+    <value>Some pictures have been blocked to help prevent the sender from identifying this computer. Open this item to view pictures.</value>
     <comment>This text is displayed if image is blocked from being displayed.</comment>
   </data>
   <data name="MarkdownNotPreviewedError" xml:space="preserve">
-    <value>由于 PowerToys Markdown 预览器出现错误，无法预览此文件。</value>
+    <value>The markdown could not be preview due to an internal error.</value>
     <comment>This text is displayed if markdown fails to preview</comment>
   </data>
   <data name="GpoDisabledErrorText" xml:space="preserve">
-    <value>组策略已禁止该功能。请联系你的电脑管理员。</value>
+    <value>Tried to start with a GPO policy setting the utility to always be disabled. Please contact your systems administrator.</value>
     <comment>GPO stands for the Windows Group Policy Object feature.</comment>
   </data>
 </root>

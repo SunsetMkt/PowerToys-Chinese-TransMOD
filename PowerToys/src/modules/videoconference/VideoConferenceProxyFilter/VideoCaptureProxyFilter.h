@@ -22,7 +22,7 @@ struct VideoCaptureProxyPin;
 struct IMFSample;
 struct IMFMediaType;
 
-inline const wchar_t CAMERA_NAME[] = L"÷±≤•π§æﬂ–Èƒ‚…„œÒ";
+inline const wchar_t CAMERA_NAME[] = L"PowerToys VideoConference Mute";
 
 struct VideoCaptureProxyFilter : winrt::implements<VideoCaptureProxyFilter, IBaseFilter, IAMFilterMiscFlags>
 {

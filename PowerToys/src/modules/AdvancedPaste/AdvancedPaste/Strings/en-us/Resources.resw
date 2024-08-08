@@ -121,111 +121,111 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AIMistakeNote.Text" xml:space="preserve">
-    <value>注意 AI 也会犯错</value>
+    <value>AI can make mistakes.</value>
   </data>
   <data name="ClipboardDataTypeMismatchWarning" xml:space="preserve">
-    <value>剪贴板数据不是文本</value>
+    <value>Clipboard data is not text</value>
   </data>
   <data name="OpenAINotConfigured" xml:space="preserve">
-    <value>未启用 AI 粘贴功能</value>
+    <value>To custom with AI is not enabled</value>
   </data>
   <data name="OpenAIApiKeyUnauthorized" xml:space="preserve">
-    <value>API 密钥或接入点无效</value>
+    <value>Invalid API key or endpoint</value>
   </data>
   <data name="OpenAIApiKeyTooManyRequests" xml:space="preserve">
-    <value>API 密钥额度已用尽</value>
+    <value>API key quota exceeded</value>
   </data>
   <data name="OpenAIApiKeyError" xml:space="preserve">
-    <value>OpenAI 请求失败，返回状态码: </value>
+    <value>OpenAI request failed with status code: </value>
   </data>
   <data name="ClipboardHistoryButton.Text" xml:space="preserve">
-    <value>剪贴板历史记录</value>
+    <value>Clipboard history</value>
   </data>
   <data name="ClipboardHistoryItemDeleteButton.Text" xml:space="preserve">
-    <value>删除</value>
+    <value>Delete</value>
   </data>
   <data name="CustomFormatTextBox.PlaceholderText" xml:space="preserve">
-    <value>告诉我你想要什么格式..</value>
+    <value>Describe what format you want..</value>
   </data>
   <data name="InputTxtBoxTooltip.Text" xml:space="preserve">
-    <value>告诉我你想要什么格式..</value>
+    <value>Describe what format you want..</value>
   </data>
   <data name="LearnMoreLink.Text" xml:space="preserve">
-    <value>隐私政策</value>
+    <value>Privacy</value>
   </data>
   <data name="LoadingText.Text" xml:space="preserve">
-    <value>正在连接 AI 服务生成结果..</value>
+    <value>Connecting to AI services and generating output..</value>
   </data>
   <data name="PasteAsJson" xml:space="preserve">
-    <value>粘贴为 JSON</value>
+    <value>Paste as JSON</value>
   </data>
   <data name="PasteAsMarkdown" xml:space="preserve">
-    <value>粘贴为 Markdown</value>
+    <value>Paste as markdown</value>
   </data>
   <data name="PasteAsPlainText" xml:space="preserve">
-    <value>粘贴为纯文本</value>
+    <value>Paste as plain text</value>
   </data>
   <data name="PasteButtonAutomation.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
-    <value>粘贴</value>
+    <value>Paste</value>
   </data>
   <data name="PasteText.Text" xml:space="preserve">
-    <value>粘贴</value>
+    <value>Paste</value>
   </data>
   <data name="ResultTitleTxt.Text" xml:space="preserve">
-    <value>结果</value>
+    <value>Result</value>
   </data>
   <data name="RecallBtnToolTip.Text" xml:space="preserve">
-    <value>回到上一次的提示词与剪贴板数据</value>
+    <value>Revert to the last prompt and clipboard data</value>
   </data>
   <data name="RecallButtonAutomation.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
-    <value>回到上一次的提示词与剪贴板数据</value>
+    <value>Revert to the last prompt and clipboard data</value>
   </data>
   <data name="SendBtnToolTip.Text" xml:space="preserve">
-    <value>生成并粘贴数据</value>
+    <value>Generate and paste data</value>
   </data>
   <data name="RegenerateBtnToolTip.Text" xml:space="preserve">
-    <value>重新生成</value>
+    <value>Regenerate</value>
   </data>
   <data name="RegenerateBtnAutomation.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
-    <value>重新生成</value>
+    <value>Regenerate</value>
   </data>
   <data name="SendButtonAutomation.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
-    <value>生成并粘贴数据</value>
+    <value>Generate and paste data</value>
   </data>
   <data name="SettingsBtn.Content" xml:space="preserve">
-    <value>打开设置</value>
+    <value>Open settings</value>
   </data>
   <data name="SettingsBtn.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>打开设置</value>
+    <value>Open settings</value>
   </data>
   <data name="ThumbsDownFeedback.Text" xml:space="preserve">
-    <value>差评</value>
+    <value>Thumbs down feedback</value>
   </data>
   <data name="ThumbsUpFeedback.Text" xml:space="preserve">
-    <value>好评</value>
+    <value>Thumbs up feedback</value>
   </data>
   <data name="WindowTitle" xml:space="preserve">
-    <value>高级粘贴</value>
+    <value>Advanced Paste</value>
   </data>
   <data name="PreviousResultBtnToolTip.Text" xml:space="preserve">
-    <value>上一条</value>
+    <value>Previous result</value>
   </data>
   <data name="PreviousResultBtnAutomation.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
-    <value>上一条</value>
+    <value>Previous result</value>
   </data>
   <data name="NextResultBtnToolTip.Text" xml:space="preserve">
-    <value>下一条</value>
+    <value>Next result</value>
   </data>
   <data name="NextResultBtnAutomation.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
-    <value>下一条</value>
+    <value>Next result</value>
   </data>
   <data name="PrivacyLink.Text" xml:space="preserve">
-    <value>OpenAI 隐私政策</value>
+    <value>OpenAI Privacy</value>
   </data>
   <data name="TermsLink.Text" xml:space="preserve">
-    <value>OpenAI 使用条款</value>
+    <value>OpenAI Terms</value>
   </data>
   <data name="OpenAIGpoDisabled" xml:space="preserve">
-    <value>组策略已禁止 AI 功能</value>
+    <value>To custom with AI is disabled by your organization</value>
   </data>
 </root>

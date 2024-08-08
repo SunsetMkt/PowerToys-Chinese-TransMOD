@@ -46,7 +46,7 @@ namespace MouseWithoutBorders
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(330, 116);
             this.label1.TabIndex = 2;
-            this.label1.Text = "正在连接！很快就可以...\r\n";
+            this.label1.Text = "Linking! Soon you will be able to...\r\n";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel2
@@ -67,7 +67,7 @@ namespace MouseWithoutBorders
             this.MessageLabel.Name = "MessageLabel";
             this.MessageLabel.Size = new System.Drawing.Size(310, 24);
             this.MessageLabel.TabIndex = 4;
-            this.MessageLabel.Text = "跨电脑复制粘贴";
+            this.MessageLabel.Text = "Copy && paste across screens";
             this.MessageLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ExamplePicture
@@ -88,7 +88,7 @@ namespace MouseWithoutBorders
             this.labelStatus.Name = "labelStatus";
             this.labelStatus.Size = new System.Drawing.Size(453, 20);
             this.labelStatus.TabIndex = 8;
-            this.labelStatus.Text = "正在连接中...";
+            this.labelStatus.Text = "Connecting...";
             this.labelStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // SetupPage3a

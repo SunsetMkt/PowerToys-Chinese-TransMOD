@@ -139,33 +139,33 @@
     <value>Shortcut Guide</value>
   </data>
   <data name="No_Action" xml:space="preserve">
-    <value>无动作</value>
+    <value>No action</value>
   </data>
   <data name="Restore" xml:space="preserve">
-    <value>还原</value>
+    <value>Restore</value>
   </data>
   <data name="Snap_Right" xml:space="preserve">
-    <value>右贴靠</value>
+    <value>Snap right</value>
   </data>
   <data name="Snap_Left" xml:space="preserve">
-    <value>左贴靠</value>
+    <value>Snap left</value>
   </data>
   <data name="Snap_Upper_Right" xml:space="preserve">
-    <value>右上贴靠</value>
+    <value>Snap upper right</value>
   </data>
   <data name="Snap_Upper_Left" xml:space="preserve">
-    <value>左上贴靠</value>
+    <value>Snap upper left</value>
   </data>
   <data name="Snap_Lower_Right" xml:space="preserve">
-    <value>右下贴靠</value>
+    <value>Snap lower right</value>
   </data>
   <data name="Snap_Lower_Left" xml:space="preserve">
-    <value>左下贴靠</value>
+    <value>Snap lower left</value>
   </data>
   <data name="Minimize" xml:space="preserve">
-    <value>最小化</value>
+    <value>Minimize</value>
   </data>
   <data name="Maximize" xml:space="preserve">
-    <value>最大化</value>
+    <value>Maximize</value>
   </data>
 </root>

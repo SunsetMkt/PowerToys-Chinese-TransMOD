@@ -235,7 +235,7 @@ namespace MouseWithoutBorders
         internal static bool IsKeyValid(string key, out string error)
         {
             error = string.IsNullOrEmpty(key) || key.Length < 16
-                ? "密码必须至少包含 16 个字符，空格不计，必须由程序自动生成。"
+                ? "Key must have at least 16 characters in length (spaces are discarded). Key must be auto generated in one of the machines."
                 : null;
 
             return error == null;

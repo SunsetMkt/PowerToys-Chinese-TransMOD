@@ -62,7 +62,7 @@ namespace MouseWithoutBorders
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(330, 52);
             this.label1.TabIndex = 2;
-            this.label1.Text = "让我们开始吧";
+            this.label1.Text = "Let\'s get started";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel2
@@ -83,7 +83,8 @@ namespace MouseWithoutBorders
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(310, 40);
             this.label2.TabIndex = 3;
-            this.label2.Text = "我们需要知道您是否已经在要连接的电脑上完成了配置。";
+            this.label2.Text = "We need to know if you have already set up Mouse w/o Borders on the computer you " +
+                "want to link to.";
             // 
             // label3
             // 
@@ -93,7 +94,7 @@ namespace MouseWithoutBorders
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(310, 60);
             this.label3.TabIndex = 4;            
-            this.label3.Text = "您是否已经在另一台电脑上安装了无界鼠标？";
+            this.label3.Text = "Have you already installed Mouse without Borders on another computer?";
             // 
             // label4
             // 

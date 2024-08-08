@@ -29,9 +29,9 @@ $profileContent | ForEach-Object {
 if($atLeastOneInstanceFound)
 {
   Set-Content -Path $PROFILE -Value $newContent
-  Write-Host "已从配置文件中删除本模块."
+  Write-Host "Removed the Command Not Found reference from the profile file."
   # This message will be compared against in Command Not Found Settings page code behind. Take care when changing it.
 } else {
-  Write-Host "配置文件中没有发现本模块, 不需要删除."
+  Write-Host "No instance of Command Not Found was found in the profile file."
   # This message will be compared against in Command Not Found Settings page code behind. Take care when changing it.
 }

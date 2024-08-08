@@ -305,7 +305,7 @@ namespace MouseWithoutBorders.Class
             {
                 Setting.Values.PauseInstantSaving = true;
 
-                Setting.Values.EasyMouse = (int)EasyMouseOption.开启;
+                Setting.Values.EasyMouse = (int)EasyMouseOption.Enable;
                 Common.ClearComputerMatrix();
                 Setting.Values.MyKey = Common.MyKey = Common.CreateRandomKey();
                 Common.GeneratedKey = true;

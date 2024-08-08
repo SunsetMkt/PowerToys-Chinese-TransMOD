@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -118,11 +118,11 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="PowerRename_App_Name" xml:space="preserve">
-    <value>批量重命名</value>
+    <value>PowerRename</value>
     <comment>do not loc, product name</comment>
   </data>
   <data name="PowerRename_Context_Menu_Entry" xml:space="preserve">
-    <value>批量重命名</value>
+    <value>Rename with PowerRename</value>
     <comment>PowerRename is a product name. do not loc it</comment>
   </data>
 </root>

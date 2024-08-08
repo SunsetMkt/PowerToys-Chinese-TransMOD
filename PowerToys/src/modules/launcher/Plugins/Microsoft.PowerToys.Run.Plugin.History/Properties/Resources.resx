@@ -118,12 +118,12 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="wox_plugin_history_plugin_name" xml:space="preserve">
-    <value>历史记录</value>
+    <value>History</value>
   </data>
   <data name="wox_plugin_history_plugin_description" xml:space="preserve">
-    <value>访问启动器的搜索记录</value>
+    <value>Accesses previously selected results</value>
   </data>
   <data name="wox_plugin_history_processing_failed" xml:space="preserve">
-    <value>无法处理该输入</value>
+    <value>Failed to process the input</value>
   </data>
 </root>

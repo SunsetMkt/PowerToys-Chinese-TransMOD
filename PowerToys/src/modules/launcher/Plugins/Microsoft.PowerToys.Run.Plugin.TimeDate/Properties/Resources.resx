@@ -118,48 +118,48 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Microsoft_plugin_timedate_CopyToClipboard" xml:space="preserve">
-    <value>复制 (Ctrl+C)</value>
+    <value>Copy value (Ctrl+C)</value>
     <comment>'Ctrl+C' is a shortcut</comment>
   </data>
   <data name="Microsoft_plugin_timedate_Date" xml:space="preserve">
-    <value>日期</value>
+    <value>Date</value>
   </data>
   <data name="Microsoft_plugin_timedate_DateAndTime" xml:space="preserve">
-    <value>日期和时间</value>
+    <value>Date and time</value>
   </data>
   <data name="Microsoft_plugin_timedate_DateAndTimeUtc" xml:space="preserve">
-    <value>日期和时间 UTC</value>
+    <value>Date and time UTC</value>
     <comment>'UTC' means here 'Universal Time Convention'</comment>
   </data>
   <data name="Microsoft_plugin_timedate_Day" xml:space="preserve">
-    <value>星期</value>
+    <value>Day (Week day)</value>
   </data>
   <data name="Microsoft_plugin_timedate_DayMonth" xml:space="preserve">
-    <value>月日</value>
+    <value>Month and day</value>
   </data>
   <data name="Microsoft_plugin_timedate_DayOfMonth" xml:space="preserve">
-    <value>日（每月）</value>
+    <value>Day of the month</value>
   </data>
   <data name="Microsoft_plugin_timedate_DayOfWeek" xml:space="preserve">
-    <value>日（每星期）</value>
+    <value>Day of the week (Week day)</value>
   </data>
   <data name="Microsoft_plugin_timedate_DayOfYear" xml:space="preserve">
-    <value>日（每年）</value>
+    <value>Day of the year</value>
   </data>
   <data name="Microsoft_plugin_timedate_Era" xml:space="preserve">
-    <value>纪元</value>
+    <value>Era</value>
   </data>
   <data name="Microsoft_plugin_timedate_EraAbbreviation" xml:space="preserve">
-    <value>纪元缩写</value>
+    <value>Era abbreviation</value>
   </data>
   <data name="Microsoft_plugin_timedate_ErrorResultSubTitle" xml:space="preserve">
-    <value>可用前缀：“u” 表示 Unix 时间戳，“ums” 表示 Unix 毫秒时间戳, “ft” 表示 Windows 文件时间</value>
+    <value>Valid prefixes: 'u' for Unix Timestamp, 'ums' for Unix Timestamp in milliseconds, 'ft' for Windows file time</value>
   </data>
   <data name="Microsoft_plugin_timedate_ErrorResultTitle" xml:space="preserve">
-    <value>错误: 数字输入无效</value>
+    <value>Error: Invalid number input</value>
   </data>
   <data name="Microsoft_plugin_timedate_Hour" xml:space="preserve">
-    <value>小时</value>
+    <value>Hour</value>
   </data>
   <data name="Microsoft_plugin_timedate_Iso8601" xml:space="preserve">
     <value>ISO 8601</value>
@@ -169,150 +169,192 @@
     <comment>'UTC' means here 'Universal Time Convention'</comment>
   </data>
   <data name="Microsoft_plugin_timedate_Iso8601Zone" xml:space="preserve">
-    <value>ISO 8601 +时区</value>
+    <value>ISO 8601 with time zone</value>
   </data>
   <data name="Microsoft_plugin_timedate_Iso8601ZoneUtc" xml:space="preserve">
-    <value>ISO 8601 UTC +时区</value>
+    <value>ISO 8601 UTC with time zone</value>
     <comment>'UTC' means here 'Universal Time Convention'</comment>
   </data>
   <data name="Microsoft_plugin_timedate_filename_compatible" xml:space="preserve">
-    <value>使用文件名支持的时间格式</value>
+    <value>Date and time in filename-compatible format</value>
     <comment>The format allows for embedding in filenames</comment>
   </data>
   <data name="Microsoft_plugin_timedate_Millisecond" xml:space="preserve">
-    <value>毫秒</value>
+    <value>Millisecond</value>
   </data>
   <data name="Microsoft_plugin_timedate_Minute" xml:space="preserve">
-    <value>分钟</value>
+    <value>Minute</value>
   </data>
   <data name="Microsoft_plugin_timedate_Month" xml:space="preserve">
-    <value>月份</value>
+    <value>Month</value>
   </data>
   <data name="Microsoft_plugin_timedate_MonthOfYear" xml:space="preserve">
-    <value>月（每年）</value>
+    <value>Month of the year</value>
   </data>
   <data name="Microsoft_plugin_timedate_MonthYear" xml:space="preserve">
-    <value>年月</value>
+    <value>Month and year</value>
   </data>
   <data name="Microsoft_plugin_timedate_Now" xml:space="preserve">
-    <value>现在</value>
+    <value>Now</value>
   </data>
   <data name="Microsoft_plugin_timedate_NowUtc" xml:space="preserve">
-    <value>现在（UTC）</value>
+    <value>Now UTC</value>
     <comment>'UTC' means here 'Universal Time Convention'</comment>
   </data>
   <data name="Microsoft_plugin_timedate_plugin_description" xml:space="preserve">
-    <value>获取时间与日期，支持自定义时间戳（比如：“{0}” “{1}” “{2}” “{3}”）</value>
+    <value>Provides time and date values for the system time or a custom time stamp (e.g.'{0}', '{1}', '{2}', '{3}')</value>
     <comment>Do not translate the placeholders like '{0}' because it will be replaced in code.</comment>
   </data>
   <data name="Microsoft_plugin_timedate_plugin_description_example_calendarWeek" xml:space="preserve">
-    <value>星期</value>
+    <value>Calendar week</value>
   </data>
   <data name="Microsoft_plugin_timedate_plugin_description_example_day" xml:space="preserve">
-    <value>日期</value>
+    <value>Day</value>
   </data>
   <data name="Microsoft_plugin_timedate_plugin_description_example_time" xml:space="preserve">
-    <value>时间</value>
+    <value>Time</value>
   </data>
   <data name="Microsoft_plugin_timedate_plugin_name" xml:space="preserve">
-    <value>时间</value>
+    <value>Time and Date</value>
   </data>
   <data name="Microsoft_plugin_timedate_Rfc1123" xml:space="preserve">
     <value>RFC1123</value>
   </data>
   <data name="Microsoft_plugin_timedate_SearchTagDate" xml:space="preserve">
-    <value>日期</value>
+    <value>Date</value>
     <comment>Don't change order</comment>
   </data>
   <data name="Microsoft_plugin_timedate_SearchTagDateNow" xml:space="preserve">
-    <value>当前日期; 现在</value>
+    <value>Current date; Now</value>
     <comment>Don't change order</comment>
   </data>
   <data name="Microsoft_plugin_timedate_SearchTagEra" xml:space="preserve">
-    <value>年份; 时代; 日期</value>
+    <value>Year; Calendar era; Date</value>
     <comment>Don't change order</comment>
   </data>
   <data name="Microsoft_plugin_timedate_SearchTagEraNow" xml:space="preserve">
-    <value>当前年份; 当前时代; 当前日期; 现在</value>
+    <value>Current year; Current calendar era; Current date; Now</value>
     <comment>Don't change order</comment>
   </data>
   <data name="Microsoft_plugin_timedate_SearchTagFormat" xml:space="preserve">
-    <value>日期和时间; 时间和日期</value>
+    <value>Date and time; Time and Date</value>
     <comment>Don't change order</comment>
   </data>
   <data name="Microsoft_plugin_timedate_SearchTagFormatNow" xml:space="preserve">
-    <value>当前日期和时间; 当前时间和日期; 现在</value>
+    <value>Current date and time; Current time and date; Now</value>
     <comment>Don't change order</comment>
   </data>
   <data name="Microsoft_plugin_timedate_SearchTagTime" xml:space="preserve">
-    <value>时间</value>
+    <value>Time</value>
     <comment>Don't change order</comment>
   </data>
   <data name="Microsoft_plugin_timedate_SearchTagTimeNow" xml:space="preserve">
-    <value>当前时间; 现在</value>
+    <value>Current Time; Now</value>
     <comment>Don't change order</comment>
   </data>
   <data name="Microsoft_plugin_timedate_Search_ConjunctionList" xml:space="preserve">
-    <value>for; and; nor; but; or; so; 与; 和; 或; 是; 的; 几; 什么</value>
+    <value>for; and; nor; but; or; so</value>
     <comment>List of conjunctions. We don't add 'yet' because this can be a synonym of 'now' which might be problematic on localized searches.</comment>
   </data>
   <data name="Microsoft_plugin_timedate_Second" xml:space="preserve">
-    <value>秒</value>
+    <value>Second</value>
   </data>
   <data name="Microsoft_plugin_timedate_SettingDateWithWeekday" xml:space="preserve">
-    <value>日期显示日月名称</value>
+    <value>Show date with weekday and name of month</value>
   </data>
   <data name="Microsoft_plugin_timedate_SettingDateWithWeekday_Description" xml:space="preserve">
-    <value>针对 “日期” 和 “现在”</value>
+    <value>This setting applies to the 'Date' and 'Now' result.</value>
   </data>
   <data name="Microsoft_plugin_timedate_SettingHideNumberMessageOnGlobalQuery" xml:space="preserve">
-    <value>全局搜索时隐藏 “数字输入无效” 结果</value>
+    <value>Hide 'Invalid number input' error message on global queries</value>
   </data>
   <data name="Microsoft_plugin_timedate_SettingOnlyDateTimeNowGlobal" xml:space="preserve">
-    <value>全局搜索只显示当前 “时间” “日期” “现在”</value>
+    <value>Show only 'Time', 'Date' and 'Now' result for system time on global queries</value>
   </data>
   <data name="Microsoft_plugin_timedate_SettingOnlyDateTimeNowGlobal_Description" xml:space="preserve">
-    <value>无论如何，搜索的第一个字必须对上才能搜到</value>
+    <value>Regardless of this setting, for global queries the first word of the query has to be a complete match.</value>
   </data>
   <data name="Microsoft_plugin_timedate_SettingTimeWithSeconds" xml:space="preserve">
-    <value>时间显示秒数</value>
+    <value>Show time with seconds</value>
   </data>
   <data name="Microsoft_plugin_timedate_SettingTimeWithSeconds_Description" xml:space="preserve">
-    <value>针对 “时间” 和 “现在”</value>
+    <value>This setting applies to the 'Time' and 'Now' result.</value>
   </data>
   <data name="Microsoft_plugin_timedate_SubTitleNote" xml:space="preserve">
-    <value>点击或按 Ctrl+C 复制</value>
+    <value>Select or press Ctrl+C to copy</value>
     <comment>'Ctrl+C' is a shortcut</comment>
   </data>
   <data name="Microsoft_plugin_timedate_Time" xml:space="preserve">
-    <value>时间</value>
+    <value>Time</value>
   </data>
   <data name="Microsoft_plugin_timedate_TimeUtc" xml:space="preserve">
-    <value>时间（UTC）</value>
+    <value>Time UTC</value>
     <comment>'UTC' means here 'Universal Time Convention'</comment>
   </data>
   <data name="Microsoft_plugin_timedate_ToolTipAlternativeSearchTag" xml:space="preserve">
-    <value>备用关键字：</value>
+    <value>Alternative search tags:</value>
   </data>
   <data name="Microsoft_plugin_timedate_UniversalTime" xml:space="preserve">
-    <value>通用时间格式：YYYY-MM-DD hh:mm:ss</value>
+    <value>Universal time format: YYYY-MM-DD hh:mm:ss</value>
   </data>
   <data name="Microsoft_plugin_timedate_Unix" xml:space="preserve">
-    <value>Unix 纪元时间</value>
+    <value>Unix epoch time</value>
   </data>
   <data name="Microsoft_plugin_timedate_WeekOfMonth" xml:space="preserve">
-    <value>星期（每月）</value>
+    <value>Week of the month</value>
   </data>
   <data name="Microsoft_plugin_timedate_WeekOfYear" xml:space="preserve">
-    <value>星期（每年）</value>
+    <value>Week of the year (Calendar week, Week number)</value>
   </data>
   <data name="Microsoft_plugin_timedate_WindowsFileTime" xml:space="preserve">
-    <value>Windows 文件时间（64 位整数）</value>
+    <value>Windows file time (Int64 number)</value>
   </data>
   <data name="Microsoft_plugin_timedate_Year" xml:space="preserve">
-    <value>年份</value>
+    <value>Year</value>
   </data>
   <data name="Microsoft_plugin_timedate_Unix_Milliseconds" xml:space="preserve">
-    <value>Unix 纪元毫秒时间</value>
+    <value>Unix epoch time in milliseconds</value>
+  </data>
+  <data name="Microsoft_plugin_timedate_SettingFirstDayOfWeek" xml:space="preserve">
+    <value>First day of the week</value>
+  </data>
+  <data name="Microsoft_plugin_timedate_SettingFirstDayOfWeek_Friday" xml:space="preserve">
+    <value>Friday</value>
+  </data>
+  <data name="Microsoft_plugin_timedate_SettingFirstDayOfWeek_Monday" xml:space="preserve">
+    <value>Monday</value>
+  </data>
+  <data name="Microsoft_plugin_timedate_SettingFirstDayOfWeek_Saturday" xml:space="preserve">
+    <value>Saturday</value>
+  </data>
+  <data name="Microsoft_plugin_timedate_SettingFirstDayOfWeek_Sunday" xml:space="preserve">
+    <value>Sunday</value>
+  </data>
+  <data name="Microsoft_plugin_timedate_SettingFirstDayOfWeek_Thursday" xml:space="preserve">
+    <value>Thursday</value>
+  </data>
+  <data name="Microsoft_plugin_timedate_SettingFirstDayOfWeek_Tuesday" xml:space="preserve">
+    <value>Tuesday</value>
+  </data>
+  <data name="Microsoft_plugin_timedate_SettingFirstDayOfWeek_Wednesday" xml:space="preserve">
+    <value>Wednesday</value>
+  </data>
+  <data name="Microsoft_plugin_timedate_SettingFirstWeekRule" xml:space="preserve">
+    <value>First week of the year</value>
+  </data>
+  <data name="Microsoft_plugin_timedate_SettingFirstWeekRule_Description" xml:space="preserve">
+    <value>Configure the calendar rule for the first week of the year.</value>
+  </data>
+  <data name="Microsoft_plugin_timedate_SettingFirstWeekRule_FirstDay" xml:space="preserve">
+    <value>First day of year</value>
+  </data>
+  <data name="Microsoft_plugin_timedate_SettingFirstWeekRule_FirstFourDayWeek" xml:space="preserve">
+    <value>First four day week</value>
+  </data>
+  <data name="Microsoft_plugin_timedate_SettingFirstWeekRule_FirstFullWeek" xml:space="preserve">
+    <value>First full week</value>
+  </data>
+  <data name="Microsoft_plugin_timedate_Setting_UseSystemSetting" xml:space="preserve">
+    <value>Use system setting</value>
   </data>
 </root>

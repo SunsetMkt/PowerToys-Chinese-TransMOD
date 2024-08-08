@@ -118,53 +118,53 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="wox_plugin_calculator_plugin_name" xml:space="preserve">
-    <value>计算器</value>
+    <value>Calculator</value>
   </data>
   <data name="wox_plugin_calculator_plugin_description" xml:space="preserve">
-    <value>进行数学计算，例如 5*3-2</value>
+    <value>Calculates mathematical equations (e.g. 5*3-2)</value>
   </data>
   <data name="wox_plugin_calculator_not_a_number" xml:space="preserve">
-    <value>发生 NaN 错误，结果不是数字</value>
+    <value>Calculation result is not a valid number (NaN)</value>
   </data>
   <data name="wox_plugin_calculator_expression_not_complete" xml:space="preserve">
-    <value>表达式错误或不完整，可能缺少括号</value>
+    <value>Expression wrong or incomplete (Did you forget some parentheses?)</value>
   </data>
   <data name="wox_plugin_calculator_copy_number_to_clipboard" xml:space="preserve">
-    <value>复制计算结果</value>
+    <value>Copy this number to the clipboard</value>
   </data>
   <data name="wox_plugin_calculator_copy_failed" xml:space="preserve">
-    <value>复制失败，请稍后再试</value>
+    <value>Copy failed, please try later</value>
   </data>
   <data name="wox_plugin_calculator_calculation_failed" xml:space="preserve">
-    <value>计算错误</value>
+    <value>Failed to calculate the input</value>
   </data>
   <data name="wox_plugin_calculator_double_array_returned" xml:space="preserve">
-    <value>暂不支持使用方括号</value>
+    <value>Unsupported use of square brackets</value>
   </data>
   <data name="wox_plugin_calculator_not_covert_to_decimal" xml:space="preserve">
-    <value>结果超过十进制数字范围</value>
+    <value>Result value was either too large or too small for a decimal number</value>
   </data>
   <data name="wox_plugin_calculator_in_en_format" xml:space="preserve">
-    <value>输入英语格式数字</value>
+    <value>Use English (United States) number format for input</value>
   </data>
   <data name="wox_plugin_calculator_in_en_format_description" xml:space="preserve">
-    <value>强制输入英语格式的数字，例如 '{0}'</value>
+    <value>Ignores your system setting and expects numbers in the format '{0}'.</value>
     <comment>{0} is a placeholder and will be replaced in code.</comment>
   </data>
   <data name="wox_plugin_calculator_out_en_format" xml:space="preserve">
-    <value>输出英语格式数字</value>
+    <value>Use English (United States) number format for output</value>
   </data>
   <data name="wox_plugin_calculator_out_en_format_description" xml:space="preserve">
-    <value>强制输出英语格式的数字，例如 '{0}'</value>
+    <value>Ignores your system setting and returns numbers in the format '{0}'.</value>
     <comment>{0} is a placeholder and will be replaced in code.</comment>
   </data>
   <data name="wox_plugin_calculator_division_by_zero" xml:space="preserve">
-    <value>零不可以作为除数</value>
+    <value>Expression contains division by zero</value>
   </data>
   <data name="wox_plugin_calculator_replace_input" xml:space="preserve">
-    <value>式子以等号结尾时，自动填入运算结果</value>
+    <value>Replace input if query ends with '='</value>
   </data>
   <data name="wox_plugin_calculator_replace_input_description" xml:space="preserve">
-    <value>使用唤醒词激活时，在式子后输入 "=" 就用运算结果替换整个式子（例如输入 '=5*3-2=' 就会变成 '=13'）</value>
+    <value>When using direct activation, appending '=' to the expression will replace the input with the calculated result (e.g. '=5*3-2=' will change the query to '=13').</value>
   </data>
 </root>

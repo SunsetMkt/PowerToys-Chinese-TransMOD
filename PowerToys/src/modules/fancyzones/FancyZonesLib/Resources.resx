@@ -214,47 +214,47 @@
     <comment>a zone is a snapping region and can be transparent</comment>
   </data>
   <data name="FancyZones" xml:space="preserve">
-    <value>窗口布局</value>
+    <value>FancyZones</value>
     <comment>FancyZones is a product name, keep as is.</comment>
   </data>
   <data name="Cant_Drag_Elevated" xml:space="preserve">
-    <value>检测到一个以管理员身份运行的程序窗口，窗口布局无法对它进行操作。</value>
+    <value>We've detected an application running with administrator privileges. This will prevent certain interactions with these applications.</value>
     <comment>administrator is context of user account.</comment>
   </data>
   <data name="Cant_Drag_Elevated_Learn_More" xml:space="preserve">
-    <value>了解更多</value>
+    <value>Learn more</value>
   </data>
   <data name="Cant_Drag_Elevated_Dialog_Dont_Show_Again" xml:space="preserve">
-    <value>不再显示</value>
+    <value>Don't show again</value>
   </data>
   <data name="Keyboard_Listener_Error" xml:space="preserve">
-    <value>无法安装快捷键监听器。</value>
+    <value>Failed to install keyboard listener.</value>
   </data>
   <data name="Window_Event_Listener_Error" xml:space="preserve">
-    <value>无法安装 Windows 事件监听器。</value>
+    <value>Failed to install Windows event listener.</value>
     <comment>Windows refers to the Operating system</comment>
   </data>
   <data name="Powertoys_FancyZones" xml:space="preserve">
-    <value>PowerToys - 窗口布局</value>
+    <value>PowerToys - FancyZones</value>
     <comment>do not loc.  Both are product names</comment>
   </data>
   <data name="Span_Across_Zones_Warning" xml:space="preserve">
-    <value>“允许布局跨显示器” 功能需要所有显示器的 DPI 缩放比例都相同。</value>
+    <value>The 'Allow zones to span across monitors' option requires all monitors to have the same DPI scaling to work properly.</value>
   </data>
   <data name="FancyZones_Data_Error" xml:space="preserve">
-    <value>窗口布局找不到数据储存路径。请将问题反馈到</value>
+    <value>FancyZones persisted data path not found. Please report the bug to</value>
     <comment>"Report bug to" will have a URL after. FancyZones is a product name, keep as is.</comment>
   </data>
   <data name="FancyZones_Editor_Launch_Error" xml:space="preserve">
-    <value>布局编辑器启动失败。请将问题反馈到</value>
+    <value>The FancyZones editor failed to start. Please report the bug to</value>
     <comment>"Report bug to" will have a URL after. FancyZones is a product name, keep as is.</comment>
   </data>
   <data name="FancyZones_Settings_Load_Error" xml:space="preserve">
-    <value>窗口布局配置加载失败。将使用默认配置。</value>
+    <value>Failed to load the FancyZones settings. Default settings will be used.</value>
     <comment>FancyZones is a product name, keep as is.</comment>
   </data>
   <data name="FancyZones_Settings_Save_Error" xml:space="preserve">
-    <value>窗口布局配置保存失败，请过会儿再试。如果仍然不行，请将问题反馈到</value>
+    <value>Failed to save the FancyZones settings. Please retry again later, if the problem persists report the bug to</value>
     <comment>"Report bug to" will have a URL after. FancyZones is a product name, keep as is.</comment>
   </data>
   <data name="Setting_Description_QuickLayoutSwitch" xml:space="preserve">

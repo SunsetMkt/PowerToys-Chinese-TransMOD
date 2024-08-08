@@ -360,13 +360,13 @@ namespace Microsoft.Plugin.Shell
             }
             catch (FileNotFoundException e)
             {
-                var name = "²å¼þ: " + Properties.Resources.wox_plugin_cmd_plugin_name;
+                var name = "Plugin: " + Properties.Resources.wox_plugin_cmd_plugin_name;
                 var message = $"{Properties.Resources.wox_plugin_cmd_command_not_found}: {e.Message}";
                 _context.API.ShowMsg(name, message);
             }
             catch (Win32Exception e)
             {
-                var name = "²å¼þ: " + Properties.Resources.wox_plugin_cmd_plugin_name;
+                var name = "Plugin: " + Properties.Resources.wox_plugin_cmd_plugin_name;
                 var message = $"{Properties.Resources.wox_plugin_cmd_command_failed}: {e.Message}";
                 _context.API.ShowMsg(name, message);
             }

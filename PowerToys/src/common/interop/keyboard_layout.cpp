@@ -1,4 +1,4 @@
-﻿#include "pch.h"
+#include "pch.h"
 #include <array>
 #include <algorithm>
 
@@ -108,7 +108,7 @@ void LayoutMap::LayoutMapImpl::UpdateLayout()
         }
 
         // Store the virtual key code as string
-        std::wstring vk = L"虚拟键值 ";
+        std::wstring vk = L"VK ";
         vk += std::to_wstring(i);
         keyboardLayoutMap[i] = vk;
         if (!isKeyCodeListGenerated)
@@ -143,39 +143,39 @@ void LayoutMap::LayoutMapImpl::UpdateLayout()
     keyboardLayoutMap[VK_END] = L"End";
     keyboardLayoutMap[VK_RETURN] = L"Enter";
 
-    keyboardLayoutMap[VK_LEFT | numpadOriginBit] = L"Left (小键盘)";
-    keyboardLayoutMap[VK_RIGHT | numpadOriginBit] = L"Right (小键盘)";
-    keyboardLayoutMap[VK_UP | numpadOriginBit] = L"Up (小键盘)";
-    keyboardLayoutMap[VK_DOWN | numpadOriginBit] = L"Down (小键盘)";
-    keyboardLayoutMap[VK_INSERT | numpadOriginBit] = L"Insert (小键盘)";
-    keyboardLayoutMap[VK_DELETE | numpadOriginBit] = L"Delete (小键盘)";
-    keyboardLayoutMap[VK_PRIOR | numpadOriginBit] = L"PgUp (小键盘)";
-    keyboardLayoutMap[VK_NEXT | numpadOriginBit] = L"PgDn (小键盘)";
-    keyboardLayoutMap[VK_HOME | numpadOriginBit] = L"Home (小键盘)";
-    keyboardLayoutMap[VK_END | numpadOriginBit] = L"End (小键盘)";
-    keyboardLayoutMap[VK_RETURN | numpadOriginBit] = L"Enter (小键盘)";
-    keyboardLayoutMap[VK_DIVIDE | numpadOriginBit] = L"/ (小键盘)";
+    keyboardLayoutMap[VK_LEFT | numpadOriginBit] = L"Left (Numpad)";
+    keyboardLayoutMap[VK_RIGHT | numpadOriginBit] = L"Right (Numpad)";
+    keyboardLayoutMap[VK_UP | numpadOriginBit] = L"Up (Numpad)";
+    keyboardLayoutMap[VK_DOWN | numpadOriginBit] = L"Down (Numpad)";
+    keyboardLayoutMap[VK_INSERT | numpadOriginBit] = L"Insert (Numpad)";
+    keyboardLayoutMap[VK_DELETE | numpadOriginBit] = L"Delete (Numpad)";
+    keyboardLayoutMap[VK_PRIOR | numpadOriginBit] = L"PgUp (Numpad)";
+    keyboardLayoutMap[VK_NEXT | numpadOriginBit] = L"PgDn (Numpad)";
+    keyboardLayoutMap[VK_HOME | numpadOriginBit] = L"Home (Numpad)";
+    keyboardLayoutMap[VK_END | numpadOriginBit] = L"End (Numpad)";
+    keyboardLayoutMap[VK_RETURN | numpadOriginBit] = L"Enter (Numpad)";
+    keyboardLayoutMap[VK_DIVIDE | numpadOriginBit] = L"/ (Numpad)";
 
-    keyboardLayoutMap[VK_SUBTRACT] = L"- (小键盘)";
+    keyboardLayoutMap[VK_SUBTRACT] = L"- (Subtract)";
     keyboardLayoutMap[VK_SELECT] = L"Select";
     keyboardLayoutMap[VK_PRINT] = L"Print";
     keyboardLayoutMap[VK_EXECUTE] = L"Execute";
     keyboardLayoutMap[VK_SNAPSHOT] = L"Print Screen";
     keyboardLayoutMap[VK_HELP] = L"Help";
-    keyboardLayoutMap[VK_LWIN] = L"Win (左)";
-    keyboardLayoutMap[VK_RWIN] = L"Win (右)";
+    keyboardLayoutMap[VK_LWIN] = L"Win (Left)";
+    keyboardLayoutMap[VK_RWIN] = L"Win (Right)";
     keyboardLayoutMap[VK_APPS] = L"Apps/Menu";
     keyboardLayoutMap[VK_SLEEP] = L"Sleep";
-    keyboardLayoutMap[VK_NUMPAD0] = L"0 (小键盘)";
-    keyboardLayoutMap[VK_NUMPAD1] = L"1 (小键盘)";
-    keyboardLayoutMap[VK_NUMPAD2] = L"2 (小键盘)";
-    keyboardLayoutMap[VK_NUMPAD3] = L"3 (小键盘)";
-    keyboardLayoutMap[VK_NUMPAD4] = L"4 (小键盘)";
-    keyboardLayoutMap[VK_NUMPAD5] = L"5 (小键盘)";
-    keyboardLayoutMap[VK_NUMPAD6] = L"6 (小键盘)";
-    keyboardLayoutMap[VK_NUMPAD7] = L"7 (小键盘)";
-    keyboardLayoutMap[VK_NUMPAD8] = L"8 (小键盘)";
-    keyboardLayoutMap[VK_NUMPAD9] = L"9 (小键盘)";
+    keyboardLayoutMap[VK_NUMPAD0] = L"NumPad 0";
+    keyboardLayoutMap[VK_NUMPAD1] = L"NumPad 1";
+    keyboardLayoutMap[VK_NUMPAD2] = L"NumPad 2";
+    keyboardLayoutMap[VK_NUMPAD3] = L"NumPad 3";
+    keyboardLayoutMap[VK_NUMPAD4] = L"NumPad 4";
+    keyboardLayoutMap[VK_NUMPAD5] = L"NumPad 5";
+    keyboardLayoutMap[VK_NUMPAD6] = L"NumPad 6";
+    keyboardLayoutMap[VK_NUMPAD7] = L"NumPad 7";
+    keyboardLayoutMap[VK_NUMPAD8] = L"NumPad 8";
+    keyboardLayoutMap[VK_NUMPAD9] = L"NumPad 9";
     keyboardLayoutMap[VK_SEPARATOR] = L"Separator";
     keyboardLayoutMap[VK_F1] = L"F1";
     keyboardLayoutMap[VK_F2] = L"F2";
@@ -203,12 +203,12 @@ void LayoutMap::LayoutMapImpl::UpdateLayout()
     keyboardLayoutMap[VK_F24] = L"F24";
     keyboardLayoutMap[VK_NUMLOCK] = L"Num Lock";
     keyboardLayoutMap[VK_SCROLL] = L"Scroll Lock";
-    keyboardLayoutMap[VK_LSHIFT] = L"Shift (左)";
-    keyboardLayoutMap[VK_RSHIFT] = L"Shift (右)";
-    keyboardLayoutMap[VK_LCONTROL] = L"Ctrl (左)";
-    keyboardLayoutMap[VK_RCONTROL] = L"Ctrl (右)";
-    keyboardLayoutMap[VK_LMENU] = L"Alt (左)";
-    keyboardLayoutMap[VK_RMENU] = L"Alt (右)";
+    keyboardLayoutMap[VK_LSHIFT] = L"Shift (Left)";
+    keyboardLayoutMap[VK_RSHIFT] = L"Shift (Right)";
+    keyboardLayoutMap[VK_LCONTROL] = L"Ctrl (Left)";
+    keyboardLayoutMap[VK_RCONTROL] = L"Ctrl (Right)";
+    keyboardLayoutMap[VK_LMENU] = L"Alt (Left)";
+    keyboardLayoutMap[VK_RMENU] = L"Alt (Right)";
     keyboardLayoutMap[VK_BROWSER_BACK] = L"Browser Back";
     keyboardLayoutMap[VK_BROWSER_FORWARD] = L"Browser Forward";
     keyboardLayoutMap[VK_BROWSER_REFRESH] = L"Browser Refresh";
@@ -236,7 +236,7 @@ void LayoutMap::LayoutMapImpl::UpdateLayout()
     keyboardLayoutMap[VK_ZOOM] = L"Zoom";
     keyboardLayoutMap[VK_PA1] = L"PA1";
     keyboardLayoutMap[VK_OEM_CLEAR] = L"Clear";
-    keyboardLayoutMap[0xFF] = L"未定义";
+    keyboardLayoutMap[0xFF] = L"Undefined";
     keyboardLayoutMap[CommonSharedConstants::VK_WIN_BOTH] = L"Win";
     keyboardLayoutMap[VK_KANA] = L"IME Kana";
     keyboardLayoutMap[VK_HANGEUL] = L"IME Hangeul";
@@ -249,8 +249,8 @@ void LayoutMap::LayoutMapImpl::UpdateLayout()
     keyboardLayoutMap[VK_NONCONVERT] = L"IME Non-Convert";
     keyboardLayoutMap[VK_ACCEPT] = L"IME Kana";
     keyboardLayoutMap[VK_MODECHANGE] = L"IME Mode Change";
-    keyboardLayoutMap[VK_DECIMAL] = L". (小键盘)";
-    keyboardLayoutMap[CommonSharedConstants::VK_DISABLED] = L"空白";
+    keyboardLayoutMap[VK_DECIMAL] = L". (Numpad)";
+    keyboardLayoutMap[CommonSharedConstants::VK_DISABLED] = L"Disable";
 }
 
 // Function to return the list of key codes in the order for the drop down. It creates it if it doesn't exist

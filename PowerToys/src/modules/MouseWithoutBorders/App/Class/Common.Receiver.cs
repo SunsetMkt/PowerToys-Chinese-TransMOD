@@ -41,7 +41,7 @@ namespace MouseWithoutBorders
             {
                 if ((Common.InvalidPackageCount % 100) == 0)
                 {
-                    ShowToolTip("收到无效数据包!", 1000, ToolTipIcon.Warning, false);
+                    ShowToolTip("Invalid packages received!", 1000, ToolTipIcon.Warning, false);
                 }
 
                 Common.InvalidPackageCount++;
@@ -252,8 +252,8 @@ namespace MouseWithoutBorders
                     string newMachine = Common.AddToMachinePool(package);
                     if (Setting.Values.MachineMatrixString == null)
                     {
-                        string tip = newMachine + " 报到!";
-                        tip += "\r\n 右键打开设备布局";
+                        string tip = newMachine + " saying Hello!";
+                        tip += "\r\n Right Click to setup your machine Matrix";
                         ShowToolTip(tip);
                     }
 

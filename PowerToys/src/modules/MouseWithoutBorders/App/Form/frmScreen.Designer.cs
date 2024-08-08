@@ -88,7 +88,7 @@
             this.menuExit.ForeColor = System.Drawing.Color.Black;
             this.menuExit.Name = "menuExit";
             this.menuExit.Size = new System.Drawing.Size(196, 22);
-            this.menuExit.Text = "退出(&E)";
+            this.menuExit.Text = "&Exit";
             this.menuExit.Click += new System.EventHandler(this.MenuExit_Click);
             // 
             // toolStripSeparator2
@@ -101,22 +101,22 @@
             this.menuAbout.ForeColor = System.Drawing.Color.Black;
             this.menuAbout.Name = "menuAbout";
             this.menuAbout.Size = new System.Drawing.Size(196, 22);
-            this.menuAbout.Text = "关于(&B)";
+            this.menuAbout.Text = "A&bout";
             this.menuAbout.Click += new System.EventHandler(this.MenuAbout_Click);
             // 
             // menuHelp
             // 
             this.menuHelp.Name = "menuHelp";
             this.menuHelp.Size = new System.Drawing.Size(196, 22);
-            this.menuHelp.Text = "帮助(&H)";
+            this.menuHelp.Text = "&Help && Questions";
             this.menuHelp.Click += new System.EventHandler(this.MenuHelp_Click);
             // 
             // menuGenDumpFile
             // 
             this.menuGenDumpFile.Name = "menuGenDumpFile";
             this.menuGenDumpFile.Size = new System.Drawing.Size(196, 22);
-            this.menuGenDumpFile.Text = "运行日志(&G)";
-            this.menuGenDumpFile.ToolTipText = "创建用于分析问题的日志文件，日志文件将在程序目录下生成。";
+            this.menuGenDumpFile.Text = "&Generate log";
+            this.menuGenDumpFile.ToolTipText = "Create logfile for triage, logfile will be generated under program directory.";
             this.menuGenDumpFile.Visible = false;
             this.menuGenDumpFile.Click += new System.EventHandler(this.MenuGenDumpFile_Click);
             // 
@@ -132,14 +132,14 @@
             this.menuGetScreenCapture.ForeColor = System.Drawing.Color.Black;
             this.menuGetScreenCapture.Name = "menuGetScreenCapture";
             this.menuGetScreenCapture.Size = new System.Drawing.Size(196, 22);
-            this.menuGetScreenCapture.Text = "获取截屏自(&G)";
+            this.menuGetScreenCapture.Text = "&Get Screen Capture from";
             // 
             // menuGetFromAll
             // 
             this.menuGetFromAll.Enabled = false;
             this.menuGetFromAll.Name = "menuGetFromAll";
             this.menuGetFromAll.Size = new System.Drawing.Size(85, 22);
-            this.menuGetFromAll.Text = "所有电脑";
+            this.menuGetFromAll.Text = "All";
             this.menuGetFromAll.Click += new System.EventHandler(this.MenuGetScreenCaptureClick);
             // 
             // menuSendScreenCapture
@@ -150,20 +150,20 @@
             this.menuSendScreenCapture.ForeColor = System.Drawing.Color.Black;
             this.menuSendScreenCapture.Name = "menuSendScreenCapture";
             this.menuSendScreenCapture.Size = new System.Drawing.Size(196, 22);
-            this.menuSendScreenCapture.Text = "发送截屏到(&C)";
+            this.menuSendScreenCapture.Text = "Send Screen &Capture to";
             // 
             // allToolStripMenuItem
             // 
             this.allToolStripMenuItem.Name = "allToolStripMenuItem";
             this.allToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
-            this.allToolStripMenuItem.Text = "所有电脑";
+            this.allToolStripMenuItem.Text = "All";
             this.allToolStripMenuItem.Click += new System.EventHandler(this.MenuSendScreenCaptureClick);
             // 
             // menuSend2Myself
             // 
             this.menuSend2Myself.Name = "menuSend2Myself";
             this.menuSend2Myself.Size = new System.Drawing.Size(105, 22);
-            this.menuSend2Myself.Text = "此电脑";
+            this.menuSend2Myself.Text = "Myself";
             this.menuSend2Myself.Click += new System.EventHandler(this.MenuSendScreenCaptureClick);
             // 
             // toolStripMenuItem1
@@ -175,7 +175,7 @@
             // 
             this.menuReinstallKeyboardAndMouseHook.Name = "menuReinstallKeyboardAndMouseHook";
             this.menuReinstallKeyboardAndMouseHook.Size = new System.Drawing.Size(196, 22);
-            this.menuReinstallKeyboardAndMouseHook.Text = "重新安装快捷键侦听器(&R)";
+            this.menuReinstallKeyboardAndMouseHook.Text = "&Reinstall Input hook";
             this.menuReinstallKeyboardAndMouseHook.ToolTipText = "This might help when keyboard/Mouse redirection stops working";
             this.menuReinstallKeyboardAndMouseHook.Visible = false;
             this.menuReinstallKeyboardAndMouseHook.Click += new System.EventHandler(this.MenuReinstallKeyboardAndMouseHook_Click);
@@ -186,7 +186,7 @@
             this.menuMachineMatrix.ForeColor = System.Drawing.Color.Black;
             this.menuMachineMatrix.Name = "menuMachineMatrix";
             this.menuMachineMatrix.Size = new System.Drawing.Size(196, 22);
-            this.menuMachineMatrix.Text = "设置(&S)";
+            this.menuMachineMatrix.Text = "&Settings";
             this.menuMachineMatrix.Click += new System.EventHandler(this.MenuMachineMatrix_Click);
             // 
             // toolStripMenuItem2
@@ -199,7 +199,7 @@
             this.MenuAllPC.CheckOnClick = true;
             this.MenuAllPC.Name = "menuAllPC";
             this.MenuAllPC.Size = new System.Drawing.Size(196, 22);
-            this.MenuAllPC.Text = "所有电脑(&A)";
+            this.MenuAllPC.Text = "&ALL COMPUTERS";
             this.MenuAllPC.ToolTipText = "Repeat Mouse/keyboard in all machines.";
             this.MenuAllPC.Click += new System.EventHandler(this.MenuAllPC_Click);
             // 

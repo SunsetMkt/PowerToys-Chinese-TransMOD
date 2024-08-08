@@ -56,30 +56,15 @@ namespace Community.PowerToys.Run.Plugin.UnitConverter
                 .ToList();
         }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("StyleCop.CSharp.LayoutRules", "SA1501:Statement should not be on a single line", Justification = "<挂起>")]
         private Result GetResult(UnitConversionResult result)
         {
-            string hack = $"{result.QuantityInfo.Name}";
-            if (hack == "Acceleration") { hack = "加速度"; }
-            else if (hack == "Angle") { hack = "角度"; }
-            else if (hack == "Area") { hack = "面积"; }
-            else if (hack == "Duration") { hack = "时间"; }
-            else if (hack == "Energy") { hack = "能量"; }
-            else if (hack == "Information") { hack = "数据"; }
-            else if (hack == "Length") { hack = "长度"; }
-            else if (hack == "Mass") { hack = "质量"; }
-            else if (hack == "Power") { hack = "功率"; }
-            else if (hack == "Pressure") { hack = "压强"; }
-            else if (hack == "Speed") { hack = "速度"; }
-            else if (hack == "Temperature") { hack = "温度"; }
-            else if (hack == "Volume") { hack = "体积"; }
             return new Result
             {
                 ContextData = result,
                 Title = result.ToString(null),
                 IcoPath = _icon_path,
                 Score = 300,
-                SubTitle = string.Format(CultureInfo.CurrentCulture, CopyToClipboard, hack),
+                SubTitle = string.Format(CultureInfo.CurrentCulture, CopyToClipboard, result.QuantityInfo.Name),
                 Action = c =>
                 {
                     var ret = false;

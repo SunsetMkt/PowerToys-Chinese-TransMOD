@@ -6,8 +6,8 @@ namespace MouseWithoutBorders.Class
 {
     internal enum EasyMouseOption : int
     {
-        关闭 = 0,
-        开启 = 1,
+        Disable = 0,
+        Enable = 1,
         Ctrl = 2,
         Shift = 3,
     }

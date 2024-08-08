@@ -59,7 +59,7 @@
 namespace
 {
     const wchar_t PT_URI_PROTOCOL_SCHEME[] = L"powertoys://";
-    const wchar_t POWER_TOYS_MODULE_LOAD_FAIL[] = L"无法加载 "; // Module name will be appended on this message and it is not localized.
+    const wchar_t POWER_TOYS_MODULE_LOAD_FAIL[] = L"Failed to load "; // Module name will be appended on this message and it is not localized.
 }
 
 void chdir_current_executable()

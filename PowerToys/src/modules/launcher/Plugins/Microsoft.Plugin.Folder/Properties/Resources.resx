@@ -118,49 +118,49 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="wox_plugin_folder_plugin_name" xml:space="preserve">
-    <value>文件夹</value>
+    <value>Folder</value>
   </data>
   <data name="wox_plugin_folder_plugin_description" xml:space="preserve">
-    <value>浏览文件夹</value>
+    <value>Navigates folders starting from a drive letter 'C:\' or from the user home '~'</value>
   </data>
   <data name="Microsoft_plugin_folder_copy_path" xml:space="preserve">
-    <value>复制路径(Ctrl+C)</value>
+    <value>Copy path (Ctrl+C)</value>
   </data>
   <data name="Microsoft_plugin_folder_open_in_console" xml:space="preserve">
-    <value>在命令行打开路径(Ctrl+Shift+C)</value>
+    <value>Open path in console (Ctrl+Shift+C)</value>
   </data>
   <data name="Microsoft_plugin_folder_open_containing_folder" xml:space="preserve">
-    <value>打开所在文件夹(Ctrl+Shift+E)</value>
+    <value>Open containing folder (Ctrl+Shift+E)</value>
   </data>
   <data name="Microsoft_plugin_folder_truncation_warning_title" xml:space="preserve">
-    <value>警告：文件夹的其余搜索结果被省略。</value>
+    <value>Warning: Folder Plugin Results truncated.</value>
   </data>
   <data name="Microsoft_plugin_folder_truncation_warning_subtitle" xml:space="preserve">
-    <value>显示了 {0:N0} 个结果中的 {1:N0} 个</value>
+    <value>Showing {0:N0} of {1:N0} results</value>
     <comment>Example: showing 25 of 540 results</comment>
   </data>
   <data name="Microsoft_plugin_folder_clipboard_failed" xml:space="preserve">
-    <value>写入剪贴板失败</value>
+    <value>Fail to set text in clipboard</value>
   </data>
   <data name="Microsoft_plugin_folder_file_open_failed" xml:space="preserve">
-    <value>无法打开文件</value>
+    <value>Fail to open file at</value>
   </data>
   <data name="wox_plugin_folder_select_folder_first_result_subtitle" xml:space="preserve">
-    <value>提示: 使用 &gt; 在文件夹内进行搜索，使用 * 作为通配符</value>
+    <value>Tip: Use &gt; to search in folders, * to search file by mask, &gt;* for both.</value>
   </data>
   <data name="wox_plugin_folder_select_folder_first_result_title" xml:space="preserve">
-    <value>打开: {0}</value>
+    <value>Open: {0}</value>
     <comment>Open as a verb.  Open this folder. Do not translate the placeholder '{0}'.</comment>
   </data>
   <data name="wox_plugin_folder_select_folder_OpenFileOrFolder_error_message" xml:space="preserve">
-    <value>无法打开</value>
+    <value>Could not start</value>
   </data>
   <data name="wox_plugin_folder_select_file_result_subtitle" xml:space="preserve">
-    <value>文件: {0}</value>
+    <value>File: {0}</value>
     <comment>the arg following is file path</comment>
   </data>
   <data name="wox_plugin_folder_select_folder_result_subtitle" xml:space="preserve">
-    <value>文件夹: {0}</value>
+    <value>Folder: {0}</value>
     <comment>the arg following is the folder path</comment>
   </data>
 </root>

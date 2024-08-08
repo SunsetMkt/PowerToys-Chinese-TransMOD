@@ -629,7 +629,7 @@
                                                 <TextBox MinWidth="{StaticResource SettingActionControlMinWidth}" Text="{x:Bind ActionKeyword, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
                                             </tkcontrols:SettingsCard>
                                             <tkcontrols:SettingsCard
-                                                Padding="0,-4,0,0"
+                                                Padding="0,0,0,0"
                                                 HorizontalContentAlignment="Left"
                                                 Background="{ThemeResource SystemFillColorCriticalBackgroundBrush}"
                                                 ContentAlignment="Vertical"
@@ -709,7 +709,7 @@
         </controls:SettingsPageControl.PrimaryLinks>
         <controls:SettingsPageControl.SecondaryLinks>
             <controls:PageLink Link="https://github.com/Wox-launcher/Wox/" Text="Wox" />
-            <controls:PageLink Link="https://github.com/betsegaw/windowwalker/" Text="Beta Tadele 的软件 Window Walker" />
+            <controls:PageLink Link="https://github.com/betsegaw/windowwalker/" Text="Beta Tadele's Window Walker" />
         </controls:SettingsPageControl.SecondaryLinks>
     </controls:SettingsPageControl>
 </Page>

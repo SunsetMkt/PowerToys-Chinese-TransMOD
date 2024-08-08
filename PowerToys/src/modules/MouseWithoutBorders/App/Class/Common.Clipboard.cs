@@ -440,7 +440,7 @@ namespace MouseWithoutBorders
                     return;
                 }
 
-                ShowToolTip("正在连接 " + remoteMachine, 2000, ToolTipIcon.Info, Setting.Values.ShowClipNetStatus);
+                ShowToolTip("Connecting to " + remoteMachine, 2000, ToolTipIcon.Info, Setting.Values.ShowClipNetStatus);
 
                 clipboardTcpClient = ConnectToRemoteClipboardSocket(remoteMachine);
             }
@@ -550,7 +550,7 @@ namespace MouseWithoutBorders
                 ShowToolTip(
                     string.Format(
                         CultureInfo.CurrentCulture,
-                        "正在从 {1} 接收 {0} ...",
+                        "Receiving {0} from {1}...",
                         Path.GetFileName(fileName),
                         remoteMachine),
                     5000,
@@ -597,7 +597,7 @@ namespace MouseWithoutBorders
                 ShowToolTip(
                     string.Format(
                         CultureInfo.CurrentCulture,
-                        "正在从 {1} 接收 {0} ...",
+                        "Receiving {0} from {1}...",
                         Path.GetFileName(fileName),
                         remoteMachine),
                     5000,
@@ -655,7 +655,7 @@ namespace MouseWithoutBorders
                         Clipboard.SetImage(Image.FromStream(m));
                         toolTipText = string.Format(
                             CultureInfo.CurrentCulture,
-                            "{0} {1} 来自 {2} 已存入剪贴板.",
+                            "{0} {1} from {2} is in Clipboard.",
                             sizeText,
                             "image",
                             remoteMachine);
@@ -665,7 +665,7 @@ namespace MouseWithoutBorders
                         byte[] data = (m as MemoryStream).GetBuffer();
                         toolTipText = string.Format(
                             CultureInfo.CurrentCulture,
-                            "{0} {1} 来自 {2} 已存入剪贴板.",
+                            "{0} {1} from {2} is in Clipboard.",
                             sizeText,
                             "text",
                             remoteMachine);
@@ -677,7 +677,7 @@ namespace MouseWithoutBorders
                         {
                             toolTipText = string.Format(
                                 CultureInfo.CurrentCulture,
-                                "{0} {1} 来自 {2}!",
+                                "{0} {1} received from {2}!",
                                 sizeText,
                                 Path.GetFileName(fileName),
                                 remoteMachine);
@@ -699,7 +699,7 @@ namespace MouseWithoutBorders
                             OpenImage(tempFile);
                             toolTipText = string.Format(
                                 CultureInfo.CurrentCulture,
-                                "{0} {1} 来自 {2} 已放入画图.",
+                                "{0} {1} from {2} is in Mspaint.",
                                 sizeText,
                                 Path.GetFileName(tempFile),
                                 remoteMachine);
@@ -713,7 +713,7 @@ namespace MouseWithoutBorders
                             Clipboard.SetFileDropList(filePaths);
                             toolTipText = string.Format(
                                 CultureInfo.CurrentCulture,
-                                "{0} {1} 来自 {2} 已存入剪贴板.",
+                                "{0} {1} from {2} is in Clipboard.",
                                 sizeText,
                                 Path.GetFileName(fileName),
                                 remoteMachine);
@@ -850,7 +850,7 @@ namespace MouseWithoutBorders
 
                 if (!handShaken)
                 {
-                    string msg = $"剪贴板连接被拒绝: {name}:{remoteName}/{package.Src}\r\n\r\n请确保软件版本相同.";
+                    string msg = $"Clipboard connection rejected: {name}:{remoteName}/{package.Src}\r\n\r\nMake sure you run the same version in all machines.";
                     Common.Log(msg);
                     Common.ShowToolTip(msg, 3000, ToolTipIcon.Warning);
                     Common.SetToggleIcon(new int[Common.TOGGLE_ICONS_SIZE] { Common.ICON_BIG_CLIPBOARD, -1, -1, -1 });
@@ -879,7 +879,7 @@ namespace MouseWithoutBorders
                     -1, Common.ICON_BIG_CLIPBOARD, -1,
                 });
                 MainForm.UpdateNotifyIcon();
-                ShowToolTip(e.Message + "\r\n\r\n请确保软件版本相同.", 1000, ToolTipIcon.Warning, Setting.Values.ShowClipNetStatus);
+                ShowToolTip(e.Message + "\r\n\r\nMake sure you run the same version in all machines.", 1000, ToolTipIcon.Warning, Setting.Values.ShowClipNetStatus);
 
                 if (m != null)
                 {
@@ -937,7 +937,7 @@ namespace MouseWithoutBorders
                 ShowToolTip(
                     string.Format(
                         CultureInfo.CurrentCulture,
-                        "正在解压 {0} 剪贴板数据 ...",
+                        "Decompressing {0} clipboard data ...",
                         (data.Length / 1024).ToString(CultureInfo.CurrentCulture) + "KB"),
                     5000,
                     ToolTipIcon.Info,

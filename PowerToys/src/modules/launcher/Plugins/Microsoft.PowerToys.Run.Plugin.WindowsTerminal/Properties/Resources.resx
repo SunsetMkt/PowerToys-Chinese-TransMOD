@@ -118,29 +118,29 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="open_new_tab" xml:space="preserve">
-    <value>在新标签页打开配置文件</value>
+    <value>Open profiles in a new tab</value>
   </data>
   <data name="open_quake" xml:space="preserve">
-    <value>在下拉栏中打开配置文件</value>
+    <value>Open profiles in the quake window</value>
     <comment>Quake is a well-known computer game. Don't localize. See https://en.wikipedia.org/wiki/Quake_(video_game)</comment>
   </data>
   <data name="open_quake_description" xml:space="preserve">
-    <value>下拉栏，又名 Quake 模式，即上半屏分屏显示控制台窗口，可以按快捷键打开</value>
-    <comment>Quake is a well-known computer game. Don't localize. See https://en.wikipedia.org/wiki/Quake_(video_game)；；Zetaspace：Not at my country.</comment>
+    <value>Windows Terminal supports a "quake" feature where a terminal window is accessible using a global hotkey. Enable this option to open profiles in a new tab in this window.</value>
+    <comment>Quake is a well-known computer game. Don't localize. See https://en.wikipedia.org/wiki/Quake_(video_game)</comment>
   </data>
   <data name="plugin_description" xml:space="preserve">
-    <value>打开 Windows Terminal 配置文件</value>
+    <value>Opens Windows Terminal profiles</value>
   </data>
   <data name="plugin_name" xml:space="preserve">
     <value>Windows Terminal</value>
   </data>
   <data name="run_as_administrator" xml:space="preserve">
-    <value>以管理员权限运行(Ctrl+Shift+Enter)</value>
+    <value>Run as administrator (Ctrl+Shift+Enter)</value>
   </data>
   <data name="run_terminal_failed" xml:space="preserve">
-    <value>无法打开 Windows Terminal</value>
+    <value>Failed to open Windows Terminal</value>
   </data>
   <data name="show_hidden_profiles" xml:space="preserve">
-    <value>显示隐藏配置文件</value>
+    <value>Show hidden profiles</value>
   </data>
 </root>

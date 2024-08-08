@@ -317,7 +317,7 @@ namespace MouseWithoutBorders
                 if (processes?.Length == 0)
                 {
                     Log("Unable to start helper process.");
-                    Common.ShowToolTip("无法启动无界鼠标帮助模块，剪贴板共享功能失效!", 5000, ToolTipIcon.Error);
+                    Common.ShowToolTip("Error starting Mouse Without Borders Helper, clipboard sharing will not work!", 5000, ToolTipIcon.Error);
                 }
                 else
                 {
@@ -334,7 +334,7 @@ namespace MouseWithoutBorders
                 else
                 {
                     Log("Invalid helper process found running.");
-                    Common.ShowToolTip("找不到无界鼠标帮助模块，剪贴板共享功能失效!", 5000, ToolTipIcon.Error);
+                    Common.ShowToolTip("Error finding Mouse Without Borders Helper, clipboard sharing will not work!", 5000, ToolTipIcon.Error);
                 }
             }
         }

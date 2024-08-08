@@ -47,7 +47,7 @@
             this.labelTitle.Name = "labelTitle";
             this.labelTitle.Size = new System.Drawing.Size(168, 16);
             this.labelTitle.TabIndex = 0;
-            this.labelTitle.Text = "无界鼠标";
+            this.labelTitle.Text = "Mouse Without Borders";
             // 
             // textExtraInfo
             // 

@@ -193,7 +193,7 @@ namespace MouseWithoutBorders.Class
                     Common.MainForm.SetTrayIconText("Not physical console session.");
                     if (byUser)
                     {
-                        Common.ShowToolTip("非物理控制台会话.", 5000);
+                        Common.ShowToolTip("Not physical console session.", 5000);
                     }
                 }
 
@@ -887,7 +887,8 @@ namespace MouseWithoutBorders.Class
 
                 if (!string.IsNullOrEmpty(Setting.Values.Name2IP))
                 {
-                    string[] name2ip = Setting.Values.Name2IP.Split(Separator, StringSplitOptions.RemoveEmptyEntries);
+                    string combinedName2ipList = Setting.Values.Name2IpPolicyList + Separator + Setting.Values.Name2IP;
+                    string[] name2ip = combinedName2ipList.Split(Separator, StringSplitOptions.RemoveEmptyEntries);
                     string[] nameNip;
 
                     if (name2ip != null)
@@ -912,7 +913,7 @@ namespace MouseWithoutBorders.Class
 
                         Common.LogDebug("Using both user-defined Name-to-IP mappings and DNS result for " + machineName);
 
-                        Common.ShowToolTip("为 " + machineName + " 同时使用用户自定义 IP 映射和 DNS 结果", 3000, ToolTipIcon.Info, false);
+                        Common.ShowToolTip("Using both user-defined Name-to-IP mappings and DNS result for " + machineName, 3000, ToolTipIcon.Info, false);
 
                         if (!CheckForSameSubNet(validatedAddresses, machineName))
                         {
@@ -1033,7 +1034,7 @@ namespace MouseWithoutBorders.Class
 
                     if (!useName2IP)
                     {
-                        Common.ShowToolTip($"无法解析对方电脑的 IP 地址: {machineName}.\r\n请解决 DNS 问题，或者手动设置 IP 地址映射.", 10000, ToolTipIcon.Warning, Setting.Values.ShowClipNetStatus);
+                        Common.ShowToolTip($"Cannot resolve IP Address of the remote machine: {machineName}.\r\nPlease fix your DNS or use the Mapping option in the Settings form.", 10000, ToolTipIcon.Warning, Setting.Values.ShowClipNetStatus);
                     }
                 }
             }
@@ -1167,7 +1168,7 @@ namespace MouseWithoutBorders.Class
                             {
                                 Common.Log($"tcpClient.Connect: Unable to connect after a timeout: {machineName}:{ip} : {e.Message}");
 
-                                string message = $"连接超时: {machineName}:{ip}";
+                                string message = $"Connection timed out: {machineName}:{ip}";
 
                                 Common.ShowToolTip(message, 5000, ToolTipIcon.Warning, Setting.Values.ShowClipNetStatus);
 
@@ -1196,7 +1197,7 @@ namespace MouseWithoutBorders.Class
 
                     if (localIP != null && (localIP.StartsWith("169.254", StringComparison.InvariantCulture) || localIP.ToString().StartsWith("0.0", StringComparison.InvariantCulture)))
                     {
-                        Common.ShowToolTip($"错误: 该机器对于 [{localIP}] 的连接性有限.", 5000, ToolTipIcon.Warning, Setting.Values.ShowClipNetStatus);
+                        Common.ShowToolTip($"Error: The machine has limited connectivity on [{localIP}].", 5000, ToolTipIcon.Warning, Setting.Values.ShowClipNetStatus);
                     }
                     else
                     {
@@ -1317,7 +1318,7 @@ namespace MouseWithoutBorders.Class
 
                         if (receivedCount > 0)
                         {
-                            Common.ShowToolTip($"来自 {remoteMachine} 的数据包无效. 请确保连接密码一致.", 5000, ToolTipIcon.Warning, false);
+                            Common.ShowToolTip($"Invalid package from {remoteMachine}. Ensure the security keys are the same in both machines.", 5000, ToolTipIcon.Warning, false);
                         }
 
                         if (errCount > 5)
@@ -1424,7 +1425,7 @@ namespace MouseWithoutBorders.Class
 
                                     if (Math.Abs(Common.GetTick() - Common.LastReconnectByHotKeyTime) < 5000)
                                     {
-                                        Common.ShowToolTip("已连接 " + remoteMachine, 1000, ToolTipIcon.Info, Setting.Values.ShowClipNetStatus);
+                                        Common.ShowToolTip("Connected to " + remoteMachine, 1000, ToolTipIcon.Info, Setting.Values.ShowClipNetStatus);
                                     }
 
                                     Common.SendHeartBeat(initial: true);
@@ -1449,7 +1450,7 @@ namespace MouseWithoutBorders.Class
 
                                         if (!Common.RunOnLogonDesktop && !Common.RunOnScrSaverDesktop)
                                         {
-                                            Common.ShowToolTip("已建立新连接 " + remoteMachine, 1000, ToolTipIcon.Info, Setting.Values.ShowClipNetStatus);
+                                            Common.ShowToolTip("Connected to new machine " + remoteMachine, 1000, ToolTipIcon.Info, Setting.Values.ShowClipNetStatus);
                                         }
                                     }
 
@@ -1469,7 +1470,7 @@ namespace MouseWithoutBorders.Class
                                     {
                                         _ = FailedAttempt.AddOrUpdate(remoteEP, 0, (key, value) => 0);
 
-                                        _ = MessageBox.Show($"来自 [{remoteEP}] 的连接尝试次数过多!\r\n重启软件后再试.", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                        _ = MessageBox.Show($"Too many connection attempts from [{remoteEP}]!\r\nRestart the app to retry.", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
                                         Common.MainForm.Quit(true, false);
                                     }
 

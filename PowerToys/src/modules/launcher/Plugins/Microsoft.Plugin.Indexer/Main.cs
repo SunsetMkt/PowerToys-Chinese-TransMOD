@@ -153,7 +153,7 @@ namespace Microsoft.Plugin.Indexer
                                 if (!Helper.OpenInShell(path, null, workingDir))
                                 {
                                     hide = false;
-                                    var name = $"插件: {_context.CurrentPluginMetadata.Name}";
+                                    var name = $"Plugin: {_context.CurrentPluginMetadata.Name}";
                                     var msg = Properties.Resources.Microsoft_plugin_indexer_file_open_failed;
                                     _context.API.ShowMsg(name, msg, string.Empty);
                                 }

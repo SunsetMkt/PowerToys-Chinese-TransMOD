@@ -118,37 +118,37 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="PluginTitle" xml:space="preserve">
-    <value>VS Code 工作区</value>
+    <value>Visual Studio Code Workspaces</value>
   </data>
   <data name="In" xml:space="preserve">
-    <value>位于</value>
+    <value>in</value>
     <comment>Used to indicate the location where something is</comment>
   </data>
   <data name="PluginDescription" xml:space="preserve">
-    <value>打开 VS Code 的常用工作区、远程计算机（SSH、Codespaces）和容器，VS Code 路径须在 PATH 环境变量中</value>
+    <value>Opens workspaces, remote machines (SSH or Codespaces) and containers, previously opened in VS Code. The VS Code instance needs to be in PATH</value>
     <comment>VS Code is the name of a product. PATH is the name of an environment variable. Don't translate it.</comment>
   </data>
   <data name="SSHRemoteMachine" xml:space="preserve">
-    <value>SSH 远程计算机</value>
+    <value>SSH remote machine</value>
   </data>
   <data name="TypeWorkspaceContainer" xml:space="preserve">
-    <value>容器</value>
+    <value>Container</value>
     <comment>As in "Visual Studio Code workspace container type</comment>
   </data>
   <data name="TypeWorkspaceLocal" xml:space="preserve">
-    <value>本地</value>
+    <value>Local</value>
     <comment>As in "The workspace is on the local machine"</comment>
   </data>
   <data name="Workspace" xml:space="preserve">
-    <value>工作区</value>
+    <value>Workspace</value>
     <comment>It refers to the Visual Studio Code .code-workspace</comment>
   </data>
   <data name="TypeWorkspaceDevContainer" xml:space="preserve">
-    <value>开发容器</value>
+    <value>Dev Container</value>
     <comment>As in "Visual Studio Code Dev Container workspace "</comment>
   </data>
   <data name="ProjectFolder" xml:space="preserve">
-    <value>项目文件夹</value>
+    <value>Project Folder</value>
     <comment>It refers to the Visual Studio Code Project Folders</comment>
   </data>
 </root>

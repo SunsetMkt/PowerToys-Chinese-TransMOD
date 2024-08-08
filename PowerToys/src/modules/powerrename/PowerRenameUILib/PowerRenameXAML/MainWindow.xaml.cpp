@@ -147,7 +147,7 @@ namespace winrt::PowerRenameUI::implementation
             appWindow.MoveAndResize(rect);
         }
 
-        Title(hstring{ L"批量重命名" });
+        Title(hstring{ L"PowerRename" });
 
         m_searchMRUList = winrt::single_threaded_observable_vector<hstring>();
         m_replaceMRUList = winrt::single_threaded_observable_vector<hstring>();

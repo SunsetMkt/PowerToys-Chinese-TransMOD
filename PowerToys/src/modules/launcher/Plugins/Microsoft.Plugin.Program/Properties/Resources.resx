@@ -118,54 +118,54 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="wox_plugin_program_run_as_administrator" xml:space="preserve">
-    <value>以管理员身份运行(Ctrl+Shift+Enter)</value>
+    <value>Run as administrator (Ctrl+Shift+Enter)</value>
   </data>
   <data name="wox_plugin_program_open_containing_folder" xml:space="preserve">
-    <value>打开所属文件夹(Ctrl+Shift+E)</value>
+    <value>Open containing folder (Ctrl+Shift+E)</value>
   </data>
   <data name="wox_plugin_program_open_in_console" xml:space="preserve">
-    <value>在命令行打开路径(Ctrl+Shift+C)</value>
+    <value>Open path in console (Ctrl+Shift+C)</value>
   </data>
   <data name="wox_plugin_program_plugin_name" xml:space="preserve">
-    <value>应用程序</value>
+    <value>Program</value>
   </data>
   <data name="wox_plugin_program_plugin_description" xml:space="preserve">
-    <value>搜索应用程序</value>
+    <value>Searches programs</value>
   </data>
   <data name="powertoys_run_plugin_program_win32_application" xml:space="preserve">
-    <value>Win32 应用</value>
+    <value>Application</value>
   </data>
   <data name="powertoys_run_plugin_program_internet_shortcut_application" xml:space="preserve">
-    <value>网页快捷方式应用</value>
+    <value>Internet shortcut application</value>
   </data>
   <data name="powertoys_run_plugin_program_web_application" xml:space="preserve">
-    <value>Web 应用</value>
+    <value>Web application</value>
   </data>
   <data name="powertoys_run_plugin_program_run_command" xml:space="preserve">
-    <value>命令行</value>
+    <value>Run command</value>
   </data>
   <data name="powertoys_run_plugin_program_packaged_application" xml:space="preserve">
-    <value>UWP 应用</value>
+    <value>Packaged application</value>
   </data>
   <data name="powertoys_run_plugin_program_file_name" xml:space="preserve">
-    <value>名称</value>
+    <value>Name</value>
   </data>
   <data name="powertoys_run_plugin_program_file_path" xml:space="preserve">
-    <value>路径</value>
+    <value>Path</value>
   </data>
   <data name="powertoys_run_plugin_program_folder_type" xml:space="preserve">
-    <value>文件夹</value>
+    <value>Folder</value>
   </data>
   <data name="powertoys_run_plugin_program_generic_file_type" xml:space="preserve">
-    <value>文件</value>
+    <value>File</value>
   </data>
   <data name="powertoys_run_plugin_program_start_failed" xml:space="preserve">
-    <value>无法启动</value>
+    <value>Unable to start</value>
   </data>
   <data name="powertoys_run_plugin_program_uwp_failed" xml:space="preserve">
-    <value>UWP 无法启动</value>
+    <value>Can't start UWP</value>
   </data>
   <data name="wox_plugin_program_run_as_user" xml:space="preserve">
-    <value>以其他用户身份运行(Ctrl+Shift+U)</value>
+    <value>Run as different user (Ctrl+Shift+U)</value>
   </data>
 </root>

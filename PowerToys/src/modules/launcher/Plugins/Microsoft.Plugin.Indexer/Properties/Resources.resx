@@ -118,60 +118,60 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Microsoft_plugin_indexer_copy_path" xml:space="preserve">
-    <value>复制路径(Ctrl+C)</value>
+    <value>Copy path (Ctrl+C)</value>
   </data>
   <data name="Microsoft_plugin_indexer_open_containing_folder" xml:space="preserve">
-    <value>打开所在文件夹(Ctrl+Shift+E)</value>
+    <value>Open containing folder (Ctrl+Shift+E)</value>
   </data>
   <data name="Microsoft_plugin_indexer_run_as_administrator" xml:space="preserve">
-    <value>以管理员身份打开(Ctrl+Shift+Enter)</value>
+    <value>Run as administrator (Ctrl+Shift+Enter)</value>
   </data>
   <data name="Microsoft_plugin_indexer_open_in_console" xml:space="preserve">
-    <value>在命令行打开路径(Ctrl+Shift+C)</value>
+    <value>Open path in console (Ctrl+Shift+C)</value>
   </data>
   <data name="Microsoft_plugin_indexer_name" xml:space="preserve">
-    <value>名称</value>
+    <value>Name</value>
   </data>
   <data name="Microsoft_plugin_indexer_path" xml:space="preserve">
-    <value>路径</value>
+    <value>Path</value>
   </data>
   <data name="Microsoft_plugin_indexer_drivedetectionwarning" xml:space="preserve">
-    <value>警告：未完全建立索引，搜索结果可能不全。</value>
+    <value>Warning: Not all files are indexed.</value>
   </data>
   <data name="Microsoft_plugin_indexer_disable_warning_in_settings" xml:space="preserve">
-    <value>单击转到 Windows 搜索设置进行修复。</value>
+    <value>Click to go to Windows Search settings to fix.</value>
   </data>
   <data name="Microsoft_plugin_indexer_clipboard_failed" xml:space="preserve">
-    <value>写入剪贴板失败</value>
+    <value>Fail to set text in clipboard</value>
   </data>
   <data name="Microsoft_plugin_indexer_file_open_failed" xml:space="preserve">
-    <value>无法打开文件</value>
+    <value>Can't open this file</value>
   </data>
   <data name="Microsoft_plugin_indexer_folder_open_failed" xml:space="preserve">
-    <value>无法打开文件夹</value>
+    <value>Fail to open folder at</value>
   </data>
   <data name="Microsoft_plugin_indexer_plugin_description" xml:space="preserve">
-    <value>搜索文件与文件夹</value>
+    <value>Searches files and folders</value>
   </data>
   <data name="Microsoft_plugin_indexer_plugin_name" xml:space="preserve">
-    <value>搜索</value>
+    <value>Windows Search</value>
   </data>
   <data name="Microsoft_plugin_indexer_subtitle_header" xml:space="preserve">
-    <value>搜索</value>
+    <value>Search</value>
   </data>
   <data name="disable_drive_detection_warning" xml:space="preserve">
-    <value>不显示未索引文件警告</value>
+    <value>Disable non-indexed files warning</value>
   </data>
   <data name="Microsoft_plugin_indexer_run_as_user" xml:space="preserve">
-    <value>以其他用户身份打开(Ctrl+Shift+U)</value>
+    <value>Run as different user (Ctrl+Shift+U)</value>
   </data>
   <data name="excluded_patterns_label" xml:space="preserve">
-    <value>排除规则</value>
+    <value>Excluded patterns</value>
   </data>
   <data name="excluded_patterns_description" xml:space="preserve">
-    <value>填写要排除的文件名规则，每行一个，名称符合的文件和文件夹将会被隐藏</value>
+    <value>Prevents files and folders showing up in search results if pattern is matched. Add one pattern per line.</value>
   </data>
   <data name="excluded_patterns_placeholder" xml:space="preserve">
-    <value>例如: *.exe</value>
+    <value>Example: *.exe</value>
   </data>
 </root>

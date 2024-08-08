@@ -105,7 +105,7 @@ namespace MouseWithoutBorders
                 else
                 {
                     _ = MessageBox.Show(
-                        "无法连接到无界鼠标进程，剪贴板共享功能失效.\r\n查看事件日志来获取更多信息.",
+                        "Unable to connect to Mouse Without Borders process, clipboard sharing is no longer working.\r\nSee EventLog for more information.",
                         Text,
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Error);

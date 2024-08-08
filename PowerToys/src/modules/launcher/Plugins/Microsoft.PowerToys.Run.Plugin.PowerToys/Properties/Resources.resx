@@ -118,58 +118,58 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Action_Open_Settings" xml:space="preserve">
-    <value>打开设置 (Ctrl+Shift+S)</value>
+    <value>Open settings (Ctrl+Shift+S)</value>
   </data>
   <data name="Action_Run_As_Administrator" xml:space="preserve">
-    <value>管理员权限运行 (Ctrl+Shift+Enter)</value>
+    <value>Run as administrator (Ctrl+Shift+Enter)</value>
   </data>
   <data name="Color_Picker" xml:space="preserve">
-    <value>取色器</value>
+    <value>Color Picker</value>
     <comment>"Color Picker" is the name of the utility</comment>
   </data>
   <data name="Crop_And_Lock_Reparent" xml:space="preserve">
-    <value>窗口镜像（重定向）</value>
+    <value>Crop And Lock (Reparent)</value>
     <comment>"Crop And Lock" is the name of the utility, "Reparent" is the activation mode</comment>
   </data>
   <data name="Crop_And_Lock_Thumbnail" xml:space="preserve">
-    <value>窗口镜像（投影）</value>
+    <value>Crop And Lock (Thumbnail)</value>
     <comment>"Crop And Lock" is the name of the utility, "Thumbnail" is the activation mode</comment>
   </data>
   <data name="Environment_Variables" xml:space="preserve">
-    <value>环境变量编辑器</value>
+    <value>Environment Variables</value>
     <comment>"Environment Variables" is the name of the utility</comment>
   </data>
   <data name="FancyZones_Editor" xml:space="preserve">
-    <value>窗口布局编辑器</value>
+    <value>FancyZones Editor</value>
     <comment>"FancyZones" is the name of the utility</comment>
   </data>
   <data name="Hosts_File_Editor" xml:space="preserve">
-    <value>域名表编辑器</value>
+    <value>Hosts File Editor</value>
     <comment>"Hosts File Editor" is the name of the utility</comment>
   </data>
   <data name="Plugin_Description" xml:space="preserve">
-    <value>打开 PowerToys 功能</value>
+    <value>Opens PowerToys utilities and settings</value>
   </data>
   <data name="Plugin_Name" xml:space="preserve">
     <value>PowerToys</value>
   </data>
   <data name="Registry_Preview" xml:space="preserve">
-    <value>注册表预览工具</value>
+    <value>Registry Preview</value>
     <comment>"Registry Preview" is the name of the utility</comment>
   </data>
   <data name="Screen_Ruler" xml:space="preserve">
-    <value>屏幕标尺</value>
+    <value>Screen Ruler</value>
     <comment>"Screen Ruler" is the name of the utility</comment>
   </data>
   <data name="Shortcut_Guide" xml:space="preserve">
-    <value>快捷键指南</value>
+    <value>Shortcut Guide</value>
     <comment>"Shortcut Guide" is the name of the utility</comment>
   </data>
   <data name="Subtitle_Powertoys_Utility" xml:space="preserve">
-    <value>PowerToys 功能</value>
+    <value>PowerToys Utility</value>
   </data>
   <data name="Text_Extractor" xml:space="preserve">
-    <value>文本提取器</value>
+    <value>Text Extractor</value>
     <comment>"Text Extractor" is the name of the utility</comment>
   </data>
 </root>

@@ -160,16 +160,16 @@
     <value>Render SVG images</value>
   </data>
   <data name="FileExplorer_Admin_Restart_Warning_Description" xml:space="preserve">
-    <value>一些预览组件的更改不支持立即生效，请以管理员身份重启软件以生效。</value>
+    <value>Some of the File Explorer modules could not be turned off/on as per your settings. Please restart PowerToys as admin for the changes to take place.</value>
   </data>
   <data name="FileExplorer_Admin_Restart_Warning_Title" xml:space="preserve">
-    <value>预览增强组件更改</value>
+    <value>Couldn't modify File Explorer modules</value>
   </data>
   <data name="FileExplorer_Admin_Restart_Warning_Open_Settings" xml:space="preserve">
-    <value>打开设置</value>
+    <value>Open Settings</value>
   </data>
   <data name="FileExplorer_Admin_Restart_Warning_Dont_Show_Again" xml:space="preserve">
-    <value>不再显示</value>
+    <value>Don't show again</value>
   </data>
   <data name="Prevpane_Pdf_Settings_Description" xml:space="preserve">
     <value>PDF Previewer</value>

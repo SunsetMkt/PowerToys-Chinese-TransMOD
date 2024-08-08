@@ -118,226 +118,225 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Active.Header" xml:space="preserve">
-    <value>启用</value>
+    <value>Active</value>
   </data>
   <data name="ActiveToggle.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
-    <value>启用</value>
+    <value>Active</value>
   </data>
   <data name="AddBtn" xml:space="preserve">
-    <value>添加</value>
+    <value>Add</value>
   </data>
   <data name="AddEntry.Text" xml:space="preserve">
-    <value>添加条目</value>
+    <value>New entry</value>
   </data>
   <data name="AddEntryBtn.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
-    <value>添加条目</value>
+    <value>New entry</value>
   </data>
   <data name="AddEntryBtn.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>添加条目 (Ctrl+N)</value>
+    <value>New entry (Ctrl+N)</value>
   </data>
   <data name="AddEntryLink.Content" xml:space="preserve">
-    <value>添加一个条目</value>
+    <value>Add an entry</value>
   </data>
   <data name="AdditionalLinesBtn.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
-    <value>注释</value>
+    <value>Additional content</value>
   </data>
   <data name="AdditionalLinesBtn.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>注释</value>
+    <value>Additional content</value>
   </data>
   <data name="AdditionalLinesDialog.CloseButtonText" xml:space="preserve">
-    <value>取消</value>
+    <value>Cancel</value>
   </data>
   <data name="AdditionalLinesDialog.PrimaryButtonText" xml:space="preserve">
-    <value>保存</value>
+    <value>Save</value>
   </data>
   <data name="AdditionalLinesDialog.Title" xml:space="preserve">
-    <value>注释</value>
+    <value>Additional content</value>
   </data>
   <data name="AddNewEntryDialog_Title" xml:space="preserve">
-    <value>添加条目</value>
+    <value>Add new entry</value>
   </data>
   <data name="Address.Header" xml:space="preserve">
-    <value>地址</value>
+    <value>Address</value>
     <comment>"Address" refers to the IP address of the entry</comment>
   </data>
   <data name="AddressFilter.Header" xml:space="preserve">
-    <value>地址</value>
+    <value>Address</value>
     <comment>"Address" refers to the IP address of the entry</comment>
   </data>
   <data name="ClearFiltersBtn.Content" xml:space="preserve">
-    <value>清除筛选</value>
+    <value>Clear filters</value>
   </data>
   <data name="ClearFiltersBtn.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
-    <value>清除筛选</value>
+    <value>Clear filters</value>
   </data>
   <data name="ClearFiltersLink.Content" xml:space="preserve">
-    <value>清除筛选</value>
+    <value>Clear filters</value>
   </data>
   <data name="Comment.Header" xml:space="preserve">
-    <value>备注</value>
+    <value>Comment</value>
     <comment>"Comment" refers to the comment of the entry</comment>
   </data>
   <data name="CommentFilter.Header" xml:space="preserve">
-    <value>备注</value>
+    <value>Comment</value>
     <comment>"Comment" refers to the comment of the entry</comment>
   </data>
   <data name="Delete.Text" xml:space="preserve">
-    <value>删除</value>
+    <value>Delete</value>
   </data>
   <data name="DeleteDialog.CloseButtonText" xml:space="preserve">
-    <value>否</value>
+    <value>No</value>
   </data>
   <data name="DeleteDialog.PrimaryButtonText" xml:space="preserve">
-    <value>是</value>
+    <value>Yes</value>
   </data>
   <data name="DeleteDialogAreYouSure.Text" xml:space="preserve">
-    <value>确定删除此条目？</value>
+    <value>Are you sure you want to delete this entry?</value>
   </data>
   <data name="DeleteEntryBtn.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
-    <value>删除</value>
+    <value>Delete</value>
   </data>
   <data name="DeleteEntryBtn.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>删除 (Delete)</value>
+    <value>Delete (Delete)</value>
     <comment>"Delete" between parentheses refers to the Delete keyboard key</comment>
   </data>
   <data name="Duplicate.Text" xml:space="preserve">
-    <value>复制</value>
+    <value>Duplicate</value>
     <comment>Refers to the action of duplicate an existing entry</comment>
   </data>
   <data name="DuplicateEntryIcon.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>地址重复</value>
+    <value>Duplicate entry</value>
   </data>
   <data name="Edit.Text" xml:space="preserve">
-    <value>编辑</value>
+    <value>Edit</value>
   </data>
   <data name="EmptyFilterResults.Text" xml:space="preserve">
-    <value>无筛选结果</value>
+    <value>No filter results</value>
   </data>
   <data name="EmptyHosts.Text" xml:space="preserve">
-    <value>未储存任何条目</value>
+    <value>No entries in the hosts file</value>
     <comment>"Hosts" refers to the system hosts file, do not loc</comment>
   </data>
   <data name="Entries.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
-    <value>条目</value>
+    <value>Entries</value>
   </data>
   <data name="EntryDialog.CloseButtonText" xml:space="preserve">
-    <value>取消</value>
+    <value>Cancel</value>
   </data>
   <data name="FileChanged.Message" xml:space="preserve">
-    <value>域名表文件被其他软件改动。</value>
+    <value>Hosts file was modified externally.</value>
     <comment>"Hosts" refers to the system hosts file, do not loc</comment>
   </data>
   <data name="FileSaveError_FileInUse" xml:space="preserve">
-    <value>无法保存域名表文件，因为文件被其他软件所占用。</value>
+    <value>The hosts file cannot be saved because it is being used by another process.</value>
     <comment>"Hosts" refers to the system hosts file, do not loc</comment>
   </data>
   <data name="FileSaveError_Generic" xml:space="preserve">
-    <value>无法保存域名表文件。</value>
+    <value>Unable to save the hosts file.</value>
     <comment>"Hosts" refers to the system hosts file, do not loc</comment>
   </data>
   <data name="FileSaveError_NotElevated" xml:space="preserve">
-    <value>无法保存域名表文件，需要管理员权限。</value>
+    <value>The hosts file cannot be saved because the program isn't running as administrator.</value>
     <comment>"Hosts" refers to the system hosts file, do not loc</comment>
   </data>
   <data name="FileSaveError_ReadOnly" xml:space="preserve">
-    <value>无法保存域名表文件，文件不允许写入。</value>
+    <value>The hosts file cannot be saved because it is read-only.</value>
     <comment>"Hosts" refers to the system hosts file, do not loc</comment>
   </data>
   <data name="FilterBtn.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
-    <value>筛选</value>
+    <value>Filters</value>
   </data>
   <data name="FilterBtn.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>筛选</value>
+    <value>Filters</value>
   </data>
   <data name="Hosts.Header" xml:space="preserve">
-    <value>域名</value>
-    <comment>"Hosts" refers to the system hosts file, do not loc // 并不是</comment>
+    <value>Hosts</value>
+    <comment>"Hosts" refers to the system hosts file, do not loc</comment>
   </data>
   <data name="Hosts.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>空格分隔多个域名（比如：server server.local），一次最多九个</value>
+    <value>Separate multiple hosts by space (e.g. server server.local). Maximum 9 hosts per entry.</value>
     <comment>Do not localize "server" and "server.local"</comment>
   </data>
   <data name="HostsFilter.Header" xml:space="preserve">
-    <value>域名</value>
-    <comment>"Hosts" refers to the system hosts file, do not loc // 并不是</comment>
+    <value>Hosts</value>
+    <comment>"Hosts" refers to the system hosts file, do not loc</comment>
   </data>
   <data name="MakeWritable.Content" xml:space="preserve">
-    <value>获取写入权限</value>
+    <value>Make writable</value>
   </data>
   <data name="MoveDown.Text" xml:space="preserve">
-    <value>下移</value>
+    <value>Move down</value>
   </data>
   <data name="MoveUp.Text" xml:space="preserve">
-    <value>上移</value>
+    <value>Move up</value>
   </data>
   <data name="OpenHostsFileBtn.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
-    <value>打开文本编辑器</value>
+    <value>Open hosts file</value>
     <comment>"Hosts" refers to the system hosts file, do not loc</comment>
   </data>
   <data name="OpenHostsFileBtn.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>打开文本编辑器</value>
+    <value>Open hosts file</value>
     <comment>"Hosts" refers to the system hosts file, do not loc</comment>
   </data>
   <data name="Ping.Text" xml:space="preserve">
-    <value>Ping 测试</value>
+    <value>Ping</value>
     <comment>"Ping" refers to the command-line utility, do not loc</comment>
   </data>
   <data name="PingIcon.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>Ping 结果</value>
+    <value>Ping response</value>
     <comment>"Ping" refers to the command-line utility, do not loc</comment>
   </data>
   <data name="Reload.Content" xml:space="preserve">
-    <value>重新加载</value>
+    <value>Reload</value>
   </data>
   <data name="SettingsBtn.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
-    <value>设置</value>
+    <value>Settings</value>
   </data>
   <data name="SettingsBtn.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>设置</value>
+    <value>Settings</value>
   </data>
   <data name="ShowOnlyDuplicates.Header" xml:space="preserve">
-    <value>仅显示地址重复的条目</value>
+    <value>Show only duplicates</value>
   </data>
   <data name="TooManyHostsTeachingTip.Subtitle" xml:space="preserve">
-    <value>每条最多填写九个域名，太长的条目已被拆分，保存后生效。</value>
+    <value>Only 9 hosts per entry are supported. The affected entries have been split. This will take effect on next change.</value>
     <comment>"Hosts" refers to the system hosts file, do not loc</comment>
   </data>
   <data name="TooManyHostsTeachingTip.Title" xml:space="preserve">
-    <value>域名数量过多</value>
+    <value>Entries contain too many hosts</value>
     <comment>"Hosts" refers to the system hosts file, do not loc</comment>
   </data>
   <data name="EntryAddressIsInvalidWarning.Text" xml:space="preserve">
-    <value>地址不符合 IPv4 或 IPv6 格式</value>
+    <value>Has to be a valid IPv4 or IPv6 address</value>
   </data>
   <data name="EntryHostsIsInvalidWarning.Text" xml:space="preserve">
-    <value>域名列表不符合格式</value>
+    <value>Has to be one or more valid host names separated by spaces</value>
   </data>
   <data name="UpdateBtn" xml:space="preserve">
-    <value>更新</value>
+    <value>Update</value>
   </data>
   <data name="UpdateEntry_Title" xml:space="preserve">
-    <value>更新条目</value>
+    <value>Update the entry</value>
   </data>
   <data name="WarningDialog_AcceptBtn" xml:space="preserve">
-    <value>继续</value>
+    <value>Accept</value>
   </data>
   <data name="WarningDialog_QuitBtn" xml:space="preserve">
-    <value>退出</value>
+    <value>Quit</value>
   </data>
   <data name="WarningDialog_Text" xml:space="preserve">
-    <value>这是 Hosts 域名表文件编辑器。
-错误修改域名表可能会导致无法解析域名、访问网站，因此请谨慎使用。</value>
+    <value>Altering hosts file has direct real world impact of how this computer resolves domain names.</value>
     <comment>"Hosts" refers to the system hosts file, do not loc</comment>
   </data>
   <data name="WarningDialog_Title" xml:space="preserve">
-    <value>警告</value>
+    <value>Warning</value>
   </data>
   <data name="WindowAdminTitle" xml:space="preserve">
-    <value>管理员权限: 域名表编辑器</value>
+    <value>Administrator: Hosts File Editor</value>
     <comment>Title of the window when running as administrator. "Hosts File Editor" is the name of the utility. "Hosts" refers to the system hosts file, do not loc</comment>
   </data>
   <data name="WindowTitle" xml:space="preserve">
-    <value>域名表编辑器</value>
+    <value>Hosts File Editor</value>
     <comment>Title of the window when running as user. "Hosts File Editor" is the name of the utility. "Hosts" refers to the system hosts file, do not loc</comment>
   </data>
 </root>

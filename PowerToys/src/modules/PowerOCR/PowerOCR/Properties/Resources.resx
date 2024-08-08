@@ -118,30 +118,30 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Cancel" xml:space="preserve">
-    <value>关闭</value>
+    <value>Cancel</value>
   </data>
   <data name="CancelShortcut" xml:space="preserve">
-    <value>关闭 (Esc)</value>
+    <value>Cancel (Esc)</value>
     <comment>(Esc) indicates the keyboard shortcut</comment>
   </data>
   <data name="ResultTextSingleLine" xml:space="preserve">
-    <value>单行</value>
+    <value>Format result as a single line</value>
   </data>
   <data name="ResultTextSingleLineShortcut" xml:space="preserve">
-    <value>单行 (S)</value>
+    <value>Format result as a single line (S)</value>
     <comment>(S) indicates the keyboard shortcut</comment>
   </data>
   <data name="ResultTextTable" xml:space="preserve">
-    <value>表格</value>
+    <value>Format result as a table</value>
   </data>
   <data name="ResultTextTableShortcut" xml:space="preserve">
-    <value>表格 (T)</value>
+    <value>Format result as a table (T)</value>
     <comment>(T) indicates the keyboard shortcut</comment>
   </data>
   <data name="SelectedLang" xml:space="preserve">
-    <value>当前语言</value>
+    <value>Selected language</value>
   </data>
   <data name="Settings" xml:space="preserve">
-    <value>设置</value>
+    <value>Settings</value>
   </data>
 </root>

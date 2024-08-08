@@ -80,7 +80,7 @@
             this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxLogo.TabIndex = 2;
             this.pictureBoxLogo.TabStop = false;
-            this.toolTipHelp.SetToolTip(this.pictureBoxLogo, "拖放改变设备布局，选中输入设备名称。");
+            this.toolTipHelp.SetToolTip(this.pictureBoxLogo, "Drag to match machine physical layout. Check the checkbox to enter machine name.");
             this.pictureBoxLogo.Paint += new System.Windows.Forms.PaintEventHandler(this.PictureBoxLogo_Paint);
             this.pictureBoxLogo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PictureBoxLogo_MouseDown);
             // 

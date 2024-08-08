@@ -43,7 +43,7 @@
             this.labelDesktop.Name = "labelDesktop";
             this.labelDesktop.Size = new System.Drawing.Size(80, 15);
             this.labelDesktop.TabIndex = 0;
-            this.labelDesktop.Text = "微软无界鼠标";
+            this.labelDesktop.Text = "MouseWithoutBorders";
             // 
             // frmLogon
             // 
@@ -60,7 +60,7 @@
             this.Opacity = 0.5;
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.Text = "微软无界鼠标";
+            this.Text = "MouseWithoutBorders";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.frmLogon_Load);
             this.Shown += new System.EventHandler(this.frmLogon_Shown);

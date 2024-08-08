@@ -22,12 +22,12 @@ namespace MouseWithoutBorders
         internal FrmAbout()
         {
             InitializeComponent();
-            Text = string.Format(CultureInfo.CurrentCulture, "关于 {0}", AssemblyTitle);
+            Text = string.Format(CultureInfo.CurrentCulture, "About {0}", AssemblyTitle);
             labelProductName.Text = string.Format(CultureInfo.CurrentCulture, "{0} {1}", AssemblyProduct, AssemblyVersion);
             labelCopyright.Text = AssemblyCopyright;
-            labelCompanyName.Text = "项目创建者: Truong Do (Đỗ Đức Trường)";
+            labelCompanyName.Text = "Project creator: Truong Do (Đỗ Đức Trường)";
 
-            textBoxContributors.Text += "* 微软车库: Quinn Hawkins, Michael Low, Joe Coplen, Nino Yuniardi, Gwyneth Marshall, David Andrews, Karen Luecking";
+            textBoxContributors.Text += "* Microsoft Garage: Quinn Hawkins, Michael Low, Joe Coplen, Nino Yuniardi, Gwyneth Marshall, David Andrews, Karen Luecking";
             textBoxContributors.Text += "\r\n* Peter Hauge\t\t- Visual Studio";
             textBoxContributors.Text += "\r\n* Bruce Dawson\t\t- Windows Fundamentals";
             textBoxContributors.Text += "\r\n* Alan Myrvold\t\t- Office Security";
@@ -41,7 +41,7 @@ namespace MouseWithoutBorders
             textBoxContributors.Text += "\r\n* Bao Nguyen\t\t- Bing";
             textBoxContributors.Text += "\r\n* Ross Nichols\t\t- Windows";
             textBoxContributors.Text += "\r\n* Ryan Baltazar\t\t- Windows";
-            textBoxContributors.Text += "\r\n* Ed Essey\t\t\t- The Garage";
+            textBoxContributors.Text += "\r\n* Ed Essey\t\t- The Garage";
             textBoxContributors.Text += "\r\n* Mario Madden\t\t- The Garage";
             textBoxContributors.Text += "\r\n* Karthick Mahalingam\t- ACE";
             textBoxContributors.Text += "\r\n* Pooja Kamra\t\t- ACE";
@@ -57,7 +57,7 @@ namespace MouseWithoutBorders
             textBoxContributors.Text += "\r\n* Loren Ponten\t\t- Surface Hub";
             textBoxContributors.Text += "\r\n* Paul Schmitt\t\t- WWL";
 
-            textBoxContributors.Text += "\r\n\r\n* 还有我们的众多用户！";
+            textBoxContributors.Text += "\r\n\r\n* And many other Users!";
         }
 
         internal static string AssemblyTitle

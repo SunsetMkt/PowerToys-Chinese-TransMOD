@@ -118,146 +118,146 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="EditButton.Label" xml:space="preserve">
-    <value>编辑文本</value>
+    <value>Edit</value>
   </data>
   <data name="ErrorDialogTitle" xml:space="preserve">
-    <value>错误</value>
+    <value>Error</value>
   </data>
   <data name="FileEditorError" xml:space="preserve">
-    <value>无法打开 .reg 注册表文件编辑器。</value>
+    <value>The REG file editor could not be opened.</value>
   </data>
   <data name="FileNotFound" xml:space="preserve">
-    <value>文件不存在！</value>
+    <value>File was not found</value>
   </data>
   <data name="FileSaveError" xml:space="preserve">
-    <value>文件无法写入。</value>
+    <value>The REG file cannot be written to.</value>
   </data>
   <data name="FilterAllFiles" xml:space="preserve">
-    <value>所有文件 (*.*)</value>
+    <value>All files (*.*)</value>
   </data>
   <data name="FilterRegistryName" xml:space="preserve">
-    <value>注册表文件 (*.reg)</value>
+    <value>Registry files (*.reg)</value>
   </data>
   <data name="InvalidBinary" xml:space="preserve">
-    <value>(无效二进制值)</value>
+    <value>(Invalid binary value)</value>
   </data>
   <data name="InvalidDword" xml:space="preserve">
-    <value>(无效 DWORD (32 位) 值)</value>
+    <value>(Invalid DWORD (32-bit) value)</value>
   </data>
   <data name="InvalidQword" xml:space="preserve">
-    <value>(无效 QWORD (64 位) 值)</value>
+    <value>(Invalid QWORD (64-bit) value)</value>
   </data>
   <data name="InvalidRegistryFile" xml:space="preserve">
-    <value> 不是有效的注册表文件！</value>
+    <value> appears to be an invalid registry file.</value>
   </data>
   <data name="InvalidRegistryFileTitle" xml:space="preserve">
-    <value>非注册表文件</value>
+    <value>File was not a Registry file</value>
   </data>
   <data name="InvalidString" xml:space="preserve">
-    <value>(无效字符串值)</value>
+    <value>(Invalid string value)</value>
   </data>
   <data name="LargeRegistryFile" xml:space="preserve">
-    <value> 大于 10MB，注册表预览工具无法打开该文件。</value>
+    <value> is larger than 10MB which is too large for this application.</value>
   </data>
   <data name="LargeRegistryFileTitle" xml:space="preserve">
-    <value>文件过大！</value>
+    <value>File is too large</value>
   </data>
   <data name="NameColumn.Header" xml:space="preserve">
-    <value>名称</value>
+    <value>Name</value>
   </data>
   <data name="NoNodesFoundInFile" xml:space="preserve">
-    <value>找不到有效的键</value>
+    <value>No valid Keys were found</value>
   </data>
   <data name="OkButtonText" xml:space="preserve">
-    <value>好的</value>
+    <value>OK</value>
     <comment>as on the OK button</comment>
   </data>
   <data name="OpenButton.Label" xml:space="preserve">
-    <value>打开</value>
+    <value>Open…</value>
   </data>
   <data name="OpenDialogTitle" xml:space="preserve">
-    <value>打开注册表文件</value>
+    <value>Open Registry file</value>
   </data>
   <data name="RefreshButton.Label" xml:space="preserve">
-    <value>重新加载文件</value>
+    <value>Reload</value>
   </data>
   <data name="RegistryButton.Label" xml:space="preserve">
-    <value>打开注册表编辑器</value>
+    <value>Open Registry Editor</value>
   </data>
   <data name="RegistryJumpToKeyButton.Label" xml:space="preserve">
-    <value>打开键</value>
+    <value>Open Key</value>
   </data>
   <data name="SaveDialogTitle" xml:space="preserve">
-    <value>另存为</value>
+    <value>Save As</value>
   </data>
   <data name="SaveAsButton.Label" xml:space="preserve">
-    <value>另存为</value>
+    <value>Save as…</value>
   </data>
   <data name="SaveButton.Label" xml:space="preserve">
-    <value>保存</value>
+    <value>Save</value>
   </data>
   <data name="SuggestFileName" xml:space="preserve">
-    <value>新建注册表文件</value>
+    <value>New Registry file</value>
   </data>
   <data name="textBox.PlaceholderText" xml:space="preserve">
-    <value>此处显示文本内容</value>
+    <value>Registry file text will appear here</value>
   </data>
   <data name="titleBarText.ApplicationTitle" xml:space="preserve">
-    <value>注册表预览</value>
+    <value>Registry Preview</value>
   </data>
   <data name="ToolTipAddedKey" xml:space="preserve">
-    <value>如果不存在，键将被自动创建</value>
+    <value>Key will be added, if needed</value>
   </data>
   <data name="ToolTipBinaryValue" xml:space="preserve">
-    <value>二进制值将写入到注册表</value>
+    <value>Binary value will be updated</value>
   </data>
   <data name="ToolTipDeletedKey" xml:space="preserve">
-    <value>键将被删除</value>
+    <value>Key will be deleted</value>
   </data>
   <data name="ToolTipDeletedValue" xml:space="preserve">
-    <value>值将被删除</value>
+    <value>Value will be deleted</value>
   </data>
   <data name="ToolTipErrorKey" xml:space="preserve">
-    <value>键无法解析</value>
+    <value>Key couldn't be parsed</value>
   </data>
   <data name="ToolTipErrorValue" xml:space="preserve">
-    <value>值存在语法错误</value>
+    <value>Value has a syntax error</value>
   </data>
   <data name="ToolTipStringValue" xml:space="preserve">
-    <value>字符串值将写入到注册表</value>
+    <value>String value will be updated</value>
   </data>
   <data name="TypeColumn.Header" xml:space="preserve">
-    <value>类型</value>
+    <value>Type</value>
     <comment>noun, as in "a type of..."</comment>
   </data>
   <data name="UACDialogError" xml:space="preserve">
-    <value>打开和写入系统注册表需要管理员权限，在刚才的弹窗中请点击允许。</value>
+    <value>Click Yes on the User Account Control dialog to run the application.</value>
   </data>
   <data name="UACDialogTitle" xml:space="preserve">
-    <value>获取管理员权限</value>
+    <value>User Account Control</value>
   </data>
   <data name="ValueColumn.Header" xml:space="preserve">
-    <value>数据</value>
+    <value>Data</value>
   </data>
   <data name="WriteButton.Label" xml:space="preserve">
-    <value>写入到注册表</value>
+    <value>Write to Registry</value>
   </data>
   <data name="YesNoCancelDialogCloseButtonText" xml:space="preserve">
-    <value>取消</value>
+    <value>Cancel</value>
   </data>
   <data name="YesNoCancelDialogContent" xml:space="preserve">
-    <value>文件有改动，现在保存吗？</value>
+    <value>Save changes?</value>
   </data>
   <data name="YesNoCancelDialogPrimaryButtonText" xml:space="preserve">
-    <value>保存</value>
+    <value>Save</value>
   </data>
   <data name="YesNoCancelDialogSecondaryButtonText" xml:space="preserve">
-    <value>不保存</value>
+    <value>Don't save</value>
   </data>
   <data name="YesNoCancelDialogTitle" xml:space="preserve">
-    <value>注册表预览</value>
+    <value>Registry Preview</value>
   </data>
   <data name="ZeroLength" xml:space="preserve">
-    <value>(零长度二进制值)</value>
+    <value>(zero-length binary value)</value>
   </data>
 </root>

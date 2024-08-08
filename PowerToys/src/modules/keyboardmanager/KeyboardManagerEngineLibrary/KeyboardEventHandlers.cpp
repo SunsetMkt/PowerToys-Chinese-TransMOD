@@ -1,4 +1,4 @@
-﻿#include "pch.h"
+#include "pch.h"
 #include <shellapi.h>
 #include "KeyboardEventHandlers.h"
 
@@ -348,7 +348,7 @@ namespace KeyboardEventHandlers
                             {
                                 // need access to text resources, maybe "convert-resx-to-rc.ps1" is not working to get
                                 // text from KeyboardManagerEditor to here in KeyboardManagerEngineLibrary land?
-                                toast(L"错误", L"遇到了无法理解的路径或网址");
+                                toast(L"Error", L"Could not understand the Path or URI");
                                 return 1;
                             }
                         }
@@ -360,7 +360,7 @@ namespace KeyboardEventHandlers
                             {
                                 // need access to text resources, maybe "convert-resx-to-rc.ps1" is not working to get
                                 // text from KeyboardManagerEditor to here in KeyboardManagerEngineLibrary land?
-                                toast(L"错误", L"遇到了无法理解的路径或网址");
+                                toast(L"Error", L"Could not understand the Path or URI");
                             }
                         };
 
@@ -1213,8 +1213,8 @@ namespace KeyboardEventHandlers
 
             if (dwAttrib == INVALID_FILE_ATTRIBUTES)
             {
-                std::wstring title = fmt::format(L"无法运行 {}", fileNamePart);
-                std::wstring message = fmt::format(L"找不到该程序。");
+                std::wstring title = fmt::format(L"Error starting {}", fileNamePart);
+                std::wstring message = fmt::format(L"The program was not found.");
                 toast(title, message);
                 return;
             }
@@ -1238,8 +1238,8 @@ namespace KeyboardEventHandlers
 
                 if (dwAttrib == INVALID_FILE_ATTRIBUTES)
                 {
-                    std::wstring title = fmt::format(L"无法运行 {}", fileNamePart);
-                    std::wstring message = fmt::format(L"起始目录无效。", currentDir);
+                    std::wstring title = fmt::format(L"Error starting {}", fileNamePart);
+                    std::wstring message = fmt::format(L"The start in path was not valid. It could not be used.", currentDir);
                     currentDirPtr = nullptr;
                     toast(title, message);
                     return;
@@ -1266,8 +1266,8 @@ namespace KeyboardEventHandlers
 
             if (processId == 0)
             {
-                std::wstring title = fmt::format(L"无法运行 {}", fileNamePart);
-                std::wstring message = fmt::format(L"程序可能启动失败了。");
+                std::wstring title = fmt::format(L"Error starting {}", fileNamePart);
+                std::wstring message = fmt::format(L"The application might not have started.");
                 toast(title, message);
                 return;
             }

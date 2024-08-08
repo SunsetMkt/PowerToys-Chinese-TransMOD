@@ -59,12 +59,12 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="DOTNET_CORE_DOWNLOAD_FAILURE" xml:space="preserve">
-    <value>无法下载 .NET Core Desktop Runtime 3.1，请自行安装。</value>
+    <value>Couldn't download .NET Core Desktop Runtime 3.1, please install it manually.</value>
   </data>
   <data name="DOTNET_CORE_DOWNLOAD_FAILURE_TITLE" xml:space="preserve">
-    <value>PowerToys 安装错误</value>
+    <value>PowerToys installation error</value>
   </data>
   <data name="GITHUB_NEW_VERSION_AVAILABLE_OFFER_VISIT" xml:space="preserve">
-    <value>PowerToys 有版本更新。请访问 GitHub 页面下载。</value>
+    <value>An update to PowerToys is available. Visit our GitHub page to update.</value>
   </data>
 </root>

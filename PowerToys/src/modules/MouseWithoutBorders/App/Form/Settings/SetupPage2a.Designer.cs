@@ -52,7 +52,7 @@ namespace MouseWithoutBorders
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(130, 18);
             this.label6.TabIndex = 7;
-            this.label6.Text = "连接密码";
+            this.label6.Text = "SECURITY CODE";
             this.label6.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
             // SecurityCodeField
@@ -93,7 +93,7 @@ namespace MouseWithoutBorders
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(262, 18);
             this.label3.TabIndex = 13;
-            this.label3.Text = "设备名称";
+            this.label3.Text = "OTHER COMPUTER\'S NAME";
             this.label3.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
             // LinkButton
@@ -121,7 +121,7 @@ namespace MouseWithoutBorders
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(128, 16);
             this.label2.TabIndex = 23;
-            this.label2.Text = "去哪里找这个密码？";
+            this.label2.Text = "Where can I find this?";
             // 
             // ExpandHelpButton
             // 
@@ -161,7 +161,8 @@ namespace MouseWithoutBorders
             this.HelpLabel.Name = "HelpLabel";
             this.HelpLabel.Size = new System.Drawing.Size(250, 94);
             this.HelpLabel.TabIndex = 26;
-            this.HelpLabel.Text = "在要连接的电脑上，右键无界鼠标托盘图标，打开设置界面，界面中将会展示这个密码。设备名称是另一台电脑的名称。";
+            this.HelpLabel.Text = "The security code can be found on the computer you want to link to by right click" +
+                "ing the system tray icon, selecting \"Settings\" (spaces in the key can be discarded)";
             this.HelpLabel.Visible = false;
             // 
             // SetupPage2a

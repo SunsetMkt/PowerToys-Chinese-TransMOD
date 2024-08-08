@@ -158,8 +158,8 @@
     <value>107, 17</value>
   </metadata>
   <data name="textBoxDNS.Text" xml:space="preserve">
-    <value>一般可以直接用设备名连接到其他电脑。如果名称解析出错，可以手动指定 IP 地址映射。
-注意：如果电脑使用动态 IP 地址，那么每次对方 IP 变动时都要手动更改。</value>
+    <value>You should always connect to other machines by name but if there is problem Resolving machine name to IP address (rarely), you can manually enter the mappings below. The app will use the IP Addresses from the mappings below and the DNS resolution result.
+Note: If your machine IP address is dynamic, you will need to change the mapping each time the machine IP address changes.</value>
   </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>58</value>

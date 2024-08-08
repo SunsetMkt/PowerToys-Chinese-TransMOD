@@ -118,19 +118,19 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="PdfMorePagesMessage" xml:space="preserve">
-    <value>此 PDF 文档超过 10 页，剩余部分请打开浏览。</value>
+    <value>This PDF contains more than 10 pages. Open the document to view all pages.</value>
     <comment>This text is displayed if PDF has more than 10 pages.</comment>
   </data>
   <data name="PdfNotPreviewedError" xml:space="preserve">
-    <value>由于 PowerToys PDF 预览器出现错误，无法预览此文件。</value>
+    <value>This PDF could not be previewed due to an internal error.</value>
     <comment>This text is displayed if PDF fails to preview</comment>
   </data>
   <data name="PdfPasswordProtectedError" xml:space="preserve">
-    <value>PDF 文档已加密。</value>
+    <value>Can't preview file. This PDF is password protected.</value>
     <comment>This text is displayed if PDF is password protected.</comment>
   </data>
   <data name="GpoDisabledErrorText" xml:space="preserve">
-    <value>组策略已禁止该功能。请联系你的电脑管理员。</value>
+    <value>Tried to start with a GPO policy setting the utility to always be disabled. Please contact your systems administrator.</value>
     <comment>GPO stands for the Windows Group Policy Object feature.</comment>
   </data>
 </root>

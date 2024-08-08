@@ -214,7 +214,7 @@ namespace Microsoft.Plugin.Program.Programs
                 catch (Exception ex)
                 {
                     ProgramLogger.Exception($"Unable to launch UWP {DisplayName}", ex, MethodBase.GetCurrentMethod().DeclaringType, queryArguments);
-                    var name = "插件: " + Properties.Resources.wox_plugin_program_plugin_name;
+                    var name = "Plugin: " + Properties.Resources.wox_plugin_program_plugin_name;
                     var message = $"{Properties.Resources.powertoys_run_plugin_program_uwp_failed}: {DisplayName}";
                     api.ShowMsg(name, message, string.Empty);
                 }

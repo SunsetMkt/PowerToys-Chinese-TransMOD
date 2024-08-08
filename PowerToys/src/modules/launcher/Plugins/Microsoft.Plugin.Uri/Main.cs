@@ -59,7 +59,7 @@ namespace Microsoft.Plugin.Uri
                     {
                         if (!Helper.OpenInShell(BrowserInfo.Path))
                         {
-                            var title = $"²å¼þ: {Properties.Resources.Microsoft_plugin_uri_plugin_name}";
+                            var title = $"Plugin: {Properties.Resources.Microsoft_plugin_uri_plugin_name}";
                             var message = $"{Properties.Resources.Microsoft_plugin_uri_open_failed}: ";
                             Context.API.ShowMsg(title, message);
                             return false;
@@ -110,7 +110,7 @@ namespace Microsoft.Plugin.Uri
                         {
                             if (!Helper.OpenInShell(resultString))
                             {
-                                var title = $"²å¼þ: {Properties.Resources.Microsoft_plugin_uri_plugin_name}";
+                                var title = $"Plugin: {Properties.Resources.Microsoft_plugin_uri_plugin_name}";
                                 var message = $"{Properties.Resources.Microsoft_plugin_uri_open_failed}: {resultString}";
                                 Context.API.ShowMsg(title, message);
                                 return false;

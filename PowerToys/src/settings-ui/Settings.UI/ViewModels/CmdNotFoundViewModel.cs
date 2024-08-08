@@ -180,18 +180,18 @@ namespace Microsoft.PowerToys.Settings.UI.ViewModels
             var arguments = $"-NoProfile -NonInteractive -ExecutionPolicy Unrestricted -File \"{ps1File}\"";
             var result = RunPowerShellScript("pwsh.exe", arguments, true);
 
-            if (result.Contains("已安装 PowerShell 7.4 或更高版本."))
+            if (result.Contains("PowerShell 7.4 or greater detected."))
             {
                 IsPowerShell7Detected = true;
             }
-            else if (result.Contains("未安装 PowerShell 7.4 或更高版本."))
+            else if (result.Contains("PowerShell 7.4 or greater not detected."))
             {
                 IsPowerShell7Detected = false;
             }
             else if (result.Contains("pwsh.exe"))
             {
                 // Likely an error saying there was an error starting pwsh.exe, so we can assume Powershell 7 was not detected.
-                CommandOutputLog += "未安装 PowerShell 7.4 或更高版本. 如需安装请访问 https://learn.microsoft.com/powershell/scripting/install/installing-powershell-on-windows \r\n";
+                CommandOutputLog += "PowerShell 7.4 or greater not detected. Installation instructions can be found on https://learn.microsoft.com/powershell/scripting/install/installing-powershell-on-windows \r\n";
                 IsPowerShell7Detected = false;
             }
 
@@ -206,7 +206,7 @@ namespace Microsoft.PowerToys.Settings.UI.ViewModels
                         if (File.Exists(Path.Combine(pathCandidate, "pwsh-preview.cmd")))
                         {
                             result = RunPowerShellScript(Path.Combine(pathCandidate, "pwsh-preview.cmd"), arguments, true);
-                            if (result.Contains("已安装 PowerShell 7.4 或更高版本."))
+                            if (result.Contains("PowerShell 7.4 or greater detected."))
                             {
                                 isPowerShellPreviewDetected = true;
                                 IsPowerShell7Detected = true;
@@ -222,20 +222,20 @@ namespace Microsoft.PowerToys.Settings.UI.ViewModels
                 }
             }
 
-            if (result.Contains("已安装 WinGet 客户端模块."))
+            if (result.Contains("WinGet Client module detected."))
             {
                 IsWinGetClientModuleDetected = true;
             }
-            else if (result.Contains("未安装 WinGet 客户端模块.") || result.Contains("WinGet 客户端模块需要更新"))
+            else if (result.Contains("WinGet Client module not detected.") || result.Contains("WinGet Client module needs to be updated."))
             {
                 IsWinGetClientModuleDetected = false;
             }
 
-            if (result.Contains("已在配置文件中注册本模块."))
+            if (result.Contains("Command Not Found module is registered in the profile file."))
             {
                 IsCommandNotFoundModuleInstalled = true;
             }
-            else if (result.Contains("未在配置文件中注册本模块.") || result.Contains("已在配置文件中注册旧版模块."))
+            else if (result.Contains("Command Not Found module is not registered in the profile file.") || result.Contains("Outdated version of Command Not Found module found in the profile file."))
             {
                 IsCommandNotFoundModuleInstalled = false;
             }
@@ -248,7 +248,7 @@ namespace Microsoft.PowerToys.Settings.UI.ViewModels
             var ps1File = AssemblyDirectory + "\\Assets\\Settings\\Scripts\\InstallPowerShell7.ps1";
             var arguments = $"-NoProfile -ExecutionPolicy Unrestricted -File \"{ps1File}\"";
             var result = RunPowerShellOrPreviewScript("powershell.exe", arguments);
-            if (result.Contains("成功安装 Powershell 7."))
+            if (result.Contains("Powershell 7 successfully installed."))
             {
                 IsPowerShell7Detected = true;
             }
@@ -264,11 +264,11 @@ namespace Microsoft.PowerToys.Settings.UI.ViewModels
             var ps1File = AssemblyDirectory + "\\Assets\\Settings\\Scripts\\InstallWinGetClientModule.ps1";
             var arguments = $"-NoProfile -ExecutionPolicy Unrestricted -File \"{ps1File}\"";
             var result = RunPowerShellOrPreviewScript("pwsh.exe", arguments);
-            if (result.Contains("已安装 WinGet 客户端模块.") || result.Contains("已更新 WinGet 客户端模块."))
+            if (result.Contains("WinGet Client module detected.") || result.Contains("WinGet Client module updated."))
             {
                 IsWinGetClientModuleDetected = true;
             }
-            else if (result.Contains("未安装 WinGet 客户端模块."))
+            else if (result.Contains("WinGet Client module not detected."))
             {
                 IsWinGetClientModuleDetected = false;
             }
@@ -282,9 +282,9 @@ namespace Microsoft.PowerToys.Settings.UI.ViewModels
             var arguments = $"-NoProfile -ExecutionPolicy Unrestricted -File \"{ps1File}\" -scriptPath \"{AssemblyDirectory}\\..\"";
             var result = RunPowerShellOrPreviewScript("pwsh.exe", arguments);
 
-            if (result.Contains("发现模块已经在配置文件中注册过了.")
-                || result.Contains("成功在配置文件中注册模块.")
-                || result.Contains("成功在配置文件中更新模块."))
+            if (result.Contains("Module is already registered in the profile file.")
+                || result.Contains("Module was successfully registered in the profile file.")
+                || result.Contains("Module was successfully upgraded in the profile file."))
             {
                 IsCommandNotFoundModuleInstalled = true;
                 PowerToysTelemetry.Log.WriteEvent(new CmdNotFoundInstallEvent());
@@ -299,7 +299,7 @@ namespace Microsoft.PowerToys.Settings.UI.ViewModels
             var arguments = $"-NoProfile -ExecutionPolicy Unrestricted -File \"{ps1File}\"";
             var result = RunPowerShellOrPreviewScript("pwsh.exe", arguments);
 
-            if (result.Contains("已从配置文件中删除本模块.") || result.Contains("配置文件中没有发现本模块, 不需要删除."))
+            if (result.Contains("Removed the Command Not Found reference from the profile file.") || result.Contains("No instance of Command Not Found was found in the profile file."))
             {
                 IsCommandNotFoundModuleInstalled = false;
                 PowerToysTelemetry.Log.WriteEvent(new CmdNotFoundUninstallEvent());

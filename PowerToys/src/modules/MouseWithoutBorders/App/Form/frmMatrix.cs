@@ -49,10 +49,10 @@ namespace MouseWithoutBorders
 
             textBoxEnc.Font = new System.Drawing.Font(Control.DefaultFont.Name, 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
 
-            Text = Application.ProductName + " " + Application.ProductVersion + " - 设置";
+            Text = Application.ProductName + " " + Application.ProductVersion + " - Settings";
             toolTip.ToolTipTitle = Application.ProductName;
             toolTipManual.ToolTipTitle = Application.ProductName;
-            labelExitMM.Text = "退出软件, Ctrl+Alt+Shift+:";
+            labelExitMM.Text = "Exit the application, Ctrl+Alt+Shift+:";
             textBoxMachineName2IP.Text = Setting.Values.Name2IP;
         }
 
@@ -101,7 +101,7 @@ namespace MouseWithoutBorders
             if (Process.GetCurrentProcess().SessionId != NativeMethods.WTSGetActiveConsoleSessionId())
             {
                 Program.StartService();
-                Common.ShowToolTip("新设置应用于物理控制台会话！", 3000, ToolTipIcon.Warning, false);
+                Common.ShowToolTip("New settings applied on the physical console session!", 3000, ToolTipIcon.Warning, false);
             }
             else
             {
@@ -476,8 +476,8 @@ namespace MouseWithoutBorders
                     showInvalidKeyMessage = true;
 
                     Common.ShowToolTip(
-                        "密码不正确。\r\n请检查是否在所有电脑上都输入了同一个密码。\r\n并检查您运行的是否都是同一版本的 "
-                        + Application.ProductName + "。\r\n" + keyNotMatchedMachines + "\r\n本软件版本: " + FrmAbout.AssemblyVersion,
+                        "Security Keys not matched.\r\nVerify that you entered the same key in all machines.\r\nAnd make sure you run the same version of "
+                        + Application.ProductName + " in all machines.\r\n" + keyNotMatchedMachines + "\r\nThis version: " + FrmAbout.AssemblyVersion,
                         20000,
                         ToolTipIcon.Warning,
                         Setting.Values.ShowClipNetStatus);
@@ -797,6 +797,14 @@ namespace MouseWithoutBorders
                 checkBoxHideLogo.Enabled = false;
             }
 
+            // Note(@htcfreek): Disable checkboxes of settings that we don't support in the PowerToys implementation
+            checkBoxDisableCAD.Enabled = false;
+            checkBoxDisableCAD.Text = checkBoxDisableCAD.Text + " [Unsupported!]";
+            checkBoxHideLogo.Enabled = false;
+            checkBoxHideLogo.Text = checkBoxHideLogo.Text + " [Unsupported!]";
+            checkBoxSendLog.Enabled = false;
+            checkBoxSendLog.Text = checkBoxSendLog.Text + " [Unsupported!]";
+
             checkBoxShareClipboard.Checked = Setting.Values.ShareClipboard;
 
             if (!Setting.Values.ShareClipboard)
@@ -829,22 +837,72 @@ namespace MouseWithoutBorders
                 radioButtonDisable.Checked = true;
             }
 
-            comboBoxShowSettings.Text = "关闭";
+            comboBoxShowSettings.Text = "Disable";
 
-            comboBoxExitMM.Text = Setting.Values.HotKeyExitMM == 0 ? "关闭" : new string(new char[] { (char)Setting.Values.HotKeyExitMM });
+            comboBoxExitMM.Text = Setting.Values.HotKeyExitMM == 0 ? "Disable" : new string(new char[] { (char)Setting.Values.HotKeyExitMM });
 #if OBSOLETE_SHORTCUTS
-            comboBoxLockMachine.Text = Setting.Values.HotKeyLockMachine == 0 ? "关闭" : new string(new char[] { (char)Setting.Values.HotKeyLockMachine });
+            comboBoxLockMachine.Text = Setting.Values.HotKeyLockMachine == 0 ? "Disable" : new string(new char[] { (char)Setting.Values.HotKeyLockMachine });
 
-            comboBoxReconnect.Text = Setting.Values.HotKeyReconnect == 0 ? "关闭" : new string(new char[] { (char)Setting.Values.HotKeyReconnect });
+            comboBoxReconnect.Text = Setting.Values.HotKeyReconnect == 0 ? "Disable" : new string(new char[] { (char)Setting.Values.HotKeyReconnect });
 
             comboBoxSwitchToAllPC.Text = Setting.Values.HotKeySwitch2AllPC == 1
                 ? "Ctrl*3"
-                : Setting.Values.HotKeySwitch2AllPC == 0 ? "关闭" : new string(new char[] { (char)Setting.Values.HotKeySwitch2AllPC });
+                : Setting.Values.HotKeySwitch2AllPC == 0 ? "Disable" : new string(new char[] { (char)Setting.Values.HotKeySwitch2AllPC });
 
             comboBoxEasyMouseOption.Text = ((EasyMouseOption)Setting.Values.EasyMouse).ToString();
 
-            comboBoxEasyMouse.Text = Setting.Values.HotKeyToggleEasyMouse == 0 ? "关闭" : new string(new char[] { (char)Setting.Values.HotKeyToggleEasyMouse });
+            comboBoxEasyMouse.Text = Setting.Values.HotKeyToggleEasyMouse == 0 ? "Disable" : new string(new char[] { (char)Setting.Values.HotKeyToggleEasyMouse });
 #endif
+
+            // Apply policy configuration on UI elements
+            // Has to be the last action
+            if (Setting.Values.ShareClipboardIsGpoConfigured)
+            {
+                checkBoxShareClipboard.Enabled = false;
+                checkBoxShareClipboard.Text += " [Managed]";
+
+                // transfer file setting depends on clipboard sharing
+                checkBoxTransferFile.Enabled = false;
+            }
+
+            if (Setting.Values.TransferFileIsGpoConfigured)
+            {
+                checkBoxTransferFile.Enabled = false;
+                checkBoxTransferFile.Text += " [Managed]";
+            }
+
+            if (Setting.Values.BlockScreenSaverIsGpoConfigured)
+            {
+                checkBoxBlockScreenSaver.Enabled = false;
+                checkBoxBlockScreenSaver.Text += " [Managed]";
+            }
+
+            if (Setting.Values.SameSubNetOnlyIsGpoConfigured)
+            {
+                checkBoxSameSubNet.Enabled = false;
+                checkBoxSameSubNet.Text += " [Managed]";
+            }
+
+            if (Setting.Values.ReverseLookupIsGpoConfigured)
+            {
+                checkBoxReverseLookup.Enabled = false;
+                checkBoxReverseLookup.Text += " [Managed]";
+            }
+
+            if (Setting.Values.Name2IpIsGpoConfigured)
+            {
+                textBoxMachineName2IP.Enabled = false;
+                groupBoxDNS.ForeColor = Color.DimGray;
+                groupBoxDNS.Text += " [Managed]";
+            }
+
+            if (Setting.Values.Name2IpPolicyListIsGpoConfigured)
+            {
+                pictureBoxMouseWithoutBorders.Visible = false;
+                groupBoxName2IPPolicyList.Visible = true;
+                textBoxMachineName2IPPolicyList.Visible = true;
+                textBoxMachineName2IPPolicyList.Text = Setting.Values.Name2IpPolicyList;
+            }
         }
 
         private void RadioButton_CheckedChanged(object sender, EventArgs e)
@@ -872,7 +930,7 @@ namespace MouseWithoutBorders
         private void ComboBoxLockMachine_TextChanged(object sender, EventArgs e)
         {
 #if OBSOLETE_SHORTCUTS
-            if (comboBoxLockMachine.Text.Contains("关闭"))
+            if (comboBoxLockMachine.Text.Contains("Disable"))
             {
                 Setting.Values.HotKeyLockMachine = 0;
             }
@@ -886,7 +944,7 @@ namespace MouseWithoutBorders
         private void ComboBoxSwitchToAllPC_TextChanged(object sender, EventArgs e)
         {
 #if OBSOLETE_SHORTCUTS
-            if (comboBoxSwitchToAllPC.Text.Contains("关闭"))
+            if (comboBoxSwitchToAllPC.Text.Contains("Disable"))
             {
                 Setting.Values.HotKeySwitch2AllPC = 0;
             }
@@ -962,7 +1020,7 @@ namespace MouseWithoutBorders
         private void ComboBoxReconnect_TextChanged(object sender, EventArgs e)
         {
 #if OBSOLETE_SHORTCUTS
-            if (comboBoxReconnect.Text.Contains("关闭"))
+            if (comboBoxReconnect.Text.Contains("Disable"))
             {
                 Setting.Values.HotKeyReconnect = 0;
             }
@@ -1001,7 +1059,7 @@ namespace MouseWithoutBorders
             string selectedOption = comboBoxEasyMouseOption.Text;
             int oldEasyMouseOption = Setting.Values.EasyMouse;
 
-            Setting.Values.EasyMouse = Enum.TryParse<EasyMouseOption>(selectedOption, out EasyMouseOption easyMouseOption) ? (int)easyMouseOption : (int)EasyMouseOption.开启;
+            Setting.Values.EasyMouse = Enum.TryParse<EasyMouseOption>(selectedOption, out EasyMouseOption easyMouseOption) ? (int)easyMouseOption : (int)EasyMouseOption.Enable;
 
             if (oldEasyMouseOption != Setting.Values.EasyMouse)
             {
@@ -1012,7 +1070,7 @@ namespace MouseWithoutBorders
         private void ComboBoxEasyMouse_TextChanged(object sender, EventArgs e)
         {
 #if OBSOLETE_SHORTCUTS
-            if (comboBoxEasyMouse.Text.Contains("关闭"))
+            if (comboBoxEasyMouse.Text.Contains("Disable"))
             {
                 Setting.Values.HotKeyToggleEasyMouse = 0;
             }
@@ -1048,8 +1106,8 @@ namespace MouseWithoutBorders
 
         private void ButtonNewKey_Click(object sender, EventArgs e)
         {
-            string message = "确定要生成新密码吗？\r\n" +
-                "所有现有的连接会被取消，您需要重新输入密码来建立所有连接。";
+            string message = "Do you really want to generate a new key?\r\n" +
+                "(You would need to enter this key in all other machines to re-establish the connections)";
 
             if (MessageBox.Show(message, Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
             {
@@ -1058,7 +1116,7 @@ namespace MouseWithoutBorders
                 checkBoxShowKey.Checked = true;
                 Common.GeneratedKey = true;
                 ButtonOK_Click(null, null);
-                Common.ShowToolTip("新密码已生成，需要在其他电脑上输入新的密码来重新连接。", 10000, ToolTipIcon.Info, false);
+                Common.ShowToolTip("New security key was generated, update other machines to the same key.", 10000, ToolTipIcon.Info, false);
             }
         }
 
@@ -1105,7 +1163,7 @@ namespace MouseWithoutBorders
             string miniLog = Common.GetMiniLog(new[] { groupBoxOtherOptions.Controls, groupBoxShortcuts.Controls });
 
             Clipboard.SetText(miniLog);
-            Common.ShowToolTip("运行日志已复制到剪贴板", 30000, ToolTipIcon.Info, false);
+            Common.ShowToolTip("Log has been placed in the clipboard.", 30000, ToolTipIcon.Info, false);
         }
 
         private void ComboBoxScreenCapture_TextChanged(object sender, EventArgs e)
@@ -1115,17 +1173,17 @@ namespace MouseWithoutBorders
 
         private void LinkLabelReConfigure_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            string message = "警告：这将清除当前布局，重置所有设置，重新运行软件初始教程。对于 PowerToys 用户，请使用 PowerToys 设置，而不是这个初始化。\r\n";
-            message += "你将需要重新初始化所有要连接的电脑。在接下去的选择窗口中，对于第一台电脑请选“否”，剩下的选“是”。\r\n";
-            message += "接着按照步骤完成配置。\r\n\r\n";
-            message += "您确定要继续吗？";
+            string message = "WARNING: This will clear the Computer Matrix and allows you to run the setup experience like the first time you installed the program.\r\n";
+            message += "You need to start this setup experience in all machines. In the next Dialog, click NO in the first machine and click YES in the rest of the machines.\r\n";
+            message += "And then follow the steps to complete the configuration.\r\n\r\n";
+            message += "Are you sure you want to continue?";
 
             if (MessageBox.Show(message, Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) == System.Windows.Forms.DialogResult.Yes)
             {
                 PowerToysTelemetry.Log.WriteEvent(new MouseWithoutBorders.Telemetry.MouseWithoutBordersOldUIReconfigureEvent());
                 ButtonCancel_Click(this, new EventArgs());
                 Setting.Values.FirstRun = true;
-                Setting.Values.EasyMouse = (int)EasyMouseOption.开启;
+                Setting.Values.EasyMouse = (int)EasyMouseOption.Enable;
                 Common.ClearComputerMatrix();
                 Common.ShowSetupForm(true);
             }

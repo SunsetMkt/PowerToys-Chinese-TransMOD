@@ -18,7 +18,7 @@ namespace RegistryPreview
     public sealed partial class MainWindow : WindowEx
     {
         // Const values
-        private const string APPNAME = "注册表预览";
+        private const string APPNAME = "RegistryPreview";
 
         // private members
         private Microsoft.UI.Windowing.AppWindow appWindow;

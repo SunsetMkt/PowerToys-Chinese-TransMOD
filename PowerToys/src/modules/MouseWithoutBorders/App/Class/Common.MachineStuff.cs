@@ -809,7 +809,7 @@ namespace MouseWithoutBorders
             {
                 Common.Log("Not physical console session.");
                 _ = MessageBox.Show(
-                    "请在物理终端会话中运行.\r\n本软件不支持在远程连接和虚拟机中使用.",
+                    "Please run the program in the physical console session.\r\nThe program does not work in a remote desktop or virtual machine session.",
                     Application.ProductName,
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Stop);
@@ -853,7 +853,7 @@ namespace MouseWithoutBorders
 
             if (Process.GetCurrentProcess().SessionId != NativeMethods.WTSGetActiveConsoleSessionId())
             {
-                Common.ShowToolTip("本软件不支持在远程连接和虚拟机中使用.", 5000);
+                Common.ShowToolTip(Application.ProductName + " cannot be used in a remote desktop or virtual machine session.", 5000);
             }
 
 #if NEW_SETTINGS_FORM

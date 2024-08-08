@@ -74,7 +74,7 @@ namespace MouseWithoutBorders
             catch (Win32Exception e)
             {
                 _ = MessageBox.Show(
-                    "安装鼠标/键盘侦听器失败，错误代码: " + e.ErrorCode,
+                    "Error installing Mouse/keyboard hook, error code: " + e.ErrorCode,
                     Application.ProductName,
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error);

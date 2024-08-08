@@ -23,9 +23,7 @@ namespace Microsoft.PowerToys.Run.Plugin.System
 
         private bool _confirmSystemCommands;
         private bool _showSuccessOnEmptyRB;
-
-        // [PowerToysCN]
-        // private bool _localizeSystemCommands;
+        private bool _localizeSystemCommands;
         private bool _reduceNetworkResultScore;
         private bool _separateEmptyRB;
 
@@ -53,16 +51,12 @@ namespace Microsoft.PowerToys.Run.Plugin.System
                 DisplayLabel = Resources.Microsoft_plugin_sys_RecycleBin_ShowEmptySuccessMessage,
                 Value = false,
             },
-
-            // [PowerToysCN]
-            // The original en-US resources are modified to Chinese.
-            // No need for an option to switch.
-            // new PluginAdditionalOption()
-            // {
-            //     Key = LocalizeSystemCommands,
-            //     DisplayLabel = Resources.Use_localized_system_commands,
-            //     Value = true,
-            // },
+            new PluginAdditionalOption()
+            {
+                Key = "LocalizeSystemCommands",
+                DisplayLabel = Resources.Use_localized_system_commands,
+                Value = true,
+            },
             new PluginAdditionalOption()
             {
                 Key = "SeparateResultEmptyRB",
@@ -96,10 +90,7 @@ namespace Microsoft.PowerToys.Run.Plugin.System
         public List<Result> Query(Query query)
         {
             List<Result> results = new List<Result>();
-
-            // [PowerToysCN]
-            // CultureInfo culture = _localizeSystemCommands ? CultureInfo.CurrentUICulture : new CultureInfo("en-US");
-            CultureInfo culture = CultureInfo.CurrentUICulture;
+            CultureInfo culture = _localizeSystemCommands ? CultureInfo.CurrentUICulture : new CultureInfo("en-US");
 
             if (query == null)
             {
@@ -146,10 +137,7 @@ namespace Microsoft.PowerToys.Run.Plugin.System
         public List<Result> Query(Query query, bool delayedExecution)
         {
             List<Result> results = new List<Result>();
-
-            // [PowerToysCN]
-            // CultureInfo culture = _localizeSystemCommands ? CultureInfo.CurrentUICulture : new CultureInfo("en-US");
-            CultureInfo culture = CultureInfo.CurrentUICulture;
+            CultureInfo culture = _localizeSystemCommands ? CultureInfo.CurrentUICulture : new CultureInfo("en-US");
 
             if (query == null)
             {
@@ -227,9 +215,7 @@ namespace Microsoft.PowerToys.Run.Plugin.System
         {
             var confirmSystemCommands = false;
             var showSuccessOnEmptyRB = false;
-
-            // [PowerToysCN]
-            // var localizeSystemCommands = true;
+            var localizeSystemCommands = true;
             var reduceNetworkResultScore = true;
             var separateEmptyRB = false;
 
@@ -241,9 +227,9 @@ namespace Microsoft.PowerToys.Run.Plugin.System
                 var optionEmptyRBSuccessMsg = settings.AdditionalOptions.FirstOrDefault(x => x.Key == "ShowSuccessOnEmptyRB");
                 showSuccessOnEmptyRB = optionEmptyRBSuccessMsg?.Value ?? showSuccessOnEmptyRB;
 
-                // [PowerToysCN]
-                // var optionLocalize = settings.AdditionalOptions.FirstOrDefault(x => x.Key == LocalizeSystemCommands);
-                // localizeSystemCommands = optionLocalize?.Value ?? true;
+                var optionLocalize = settings.AdditionalOptions.FirstOrDefault(x => x.Key == "LocalizeSystemCommands");
+                localizeSystemCommands = optionLocalize?.Value ?? localizeSystemCommands;
+
                 var optionNetworkScore = settings.AdditionalOptions.FirstOrDefault(x => x.Key == "ReduceNetworkResultScore");
                 reduceNetworkResultScore = optionNetworkScore?.Value ?? reduceNetworkResultScore;
 
@@ -253,9 +239,7 @@ namespace Microsoft.PowerToys.Run.Plugin.System
 
             _confirmSystemCommands = confirmSystemCommands;
             _showSuccessOnEmptyRB = showSuccessOnEmptyRB;
-
-            // [PowerToysCN]
-            // _localizeSystemCommands = localizeSystemCommands;
+            _localizeSystemCommands = localizeSystemCommands;
             _reduceNetworkResultScore = reduceNetworkResultScore;
             _separateEmptyRB = separateEmptyRB;
         }

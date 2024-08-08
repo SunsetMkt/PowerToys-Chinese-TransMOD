@@ -73,7 +73,7 @@ namespace MouseWithoutBorders
                     {
                         shownErrMessage = true;
                         _ = MessageBox.Show(
-                            Application.ProductName + " 尚未安装，请先运行 Setup.exe!",
+                            Application.ProductName + " is not installed yet, please run Setup.exe first!",
                             Application.ProductName,
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Error);
@@ -111,7 +111,7 @@ namespace MouseWithoutBorders
                     {
                         shownErrMessage = true;
                         _ = MessageBox.Show(
-                            "无法启动服务 " + service.ServiceName + ": " + e.Message,
+                            "Cannot start service " + service.ServiceName + ": " + e.Message,
                             Common.BinaryName,
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Error);

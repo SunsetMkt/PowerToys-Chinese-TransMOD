@@ -39,9 +39,8 @@ namespace MouseWithoutBorders.Class
                 catch (Win32Exception e)
                 {
                     string log = $"The process {processName} (PID={processId}) could not be terminated, error: {e.Message}";
-                    string logcn = $"进程 {processName} (PID={processId}) 无法被终止，错误: {e.Message}";
                     Common.TelemetryLogTrace(log, SeverityLevel.Error);
-                    Common.ShowToolTip(logcn, 5000);
+                    Common.ShowToolTip(log, 5000);
 
                     if (!keepTrying)
                     {

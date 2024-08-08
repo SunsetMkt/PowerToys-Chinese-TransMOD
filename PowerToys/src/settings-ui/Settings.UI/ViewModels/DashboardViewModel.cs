@@ -88,10 +88,17 @@ namespace Microsoft.PowerToys.Settings.UI.ViewModels
 
         private void LoadKBMSettingsFromJson()
         {
-            KeyboardManagerProfile kbmProfile = GetKBMProfile();
-            _kbmItem.RemapKeys = kbmProfile?.RemapKeys.InProcessRemapKeys;
-            _kbmItem.RemapShortcuts = KeyboardManagerViewModel.CombineShortcutLists(kbmProfile?.RemapShortcuts.GlobalRemapShortcuts, kbmProfile?.RemapShortcuts.AppSpecificRemapShortcuts);
-            dispatcher.Invoke(new Action(() => UpdateKBMItems()));
+            try
+            {
+                KeyboardManagerProfile kbmProfile = GetKBMProfile();
+                _kbmItem.RemapKeys = kbmProfile?.RemapKeys.InProcessRemapKeys;
+                _kbmItem.RemapShortcuts = KeyboardManagerViewModel.CombineShortcutLists(kbmProfile?.RemapShortcuts.GlobalRemapShortcuts, kbmProfile?.RemapShortcuts.AppSpecificRemapShortcuts);
+                dispatcher.Invoke(new Action(() => UpdateKBMItems()));
+            }
+            catch (Exception ex)
+            {
+                Logger.LogError($"Failed to load KBM settings: {ex.Message}");
+            }
         }
 
         private void UpdateKBMItems()
@@ -230,10 +237,10 @@ namespace Microsoft.PowerToys.Settings.UI.ViewModels
         {
             ISettingsRepository<FancyZonesSettings> moduleSettingsRepository = SettingsRepository<FancyZonesSettings>.GetInstance(new SettingsUtils());
             var settings = moduleSettingsRepository.SettingsConfig;
-            string activationMode = $"{resourceLoader.GetString(settings.Properties.FancyzonesShiftDrag.Value ? "FancyZones_ShiftDragCheckBoxControl_Header/Content" : "FancyZones_ActivationNoShiftDrag")}";
+            string activationMode = $"{resourceLoader.GetString(settings.Properties.FancyzonesShiftDrag.Value ? "FancyZones_ShiftDragCheckBoxControl_Header/Content" : "FancyZones_ActivationNoShiftDrag")}.";
             if (settings.Properties.FancyzonesMouseSwitch.Value)
             {
-                activationMode += $"；{resourceLoader.GetString("FancyZones_MouseDragCheckBoxControl_Header/Content")}";
+                activationMode += $" {resourceLoader.GetString("FancyZones_MouseDragCheckBoxControl_Header/Content")}.";
             }
 
             var list = new List<DashboardModuleItem>
@@ -270,10 +277,10 @@ namespace Microsoft.PowerToys.Settings.UI.ViewModels
             {
                 switch (activationMethod)
                 {
-                    case 2: shortDescription += $"，{resourceLoader.GetString("Dashboard_Activation")}：{resourceLoader.GetString("MouseUtils_FindMyMouse_ActivationShakeMouse/Content")}"; break;
-                    case 1: shortDescription += $"，{resourceLoader.GetString("Dashboard_Activation")}：{resourceLoader.GetString("MouseUtils_FindMyMouse_ActivationDoubleRightControlPress/Content")}"; break;
+                    case 2: shortDescription += $". {resourceLoader.GetString("Dashboard_Activation")}: {resourceLoader.GetString("MouseUtils_FindMyMouse_ActivationShakeMouse/Content")}"; break;
+                    case 1: shortDescription += $". {resourceLoader.GetString("Dashboard_Activation")}: {resourceLoader.GetString("MouseUtils_FindMyMouse_ActivationDoubleRightControlPress/Content")}"; break;
                     case 0:
-                    default: shortDescription += $"，{resourceLoader.GetString("Dashboard_Activation")}：{resourceLoader.GetString("MouseUtils_FindMyMouse_ActivationDoubleControlPress/Content")}"; break;
+                    default: shortDescription += $". {resourceLoader.GetString("Dashboard_Activation")}: {resourceLoader.GetString("MouseUtils_FindMyMouse_ActivationDoubleControlPress/Content")}"; break;
                 }
 
                 list.Add(new DashboardModuleTextItem() { Label = shortDescription });
@@ -418,9 +425,9 @@ namespace Microsoft.PowerToys.Settings.UI.ViewModels
             var activationMethod = moduleSettings.Properties.ActivationKey;
             switch (activationMethod)
             {
-                case Library.Enumerations.PowerAccentActivationKey.LeftRightArrow: shortDescription += $"，{resourceLoader.GetString("Dashboard_Activation")}：{resourceLoader.GetString("QuickAccent_Activation_Key_Arrows/Content")}"; break;
-                case Library.Enumerations.PowerAccentActivationKey.Space: shortDescription += $"，{resourceLoader.GetString("Dashboard_Activation")}：{resourceLoader.GetString("QuickAccent_Activation_Key_Space/Content")}"; break;
-                case Library.Enumerations.PowerAccentActivationKey.Both: shortDescription += $"，{resourceLoader.GetString("Dashboard_Activation")}：{resourceLoader.GetString("QuickAccent_Activation_Key_Either/Content")}"; break;
+                case Library.Enumerations.PowerAccentActivationKey.LeftRightArrow: shortDescription += $". {resourceLoader.GetString("Dashboard_Activation")}: {resourceLoader.GetString("QuickAccent_Activation_Key_Arrows/Content")}"; break;
+                case Library.Enumerations.PowerAccentActivationKey.Space: shortDescription += $". {resourceLoader.GetString("Dashboard_Activation")}: {resourceLoader.GetString("QuickAccent_Activation_Key_Space/Content")}"; break;
+                case Library.Enumerations.PowerAccentActivationKey.Both: shortDescription += $". {resourceLoader.GetString("Dashboard_Activation")}: {resourceLoader.GetString("QuickAccent_Activation_Key_Either/Content")}"; break;
             }
 
             var list = new List<DashboardModuleItem>

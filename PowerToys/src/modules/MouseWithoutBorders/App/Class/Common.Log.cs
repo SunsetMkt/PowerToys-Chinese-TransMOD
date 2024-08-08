@@ -309,11 +309,11 @@ namespace MouseWithoutBorders
 
                 if (RunOnLogonDesktop || RunOnScrSaverDesktop)
                 {
-                    _ = MessageBox.Show("已创建转储文件: " + logFile, Application.ProductName);
+                    _ = MessageBox.Show("Dump file created: " + logFile, Application.ProductName);
                 }
                 else
                 {
-                    ShowToolTip("已创建转储文件: " + logFile + " 并复制到剪贴板.", 10000);
+                    ShowToolTip("Dump file created: " + logFile + " and placed in the Clipboard.", 10000);
                     Clipboard.SetText(logFile);
                 }
             }
